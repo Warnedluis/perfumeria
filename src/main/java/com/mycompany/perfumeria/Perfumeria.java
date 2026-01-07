@@ -3,6 +3,7 @@
  */
 
 package com.mycompany.perfumeria;
+import Vistas.PantallaPrincipal;
 
 /**
  *
@@ -11,9 +12,9 @@ package com.mycompany.perfumeria;
 public class Perfumeria {
 
     public static void main(String[] args) {
-        Principal pan = new Principal();
+        PantallaPrincipal pan = new PantallaPrincipal();
         pan.setVisible(true);
         pan.setLocationRelativeTo(null);
-        pan.setTitle("programa registro alumnos");
+        pan.setTitle("Essentia Fragrances");
     }
 }
