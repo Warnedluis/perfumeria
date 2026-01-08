@@ -48,7 +48,6 @@ public class PantallaPrincipal extends javax.swing.JFrame {
         MenuVentas = new javax.swing.JMenu();
         MnClientes = new javax.swing.JMenuItem();
         MnPedidos = new javax.swing.JMenuItem();
-        MnDetallePedidos = new javax.swing.JMenuItem();
         MenuFinanzas = new javax.swing.JMenu();
         MnProveedores = new javax.swing.JMenuItem();
         MnFacturas = new javax.swing.JMenuItem();
@@ -56,7 +55,6 @@ public class PantallaPrincipal extends javax.swing.JFrame {
         MnEmpleados = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1000, 750));
 
         jPanel1.setPreferredSize(new java.awt.Dimension(1000, 750));
         jPanel1.setLayout(new java.awt.GridBagLayout());
@@ -96,9 +94,11 @@ public class PantallaPrincipal extends javax.swing.JFrame {
         MenuDesarrollo.setText("Desarrollo");
 
         MnFormulas.setText("Fórmulas");
+        MnFormulas.addActionListener(this::MnFormulasActionPerformed);
         MenuDesarrollo.add(MnFormulas);
 
         MnIngredientes.setText("Ingredientes");
+        MnIngredientes.addActionListener(this::MnIngredientesActionPerformed);
         MenuDesarrollo.add(MnIngredientes);
 
         BarraMenu.add(MenuDesarrollo);
@@ -133,10 +133,6 @@ public class PantallaPrincipal extends javax.swing.JFrame {
 
         MnPedidos.setText("Pedidos");
         MenuVentas.add(MnPedidos);
-
-        MnDetallePedidos.setText("Detalle de pedidos");
-        MnDetallePedidos.addActionListener(this::MnDetallePedidosActionPerformed);
-        MenuVentas.add(MnDetallePedidos);
 
         BarraMenu.add(MenuVentas);
 
@@ -177,6 +173,9 @@ public class PantallaPrincipal extends javax.swing.JFrame {
 
     private void MnLotesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnLotesActionPerformed
         // TODO add your handling code here:
+        Lotes Ventana = new Lotes ();
+        Escritorio.add(Ventana);
+        Ventana.show();
     }//GEN-LAST:event_MnLotesActionPerformed
 
     private void MnMateriasPrimasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnMateriasPrimasActionPerformed
@@ -191,10 +190,6 @@ public class PantallaPrincipal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_MnProveedoresActionPerformed
 
-    private void MnDetallePedidosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnDetallePedidosActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_MnDetallePedidosActionPerformed
-
     private void MnClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnClientesActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_MnClientesActionPerformed
@@ -205,6 +200,20 @@ public class PantallaPrincipal extends javax.swing.JFrame {
         Escritorio.add(Ventana);
         Ventana.show();
     }//GEN-LAST:event_MnPerfumesActionPerformed
+
+    private void MnFormulasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnFormulasActionPerformed
+        // TODO add your handling code here:
+        Formulas Ventana = new Formulas();
+        Escritorio.add(Ventana);
+        Ventana.show();
+    }//GEN-LAST:event_MnFormulasActionPerformed
+
+    private void MnIngredientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnIngredientesActionPerformed
+        // TODO add your handling code here:
+        Ingredientes Ventana = new Ingredientes();
+        Escritorio.add(Ventana);
+        Ventana.show();
+    }//GEN-LAST:event_MnIngredientesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -221,7 +230,6 @@ public class PantallaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu MenuProductos;
     private javax.swing.JMenu MenuVentas;
     private javax.swing.JMenuItem MnClientes;
-    private javax.swing.JMenuItem MnDetallePedidos;
     private javax.swing.JMenuItem MnEmpleados;
     private javax.swing.JMenuItem MnFacturas;
     private javax.swing.JMenuItem MnFormulas;
