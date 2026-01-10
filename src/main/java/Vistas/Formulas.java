@@ -149,15 +149,10 @@ public class Formulas extends javax.swing.JInternalFrame {
                 {null, null, null}
             },
             new String [] {
-                "ID ingrediente", "Nota", "Proporción "
+                "Ingrediente", "Nota", "Proporción "
             }
         ));
         jScrollPane3.setViewportView(TablaContiene);
-        if (TablaContiene.getColumnModel().getColumnCount() > 0) {
-            TablaContiene.getColumnModel().getColumn(0).setHeaderValue("ID ingrediente");
-            TablaContiene.getColumnModel().getColumn(1).setHeaderValue("Nota");
-            TablaContiene.getColumnModel().getColumn(2).setHeaderValue("Proporción ");
-        }
 
         BtnGuardarFormula.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         BtnGuardarFormula.setText("Guardar");
@@ -237,7 +232,7 @@ public class Formulas extends javax.swing.JInternalFrame {
                 .addGap(20, 20, 20)
                 .addComponent(jLabel55)
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(BtnAgregarFilaF)
                 .addGap(18, 18, 18)
@@ -283,6 +278,7 @@ public class Formulas extends javax.swing.JInternalFrame {
         TxtIDFormula1.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         TxtIDFormula1.addActionListener(this::TxtIDFormula1ActionPerformed);
 
+        jScrollPane4.setEnabled(false);
         jScrollPane4.setFont(new java.awt.Font("Segoe UI Light", 0, 12)); // NOI18N
 
         TablaContiene1.setModel(new javax.swing.table.DefaultTableModel(
@@ -294,16 +290,11 @@ public class Formulas extends javax.swing.JInternalFrame {
                 {null, null, null}
             },
             new String [] {
-                "ID ingrediente", "Nota", "Proporción "
+                "Ingrediente", "Nota", "Proporción "
             }
         ));
         TablaContiene1.setEnabled(false);
         jScrollPane4.setViewportView(TablaContiene1);
-        if (TablaContiene1.getColumnModel().getColumnCount() > 0) {
-            TablaContiene1.getColumnModel().getColumn(0).setHeaderValue("ID ingrediente");
-            TablaContiene1.getColumnModel().getColumn(1).setHeaderValue("Nota");
-            TablaContiene1.getColumnModel().getColumn(2).setHeaderValue("Proporción ");
-        }
 
         BtnGuardarFormula1.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         BtnGuardarFormula1.setText("Eliminar");
@@ -376,7 +367,7 @@ public class Formulas extends javax.swing.JInternalFrame {
                 .addGap(20, 20, 20)
                 .addComponent(jLabel62)
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
                 .addGap(47, 47, 47)
                 .addGroup(BajaFormulasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BtnGuardarFormula1)
@@ -420,6 +411,7 @@ public class Formulas extends javax.swing.JInternalFrame {
         TxtIDFormula2.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         TxtIDFormula2.addActionListener(this::TxtIDFormula2ActionPerformed);
 
+        jScrollPane5.setEnabled(false);
         jScrollPane5.setFont(new java.awt.Font("Segoe UI Light", 0, 12)); // NOI18N
 
         TablaContiene2.setModel(new javax.swing.table.DefaultTableModel(
@@ -431,16 +423,11 @@ public class Formulas extends javax.swing.JInternalFrame {
                 {null, null, null}
             },
             new String [] {
-                "ID ingrediente", "Nota", "Proporción "
+                "Ingrediente", "Nota", "Proporción "
             }
         ));
         TablaContiene2.setEnabled(false);
         jScrollPane5.setViewportView(TablaContiene2);
-        if (TablaContiene2.getColumnModel().getColumnCount() > 0) {
-            TablaContiene2.getColumnModel().getColumn(0).setHeaderValue("ID ingrediente");
-            TablaContiene2.getColumnModel().getColumn(1).setHeaderValue("Nota");
-            TablaContiene2.getColumnModel().getColumn(2).setHeaderValue("Proporción ");
-        }
 
         BtnGuardarFormula2.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         BtnGuardarFormula2.setText("Modificar");
@@ -452,6 +439,7 @@ public class Formulas extends javax.swing.JInternalFrame {
 
         BtnAgregarFilaF1.setFont(new java.awt.Font("Segoe UI Light", 0, 12)); // NOI18N
         BtnAgregarFilaF1.setText("Agregar fila");
+        BtnAgregarFilaF1.setEnabled(false);
         BtnAgregarFilaF1.addActionListener(this::BtnAgregarFilaF1ActionPerformed);
 
         jLabel68.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -520,7 +508,7 @@ public class Formulas extends javax.swing.JInternalFrame {
                 .addGap(20, 20, 20)
                 .addComponent(jLabel68)
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(BtnAgregarFilaF1)
                 .addGap(18, 18, 18)
@@ -566,6 +554,7 @@ public class Formulas extends javax.swing.JInternalFrame {
         TxtIDFormula3.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         TxtIDFormula3.addActionListener(this::TxtIDFormula3ActionPerformed);
 
+        jScrollPane6.setEnabled(false);
         jScrollPane6.setFont(new java.awt.Font("Segoe UI Light", 0, 12)); // NOI18N
 
         TablaContiene3.setModel(new javax.swing.table.DefaultTableModel(
@@ -577,16 +566,11 @@ public class Formulas extends javax.swing.JInternalFrame {
                 {null, null, null}
             },
             new String [] {
-                "ID ingrediente", "Nota", "Proporción "
+                "Ingrediente", "Nota", "Proporción "
             }
         ));
         TablaContiene3.setEnabled(false);
         jScrollPane6.setViewportView(TablaContiene3);
-        if (TablaContiene3.getColumnModel().getColumnCount() > 0) {
-            TablaContiene3.getColumnModel().getColumn(0).setHeaderValue("ID ingrediente");
-            TablaContiene3.getColumnModel().getColumn(1).setHeaderValue("Nota");
-            TablaContiene3.getColumnModel().getColumn(2).setHeaderValue("Proporción ");
-        }
 
         BtnGuardarFormula3.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         BtnGuardarFormula3.setText("Buscar");
@@ -659,7 +643,7 @@ public class Formulas extends javax.swing.JInternalFrame {
                 .addGap(20, 20, 20)
                 .addComponent(jLabel74)
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)
+                .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
                 .addGap(47, 47, 47)
                 .addGroup(BuscarFormulasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BtnGuardarFormula3)
@@ -702,7 +686,7 @@ public class Formulas extends javax.swing.JInternalFrame {
         );
         MostrarFormulasLayout.setVerticalGroup(
             MostrarFormulasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 480, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 479, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("Mostrar todo", MostrarFormulas);
@@ -715,7 +699,7 @@ public class Formulas extends javax.swing.JInternalFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 515, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 514, Short.MAX_VALUE)
         );
 
         pack();
@@ -760,15 +744,11 @@ public class Formulas extends javax.swing.JInternalFrame {
  int fila = jTable2.getSelectedRow();
     
     if (fila != -1) {
-        // 2. Obtener el ID de la columna 0
+ 
         String id = jTable2.getValueAt(fila, 0).toString();
-        
-        // 3. Llamar al método que abre la ventana
         mostrarIngredientesFormula(id);
     }
-}                                    
-
-// ESTE MÉTODO VA FUERA DEL ANTERIOR
+}         
 private void mostrarIngredientesFormula(String id) {
     javax.swing.JDialog ventanaDetalle = new javax.swing.JDialog();
     ventanaDetalle.setTitle("Ingredientes de la Fórmula " + id);

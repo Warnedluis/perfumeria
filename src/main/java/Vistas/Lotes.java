@@ -46,8 +46,8 @@ public class Lotes extends javax.swing.JInternalFrame {
         jLabel82 = new javax.swing.JLabel();
         jLabel83 = new javax.swing.JLabel();
         jTextField22 = new javax.swing.JTextField();
-        jTextField24 = new javax.swing.JTextField();
-        jTextField25 = new javax.swing.JTextField();
+        jComboBox17 = new javax.swing.JComboBox<>();
+        jComboBox18 = new javax.swing.JComboBox<>();
         BajaLotesProduccion = new javax.swing.JPanel();
         jFormattedTextField17 = new javax.swing.JFormattedTextField();
         jLabel54 = new javax.swing.JLabel();
@@ -67,8 +67,8 @@ public class Lotes extends javax.swing.JInternalFrame {
         jLabel84 = new javax.swing.JLabel();
         jLabel85 = new javax.swing.JLabel();
         jTextField29 = new javax.swing.JTextField();
-        jTextField30 = new javax.swing.JTextField();
-        jTextField31 = new javax.swing.JTextField();
+        jComboBox19 = new javax.swing.JComboBox<>();
+        jComboBox20 = new javax.swing.JComboBox<>();
         CambiosLotesProduccion = new javax.swing.JPanel();
         jFormattedTextField18 = new javax.swing.JFormattedTextField();
         jLabel64 = new javax.swing.JLabel();
@@ -88,8 +88,8 @@ public class Lotes extends javax.swing.JInternalFrame {
         jLabel86 = new javax.swing.JLabel();
         jLabel87 = new javax.swing.JLabel();
         jTextField35 = new javax.swing.JTextField();
-        jTextField36 = new javax.swing.JTextField();
-        jTextField37 = new javax.swing.JTextField();
+        jComboBox21 = new javax.swing.JComboBox<>();
+        jComboBox22 = new javax.swing.JComboBox<>();
         BuscarLotesProduccion = new javax.swing.JPanel();
         jFormattedTextField19 = new javax.swing.JFormattedTextField();
         jLabel71 = new javax.swing.JLabel();
@@ -109,8 +109,8 @@ public class Lotes extends javax.swing.JInternalFrame {
         jLabel88 = new javax.swing.JLabel();
         jLabel89 = new javax.swing.JLabel();
         jTextField41 = new javax.swing.JTextField();
-        jTextField42 = new javax.swing.JTextField();
-        jTextField43 = new javax.swing.JTextField();
+        jComboBox23 = new javax.swing.JComboBox<>();
+        jComboBox24 = new javax.swing.JComboBox<>();
         MostrarLotesProduccion = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
@@ -173,37 +173,40 @@ public class Lotes extends javax.swing.JInternalFrame {
         jFormattedTextField21.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel82.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jLabel82.setText("ID perfume:");
+        jLabel82.setText("Perfume:");
 
         jLabel83.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jLabel83.setText("ID empleado:");
+        jLabel83.setText("Empleado:");
 
         jTextField22.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jTextField22.addActionListener(this::jTextField22ActionPerformed);
 
-        jTextField24.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jTextField24.addActionListener(this::jTextField24ActionPerformed);
+        jComboBox17.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
-        jTextField25.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jTextField25.addActionListener(this::jTextField25ActionPerformed);
+        jComboBox18.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         javax.swing.GroupLayout AltaLotesProduccionLayout = new javax.swing.GroupLayout(AltaLotesProduccion);
         AltaLotesProduccion.setLayout(AltaLotesProduccionLayout);
         AltaLotesProduccionLayout.setHorizontalGroup(
             AltaLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(AltaLotesProduccionLayout.createSequentialGroup()
-                .addGap(91, 91, 91)
-                .addGroup(AltaLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel82)
-                    .addComponent(jLabel51)
-                    .addComponent(jLabel52)
-                    .addComponent(jLabel53)
-                    .addComponent(jLabel55)
-                    .addComponent(jLabel59)
-                    .addComponent(jLabel50)
-                    .addComponent(jLabel58)
-                    .addComponent(jLabel83))
-                .addGap(21, 21, 21)
+                .addGroup(AltaLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(AltaLotesProduccionLayout.createSequentialGroup()
+                        .addGap(91, 91, 91)
+                        .addGroup(AltaLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel82)
+                            .addComponent(jLabel51)
+                            .addComponent(jLabel52)
+                            .addComponent(jLabel53)
+                            .addComponent(jLabel55)
+                            .addComponent(jLabel59)
+                            .addComponent(jLabel50)
+                            .addComponent(jLabel58))
+                        .addGap(21, 21, 21))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AltaLotesProduccionLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel83)
+                        .addGap(18, 18, 18)))
                 .addGroup(AltaLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jFormattedTextField20)
                     .addComponent(jFormattedTextField21)
@@ -217,8 +220,8 @@ public class Lotes extends javax.swing.JInternalFrame {
                         .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jTextField23)
                     .addComponent(jTextField22)
-                    .addComponent(jTextField24)
-                    .addComponent(jTextField25))
+                    .addComponent(jComboBox17, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jComboBox18, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(96, 96, 96))
         );
         AltaLotesProduccionLayout.setVerticalGroup(
@@ -254,19 +257,21 @@ public class Lotes extends javax.swing.JInternalFrame {
                         .addGap(35, 35, 35)
                         .addGroup(AltaLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel82)
-                            .addComponent(jTextField24))
-                        .addGap(18, 18, 18)
+                            .addComponent(jComboBox17)))
+                    .addGroup(AltaLotesProduccionLayout.createSequentialGroup()
                         .addGroup(AltaLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel83)
-                            .addComponent(jTextField25)))
-                    .addGroup(AltaLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel53)
-                        .addComponent(jTextField22)))
+                            .addComponent(jLabel53)
+                            .addComponent(jTextField22))
+                        .addGap(47, 47, 47)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(AltaLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel83)
+                    .addComponent(jComboBox18))
                 .addGap(18, 18, 18)
                 .addGroup(AltaLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton12)
                     .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(22, 22, 22))
+                .addGap(48, 48, 48))
         );
 
         jTabbedPane1.addTab("Alta", AltaLotesProduccion);
@@ -326,55 +331,58 @@ public class Lotes extends javax.swing.JInternalFrame {
         jFormattedTextField23.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel84.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jLabel84.setText("ID perfume:");
+        jLabel84.setText("Perfume:");
 
         jLabel85.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jLabel85.setText("ID empleado:");
+        jLabel85.setText("Empleado:");
 
         jTextField29.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jTextField29.setEnabled(false);
         jTextField29.addActionListener(this::jTextField29ActionPerformed);
 
-        jTextField30.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jTextField30.setEnabled(false);
-        jTextField30.addActionListener(this::jTextField30ActionPerformed);
+        jComboBox19.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jComboBox19.setEnabled(false);
 
-        jTextField31.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jTextField31.setEnabled(false);
-        jTextField31.addActionListener(this::jTextField31ActionPerformed);
+        jComboBox20.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jComboBox20.setEnabled(false);
 
         javax.swing.GroupLayout BajaLotesProduccionLayout = new javax.swing.GroupLayout(BajaLotesProduccion);
         BajaLotesProduccion.setLayout(BajaLotesProduccionLayout);
         BajaLotesProduccionLayout.setHorizontalGroup(
             BajaLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(BajaLotesProduccionLayout.createSequentialGroup()
-                .addGap(91, 91, 91)
-                .addGroup(BajaLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel84)
-                    .addComponent(jLabel56)
-                    .addComponent(jLabel57)
-                    .addComponent(jLabel60)
-                    .addComponent(jLabel61)
-                    .addComponent(jLabel63)
-                    .addComponent(jLabel54)
-                    .addComponent(jLabel62)
-                    .addComponent(jLabel85))
-                .addGap(21, 21, 21)
+                .addGroup(BajaLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(BajaLotesProduccionLayout.createSequentialGroup()
+                        .addGap(91, 91, 91)
+                        .addGroup(BajaLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel84)
+                            .addComponent(jLabel56)
+                            .addComponent(jLabel57)
+                            .addComponent(jLabel60)
+                            .addComponent(jLabel61)
+                            .addComponent(jLabel63)
+                            .addComponent(jLabel54)
+                            .addComponent(jLabel62))
+                        .addGap(21, 21, 21))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BajaLotesProduccionLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel85)
+                        .addGap(18, 18, 18)))
                 .addGroup(BajaLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jFormattedTextField22)
                     .addComponent(jFormattedTextField23)
                     .addComponent(jTextField26)
                     .addComponent(jFormattedTextField17)
                     .addComponent(jTextField27)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BajaLotesProduccionLayout.createSequentialGroup()
+                    .addGroup(BajaLotesProduccionLayout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(127, 127, 127)
                         .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jTextField28)
                     .addComponent(jTextField29)
-                    .addComponent(jTextField30)
-                    .addComponent(jTextField31))
+                    .addComponent(jComboBox19, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jComboBox20, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(96, 96, 96))
         );
         BajaLotesProduccionLayout.setVerticalGroup(
@@ -410,19 +418,21 @@ public class Lotes extends javax.swing.JInternalFrame {
                         .addGap(35, 35, 35)
                         .addGroup(BajaLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel84)
-                            .addComponent(jTextField30))
-                        .addGap(18, 18, 18)
+                            .addComponent(jComboBox19)))
+                    .addGroup(BajaLotesProduccionLayout.createSequentialGroup()
                         .addGroup(BajaLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel85)
-                            .addComponent(jTextField31)))
-                    .addGroup(BajaLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel60)
-                        .addComponent(jTextField29)))
+                            .addComponent(jLabel60)
+                            .addComponent(jTextField29))
+                        .addGap(47, 47, 47)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(BajaLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jComboBox20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel85))
                 .addGap(18, 18, 18)
                 .addGroup(BajaLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton14)
                     .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(22, 22, 22))
+                .addGap(48, 48, 48))
         );
 
         jTabbedPane1.addTab("Baja", BajaLotesProduccion);
@@ -482,55 +492,58 @@ public class Lotes extends javax.swing.JInternalFrame {
         jFormattedTextField25.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel86.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jLabel86.setText("ID perfume:");
+        jLabel86.setText("Perfume:");
 
         jLabel87.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jLabel87.setText("ID empleado:");
+        jLabel87.setText("Empleado:");
 
         jTextField35.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jTextField35.setEnabled(false);
         jTextField35.addActionListener(this::jTextField35ActionPerformed);
 
-        jTextField36.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jTextField36.setEnabled(false);
-        jTextField36.addActionListener(this::jTextField36ActionPerformed);
+        jComboBox21.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jComboBox21.setEnabled(false);
 
-        jTextField37.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jTextField37.setEnabled(false);
-        jTextField37.addActionListener(this::jTextField37ActionPerformed);
+        jComboBox22.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jComboBox22.setEnabled(false);
 
         javax.swing.GroupLayout CambiosLotesProduccionLayout = new javax.swing.GroupLayout(CambiosLotesProduccion);
         CambiosLotesProduccion.setLayout(CambiosLotesProduccionLayout);
         CambiosLotesProduccionLayout.setHorizontalGroup(
             CambiosLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CambiosLotesProduccionLayout.createSequentialGroup()
-                .addGap(91, 91, 91)
-                .addGroup(CambiosLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel86)
-                    .addComponent(jLabel65)
-                    .addComponent(jLabel66)
-                    .addComponent(jLabel67)
-                    .addComponent(jLabel68)
-                    .addComponent(jLabel70)
-                    .addComponent(jLabel64)
-                    .addComponent(jLabel69)
-                    .addComponent(jLabel87))
-                .addGap(21, 21, 21)
+                .addGroup(CambiosLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(CambiosLotesProduccionLayout.createSequentialGroup()
+                        .addGap(91, 91, 91)
+                        .addGroup(CambiosLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel86)
+                            .addComponent(jLabel65)
+                            .addComponent(jLabel66)
+                            .addComponent(jLabel67)
+                            .addComponent(jLabel68)
+                            .addComponent(jLabel70)
+                            .addComponent(jLabel64)
+                            .addComponent(jLabel69))
+                        .addGap(21, 21, 21))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CambiosLotesProduccionLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel87)
+                        .addGap(18, 18, 18)))
                 .addGroup(CambiosLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jFormattedTextField24)
                     .addComponent(jFormattedTextField25)
                     .addComponent(jTextField32)
                     .addComponent(jFormattedTextField18)
                     .addComponent(jTextField33)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CambiosLotesProduccionLayout.createSequentialGroup()
+                    .addGroup(CambiosLotesProduccionLayout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(127, 127, 127)
                         .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jTextField34)
                     .addComponent(jTextField35)
-                    .addComponent(jTextField36)
-                    .addComponent(jTextField37))
+                    .addComponent(jComboBox21, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jComboBox22, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(96, 96, 96))
         );
         CambiosLotesProduccionLayout.setVerticalGroup(
@@ -566,19 +579,20 @@ public class Lotes extends javax.swing.JInternalFrame {
                         .addGap(35, 35, 35)
                         .addGroup(CambiosLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel86)
-                            .addComponent(jTextField36))
-                        .addGap(18, 18, 18)
+                            .addComponent(jComboBox21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(CambiosLotesProduccionLayout.createSequentialGroup()
                         .addGroup(CambiosLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel87)
-                            .addComponent(jTextField37)))
-                    .addGroup(CambiosLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel67)
-                        .addComponent(jTextField35)))
+                            .addComponent(jLabel67)
+                            .addComponent(jTextField35))
+                        .addGap(47, 47, 47)))
+                .addGroup(CambiosLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jComboBox22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel87))
                 .addGap(18, 18, 18)
                 .addGroup(CambiosLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton16)
                     .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(22, 22, 22))
+                .addGap(48, 48, 48))
         );
 
         jTabbedPane1.addTab("Cambios", CambiosLotesProduccion);
@@ -638,55 +652,58 @@ public class Lotes extends javax.swing.JInternalFrame {
         jFormattedTextField27.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel88.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jLabel88.setText("ID perfume:");
+        jLabel88.setText("Perfume:");
 
         jLabel89.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jLabel89.setText("ID empleado:");
+        jLabel89.setText("Empleado:");
 
         jTextField41.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jTextField41.setEnabled(false);
         jTextField41.addActionListener(this::jTextField41ActionPerformed);
 
-        jTextField42.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jTextField42.setEnabled(false);
-        jTextField42.addActionListener(this::jTextField42ActionPerformed);
+        jComboBox23.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jComboBox23.setEnabled(false);
 
-        jTextField43.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jTextField43.setEnabled(false);
-        jTextField43.addActionListener(this::jTextField43ActionPerformed);
+        jComboBox24.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jComboBox24.setEnabled(false);
 
         javax.swing.GroupLayout BuscarLotesProduccionLayout = new javax.swing.GroupLayout(BuscarLotesProduccion);
         BuscarLotesProduccion.setLayout(BuscarLotesProduccionLayout);
         BuscarLotesProduccionLayout.setHorizontalGroup(
             BuscarLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(BuscarLotesProduccionLayout.createSequentialGroup()
-                .addGap(91, 91, 91)
-                .addGroup(BuscarLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel88)
-                    .addComponent(jLabel72)
-                    .addComponent(jLabel73)
-                    .addComponent(jLabel74)
-                    .addComponent(jLabel75)
-                    .addComponent(jLabel77)
-                    .addComponent(jLabel71)
-                    .addComponent(jLabel76)
-                    .addComponent(jLabel89))
-                .addGap(21, 21, 21)
                 .addGroup(BuscarLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(BuscarLotesProduccionLayout.createSequentialGroup()
+                        .addGap(91, 91, 91)
+                        .addGroup(BuscarLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel88)
+                            .addComponent(jLabel72)
+                            .addComponent(jLabel73)
+                            .addComponent(jLabel74)
+                            .addComponent(jLabel75)
+                            .addComponent(jLabel77)
+                            .addComponent(jLabel71)
+                            .addComponent(jLabel76))
+                        .addGap(21, 21, 21))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BuscarLotesProduccionLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel89)
+                        .addGap(18, 18, 18)))
+                .addGroup(BuscarLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jComboBox24, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jFormattedTextField26)
                     .addComponent(jFormattedTextField27)
                     .addComponent(jTextField38)
                     .addComponent(jFormattedTextField19)
                     .addComponent(jTextField39)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BuscarLotesProduccionLayout.createSequentialGroup()
+                    .addGroup(BuscarLotesProduccionLayout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(127, 127, 127)
                         .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jTextField40)
                     .addComponent(jTextField41)
-                    .addComponent(jTextField42)
-                    .addComponent(jTextField43))
+                    .addComponent(jComboBox23, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(96, 96, 96))
         );
         BuscarLotesProduccionLayout.setVerticalGroup(
@@ -719,22 +736,23 @@ public class Lotes extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(BuscarLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(BuscarLotesProduccionLayout.createSequentialGroup()
+                        .addGroup(BuscarLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel74)
+                            .addComponent(jTextField41))
+                        .addGap(47, 47, 47))
+                    .addGroup(BuscarLotesProduccionLayout.createSequentialGroup()
                         .addGap(35, 35, 35)
                         .addGroup(BuscarLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel88)
-                            .addComponent(jTextField42))
-                        .addGap(18, 18, 18)
-                        .addGroup(BuscarLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel89)
-                            .addComponent(jTextField43)))
-                    .addGroup(BuscarLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel74)
-                        .addComponent(jTextField41)))
+                            .addComponent(jComboBox23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGroup(BuscarLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jComboBox24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel89))
                 .addGap(18, 18, 18)
                 .addGroup(BuscarLotesProduccionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton18)
                     .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(22, 22, 22))
+                .addGap(74, 74, 74))
         );
 
         jTabbedPane1.addTab("Buscar", BuscarLotesProduccion);
@@ -776,7 +794,9 @@ public class Lotes extends javax.swing.JInternalFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 467, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 467, Short.MAX_VALUE)
+                .addGap(0, 0, 0))
         );
 
         pack();
@@ -806,14 +826,6 @@ public class Lotes extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField22ActionPerformed
 
-    private void jTextField24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField24ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField24ActionPerformed
-
-    private void jTextField25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField25ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField25ActionPerformed
-
     private void jTextField26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField26ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField26ActionPerformed
@@ -837,14 +849,6 @@ public class Lotes extends javax.swing.JInternalFrame {
     private void jTextField29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField29ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField29ActionPerformed
-
-    private void jTextField30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField30ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField30ActionPerformed
-
-    private void jTextField31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField31ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField31ActionPerformed
 
     private void jTextField32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField32ActionPerformed
         // TODO add your handling code here:
@@ -870,14 +874,6 @@ public class Lotes extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField35ActionPerformed
 
-    private void jTextField36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField36ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField36ActionPerformed
-
-    private void jTextField37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField37ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField37ActionPerformed
-
     private void jTextField38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField38ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField38ActionPerformed
@@ -902,14 +898,6 @@ public class Lotes extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField41ActionPerformed
 
-    private void jTextField42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField42ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField42ActionPerformed
-
-    private void jTextField43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField43ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField43ActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel AltaLotesProduccion;
@@ -925,6 +913,14 @@ public class Lotes extends javax.swing.JInternalFrame {
     private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton18;
     private javax.swing.JButton jButton19;
+    private javax.swing.JComboBox<String> jComboBox17;
+    private javax.swing.JComboBox<String> jComboBox18;
+    private javax.swing.JComboBox<String> jComboBox19;
+    private javax.swing.JComboBox<String> jComboBox20;
+    private javax.swing.JComboBox<String> jComboBox21;
+    private javax.swing.JComboBox<String> jComboBox22;
+    private javax.swing.JComboBox<String> jComboBox23;
+    private javax.swing.JComboBox<String> jComboBox24;
     private javax.swing.JFormattedTextField jFormattedTextField16;
     private javax.swing.JFormattedTextField jFormattedTextField17;
     private javax.swing.JFormattedTextField jFormattedTextField18;
@@ -980,25 +976,17 @@ public class Lotes extends javax.swing.JInternalFrame {
     private javax.swing.JTextField jTextField21;
     private javax.swing.JTextField jTextField22;
     private javax.swing.JTextField jTextField23;
-    private javax.swing.JTextField jTextField24;
-    private javax.swing.JTextField jTextField25;
     private javax.swing.JTextField jTextField26;
     private javax.swing.JTextField jTextField27;
     private javax.swing.JTextField jTextField28;
     private javax.swing.JTextField jTextField29;
-    private javax.swing.JTextField jTextField30;
-    private javax.swing.JTextField jTextField31;
     private javax.swing.JTextField jTextField32;
     private javax.swing.JTextField jTextField33;
     private javax.swing.JTextField jTextField34;
     private javax.swing.JTextField jTextField35;
-    private javax.swing.JTextField jTextField36;
-    private javax.swing.JTextField jTextField37;
     private javax.swing.JTextField jTextField38;
     private javax.swing.JTextField jTextField39;
     private javax.swing.JTextField jTextField40;
     private javax.swing.JTextField jTextField41;
-    private javax.swing.JTextField jTextField42;
-    private javax.swing.JTextField jTextField43;
     // End of variables declaration//GEN-END:variables
 }

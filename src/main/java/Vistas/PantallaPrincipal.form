@@ -85,8 +85,11 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="MnInventarioG">
               <Properties>
-                <Property name="text" type="java.lang.String" value="General"/>
+                <Property name="text" type="java.lang.String" value="Inventario General"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MnInventarioGActionPerformed"/>
+              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>

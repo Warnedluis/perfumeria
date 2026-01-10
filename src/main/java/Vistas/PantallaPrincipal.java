@@ -121,7 +121,8 @@ public class PantallaPrincipal extends javax.swing.JFrame {
         MnProductosTerminados.addActionListener(this::MnProductosTerminadosActionPerformed);
         MenuInventario.add(MnProductosTerminados);
 
-        MnInventarioG.setText("General");
+        MnInventarioG.setText("Inventario General");
+        MnInventarioG.addActionListener(this::MnInventarioGActionPerformed);
         MenuInventario.add(MnInventarioG);
 
         BarraMenu.add(MenuInventario);
@@ -250,6 +251,13 @@ public class PantallaPrincipal extends javax.swing.JFrame {
         Escritorio.add(Ventana);
         Ventana.show();
     }//GEN-LAST:event_MnFacturasActionPerformed
+
+    private void MnInventarioGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnInventarioGActionPerformed
+        // TODO add your handling code here:
+        Inventario Ventana = new Inventario ();
+        Escritorio.add(Ventana);
+        Ventana.show();
+    }//GEN-LAST:event_MnInventarioGActionPerformed
 
     /**
      * @param args the command line arguments

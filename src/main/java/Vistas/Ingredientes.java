@@ -111,7 +111,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         setIconifiable(true);
         setMaximizable(true);
         setResizable(true);
-        setPreferredSize(new java.awt.Dimension(750, 450));
+        setPreferredSize(new java.awt.Dimension(750, 470));
 
         jTabbedPane1.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
@@ -136,7 +136,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jLabel52.setText("Nombre:");
 
         jLabel53.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jLabel53.setText("ID Proveedor:");
+        jLabel53.setText("Proveedor:");
 
         jTextField22.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jTextField22.addActionListener(this::jTextField22ActionPerformed);
@@ -283,7 +283,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jLabel60.setText("Nombre:");
 
         jLabel61.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jLabel61.setText("ID Proveedor:");
+        jLabel61.setText("Proveedor:");
 
         jTextField26.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jTextField26.setEnabled(false);
@@ -433,7 +433,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jLabel68.setText("Nombre:");
 
         jLabel69.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jLabel69.setText("ID Proveedor:");
+        jLabel69.setText("Proveedor:");
 
         jTextField30.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jTextField30.setEnabled(false);
@@ -583,7 +583,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jLabel76.setText("Nombre:");
 
         jLabel77.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jLabel77.setText("ID Proveedor:");
+        jLabel77.setText("Proveedor:");
 
         jTextField34.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jTextField34.setEnabled(false);
@@ -729,11 +729,11 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         MostrarIngredientes.setLayout(MostrarIngredientesLayout);
         MostrarIngredientesLayout.setHorizontalGroup(
             MostrarIngredientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 752, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 737, Short.MAX_VALUE)
         );
         MostrarIngredientesLayout.setVerticalGroup(
             MostrarIngredientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 452, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 385, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("Mostrar todo", MostrarIngredientes);
@@ -742,11 +742,13 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 737, Short.MAX_VALUE)
+                .addGap(1, 1, 1))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1)
+            .addComponent(jTabbedPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 420, Short.MAX_VALUE)
         );
 
         pack();

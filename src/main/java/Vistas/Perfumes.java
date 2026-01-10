@@ -343,6 +343,7 @@ public class Perfumes extends javax.swing.JInternalFrame {
         jComboBox9.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Eau de parfum", "Eau de toilette", "Extracto" }));
         jComboBox9.setEnabled(false);
+        jComboBox9.addActionListener(this::jComboBox9ActionPerformed);
 
         jLabel27.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel27.setText("Fecha de creación:");
@@ -919,6 +920,10 @@ public class Perfumes extends javax.swing.JInternalFrame {
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton13ActionPerformed
+
+    private void jComboBox9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox9ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
