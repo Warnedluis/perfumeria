@@ -79,6 +79,9 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Productos terminados"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MnProductosTerminadosActionPerformed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="MnInventarioG">
               <Properties>
@@ -104,6 +107,9 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Pedidos"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MnPedidosActionPerformed"/>
+              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>
@@ -124,6 +130,9 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Facturaci&#xf3;n"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MnFacturasActionPerformed"/>
+              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>

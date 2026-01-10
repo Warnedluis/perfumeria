@@ -253,23 +253,27 @@ public class Formulas extends javax.swing.JInternalFrame {
         jLabel53.setText("Observaciones:");
 
         jTextField22.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField22.setEnabled(false);
         jTextField22.addActionListener(this::jTextField22ActionPerformed);
 
         jLabel56.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel56.setText("Versión:");
 
         TxtVersionFormula1.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtVersionFormula1.setEnabled(false);
         TxtVersionFormula1.addActionListener(this::TxtVersionFormula1ActionPerformed);
 
         jLabel58.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel58.setText("Perfume:");
 
         jComboBox18.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jComboBox18.setEnabled(false);
 
         jLabel60.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel60.setText("Fecha de registro:");
 
         FTxTFechaRegistro1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
+        FTxTFechaRegistro1.setEnabled(false);
         FTxTFechaRegistro1.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         FTxTFechaRegistro1.addActionListener(this::FTxTFechaRegistro1ActionPerformed);
 
@@ -293,6 +297,7 @@ public class Formulas extends javax.swing.JInternalFrame {
                 "ID ingrediente", "Nota", "Proporción "
             }
         ));
+        TablaContiene1.setEnabled(false);
         jScrollPane4.setViewportView(TablaContiene1);
         if (TablaContiene1.getColumnModel().getColumnCount() > 0) {
             TablaContiene1.getColumnModel().getColumn(0).setHeaderValue("ID ingrediente");
@@ -385,23 +390,27 @@ public class Formulas extends javax.swing.JInternalFrame {
         jLabel63.setText("Observaciones:");
 
         jTextField23.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField23.setEnabled(false);
         jTextField23.addActionListener(this::jTextField23ActionPerformed);
 
         jLabel64.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel64.setText("Versión:");
 
         TxtVersionFormula2.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtVersionFormula2.setEnabled(false);
         TxtVersionFormula2.addActionListener(this::TxtVersionFormula2ActionPerformed);
 
         jLabel65.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel65.setText("Perfume:");
 
         jComboBox19.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jComboBox19.setEnabled(false);
 
         jLabel66.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel66.setText("Fecha de registro:");
 
         FTxTFechaRegistro2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
+        FTxTFechaRegistro2.setEnabled(false);
         FTxTFechaRegistro2.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         FTxTFechaRegistro2.addActionListener(this::FTxTFechaRegistro2ActionPerformed);
 
@@ -425,6 +434,7 @@ public class Formulas extends javax.swing.JInternalFrame {
                 "ID ingrediente", "Nota", "Proporción "
             }
         ));
+        TablaContiene2.setEnabled(false);
         jScrollPane5.setViewportView(TablaContiene2);
         if (TablaContiene2.getColumnModel().getColumnCount() > 0) {
             TablaContiene2.getColumnModel().getColumn(0).setHeaderValue("ID ingrediente");
@@ -526,23 +536,27 @@ public class Formulas extends javax.swing.JInternalFrame {
         jLabel69.setText("Observaciones:");
 
         jTextField24.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField24.setEnabled(false);
         jTextField24.addActionListener(this::jTextField24ActionPerformed);
 
         jLabel70.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel70.setText("Versión:");
 
         TxtVersionFormula3.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtVersionFormula3.setEnabled(false);
         TxtVersionFormula3.addActionListener(this::TxtVersionFormula3ActionPerformed);
 
         jLabel71.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel71.setText("Perfume:");
 
         jComboBox20.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jComboBox20.setEnabled(false);
 
         jLabel72.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel72.setText("Fecha de registro:");
 
         FTxTFechaRegistro3.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
+        FTxTFechaRegistro3.setEnabled(false);
         FTxTFechaRegistro3.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         FTxTFechaRegistro3.addActionListener(this::FTxTFechaRegistro3ActionPerformed);
 
@@ -566,6 +580,7 @@ public class Formulas extends javax.swing.JInternalFrame {
                 "ID ingrediente", "Nota", "Proporción "
             }
         ));
+        TablaContiene3.setEnabled(false);
         jScrollPane6.setViewportView(TablaContiene3);
         if (TablaContiene3.getColumnModel().getColumnCount() > 0) {
             TablaContiene3.getColumnModel().getColumn(0).setHeaderValue("ID ingrediente");

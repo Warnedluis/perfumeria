@@ -110,28 +110,80 @@ public class lotespoduccion {
         this.costo_total = costo_total;
     }
     
-        public void guardar() throws SQLException {
-        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria","root","");
+public void guardar() throws SQLException 
+    {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
         PreparedStatement RES = Con.prepareStatement("insert into lotes_produccion values (?,?,?,?,?,?,?,?,?)");
         
         RES.setInt(1, id_lote);
-        java.sql.Date fechaSQL = new java.sql.Date(fecha_inicio.getTime());
-        RES.setDate(2, fechaSQL);
-        java.sql.Date fechaSQL2 = new java.sql.Date(fecha_fin.getTime());
-        RES.setDate(3, fechaSQL2);
+        RES.setDate(2, new java.sql.Date(fecha_inicio.getTime()));
+        RES.setDate(3, new java.sql.Date(fecha_fin.getTime()));
         RES.setInt(4, cantidad_producida);
         RES.setFloat(5, costo_total);
         RES.setString(6, control_calidad);
         RES.setString(7, observaciones);
         RES.setInt(8, id_perfume);
         RES.setInt(9, id_empleado);
+        
         RES.executeUpdate();
         Con.close();
     }
-        
-    public ResultSet Mostrar () throws SQLException
+
+    public boolean Buscar(int id) throws SQLException 
     {
-        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria","root","");
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
+        PreparedStatement SQL = Con.prepareStatement("Select * From lotes_produccion where id_lote=?");
+        SQL.setInt(1, id);
+        ResultSet Res = SQL.executeQuery();
+        
+        if (Res.next()) {
+            this.id_lote = Res.getInt("id_lote");
+            this.fecha_inicio = Res.getDate("fecha_inicio");
+            this.fecha_fin = Res.getDate("fecha_fin");
+            this.cantidad_producida = Res.getInt("cantidad_producida");
+            this.costo_total = Res.getFloat("costo_total");
+            this.control_calidad = Res.getString("control_calidad");
+            this.observaciones = Res.getString("observaciones");
+            this.id_perfume = Res.getInt("perfumes_id_perfume");
+            this.id_empleado = Res.getInt("empleados_id_empleado");
+            Con.close();
+            return true;
+        }
+        Con.close();
+        return false;
+    }
+
+    public void Modificar() throws SQLException 
+    {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
+        PreparedStatement RES = Con.prepareStatement("UPDATE lotes_produccion SET fecha_inicio=?, fecha_fin=?, cantidad_producida=?, costo_total=?, control_calidad=?, observaciones=?, perfumes_id_perfume=?, empleados_id_empleado=? WHERE id_lote=?");
+        
+        RES.setDate(1, new java.sql.Date(fecha_inicio.getTime()));
+        RES.setDate(2, new java.sql.Date(fecha_fin.getTime()));
+        RES.setInt(3, cantidad_producida);
+        RES.setFloat(4, costo_total);
+        RES.setString(5, control_calidad);
+        RES.setString(6, observaciones);
+        RES.setInt(7, id_perfume);
+        RES.setInt(8, id_empleado);
+        RES.setInt(9, id_lote);
+        
+        RES.executeUpdate();
+        Con.close();
+    }
+
+    public void Borrar(int id) throws SQLException 
+    {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
+        PreparedStatement RES = Con.prepareStatement("DELETE from lotes_produccion WHERE id_lote=?");
+        RES.setInt(1, id);
+        RES.executeUpdate();
+        Con.close();
+    }
+
+    public ResultSet Mostrar() throws SQLException 
+    {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
         PreparedStatement SQL = Con.prepareStatement("Select * from lotes_produccion");
         return SQL.executeQuery();
     }

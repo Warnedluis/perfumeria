@@ -118,6 +118,7 @@ public class PantallaPrincipal extends javax.swing.JFrame {
         MenuInventario.add(MnMateriasPrimas);
 
         MnProductosTerminados.setText("Productos terminados");
+        MnProductosTerminados.addActionListener(this::MnProductosTerminadosActionPerformed);
         MenuInventario.add(MnProductosTerminados);
 
         MnInventarioG.setText("General");
@@ -132,6 +133,7 @@ public class PantallaPrincipal extends javax.swing.JFrame {
         MenuVentas.add(MnClientes);
 
         MnPedidos.setText("Pedidos");
+        MnPedidos.addActionListener(this::MnPedidosActionPerformed);
         MenuVentas.add(MnPedidos);
 
         BarraMenu.add(MenuVentas);
@@ -143,6 +145,7 @@ public class PantallaPrincipal extends javax.swing.JFrame {
         MenuFinanzas.add(MnProveedores);
 
         MnFacturas.setText("Facturación");
+        MnFacturas.addActionListener(this::MnFacturasActionPerformed);
         MenuFinanzas.add(MnFacturas);
 
         BarraMenu.add(MenuFinanzas);
@@ -180,18 +183,30 @@ public class PantallaPrincipal extends javax.swing.JFrame {
 
     private void MnMateriasPrimasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnMateriasPrimasActionPerformed
         // TODO add your handling code here:
+        Materiaprima Ventana = new Materiaprima();
+        Escritorio.add(Ventana);
+        Ventana.show();
     }//GEN-LAST:event_MnMateriasPrimasActionPerformed
 
     private void MnEmpleadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnEmpleadosActionPerformed
         // TODO add your handling code here:
+        Empleados Ventana = new Empleados ();
+        Escritorio.add(Ventana);
+        Ventana.show();
     }//GEN-LAST:event_MnEmpleadosActionPerformed
 
     private void MnProveedoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnProveedoresActionPerformed
         // TODO add your handling code here:
+        Proveedores Ventana = new Proveedores ();
+        Escritorio.add(Ventana);
+        Ventana.show();
     }//GEN-LAST:event_MnProveedoresActionPerformed
 
     private void MnClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnClientesActionPerformed
         // TODO add your handling code here:
+        Clientes Ventana = new Clientes ();
+        Escritorio.add(Ventana);
+        Ventana.show();
     }//GEN-LAST:event_MnClientesActionPerformed
 
     private void MnPerfumesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnPerfumesActionPerformed
@@ -214,6 +229,27 @@ public class PantallaPrincipal extends javax.swing.JFrame {
         Escritorio.add(Ventana);
         Ventana.show();
     }//GEN-LAST:event_MnIngredientesActionPerformed
+
+    private void MnProductosTerminadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnProductosTerminadosActionPerformed
+        // TODO add your handling code here:
+        Productos_terminado Ventana = new Productos_terminado();
+        Escritorio.add(Ventana);
+        Ventana.show();
+    }//GEN-LAST:event_MnProductosTerminadosActionPerformed
+
+    private void MnPedidosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnPedidosActionPerformed
+        // TODO add your handling code here:
+        Pedidos Ventana = new Pedidos();
+        Escritorio.add(Ventana);
+        Ventana.show();
+    }//GEN-LAST:event_MnPedidosActionPerformed
+
+    private void MnFacturasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnFacturasActionPerformed
+        // TODO add your handling code here:
+        Facturacion Ventana = new Facturacion ();
+        Escritorio.add(Ventana);
+        Ventana.show();
+    }//GEN-LAST:event_MnFacturasActionPerformed
 
     /**
      * @param args the command line arguments

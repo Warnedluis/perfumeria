@@ -117,10 +117,10 @@ public class empleados {
         this.contrasenia = contrasenia;
     }
     
-        public void guardar() throws SQLException {
-        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria","root","");
+public void guardar() throws SQLException 
+    {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
         PreparedStatement RES = Con.prepareStatement("insert into empleados values (?,?,?,?,?,?,?,?,?,?)");
-        
         RES.setInt(1, id_empleado);
         RES.setString(2, nombre);
         RES.setString(3, ap_paterno);
@@ -135,11 +135,61 @@ public class empleados {
         Con.close();
     }
         
-public ResultSet Mostrar () throws SQLException
-{
-    Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria","root","");
-    PreparedStatement SQL = Con.prepareStatement("Select * from empleados");
-    return SQL.executeQuery();
-}
+public boolean Buscar(int id) throws SQLException 
+    {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
+        PreparedStatement SQL = Con.prepareStatement("Select * From empleados where id_empleado=?");
+        SQL.setInt(1, id);
+        ResultSet Res = SQL.executeQuery();
+        if (Res.next()) {
+            this.id_empleado = Res.getInt("id_empleado");
+            this.nombre = Res.getString("nombre");
+            this.ap_paterno = Res.getString("ap_paterno");
+            this.ap_materno = Res.getString("ap_materno");
+            this.puesto = Res.getString("puesto");
+            this.correo = Res.getString("correo");
+            this.telefono = Res.getString("telefono");
+            this.usuario = Res.getString("usuario");
+            this.contrasenia = Res.getString("contrasenia");
+            this.activo = Res.getInt("activo");
+            Con.close();
+            return true;
+        }
+        Con.close();
+        return false;
+    }
 
+public void Modificar() throws SQLException 
+    {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
+        PreparedStatement RES = Con.prepareStatement("UPDATE empleados SET nombre=?, ap_paterno=?, ap_materno=?, puesto=?, correo=?, telefono=?, usuario=?, contrasenia=?, activo=? WHERE id_empleado=?");
+        RES.setString(1, nombre);
+        RES.setString(2, ap_paterno);
+        RES.setString(3, ap_materno);
+        RES.setString(4, puesto);
+        RES.setString(5, correo);
+        RES.setString(6, telefono);
+        RES.setString(7, usuario);
+        RES.setString(8, contrasenia);
+        RES.setInt(9, activo);
+        RES.setInt(10, id_empleado);
+        RES.executeUpdate();
+        Con.close();
+    }
+
+public void Borrar(int id) throws SQLException 
+    {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
+        PreparedStatement RES = Con.prepareStatement("DELETE from empleados WHERE id_empleado=?");
+        RES.setInt(1, id);
+        RES.executeUpdate();
+        Con.close();
+    }
+
+    public ResultSet Mostrar() throws SQLException 
+    {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
+        PreparedStatement SQL = Con.prepareStatement("Select * from empleados");
+        return SQL.executeQuery();
+    }
 }

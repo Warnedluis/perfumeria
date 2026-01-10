@@ -100,24 +100,77 @@ public class ingredientes {
         this.nivel_reorden = nivel_reorden;
     }
     
-    public void guardar() throws SQLException {
-        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria","root","");
-        PreparedStatement RES = Con.prepareStatement("insert into ingredientes values (?,?,?,?,?,?,?)");
-        
+public void guardar() throws SQLException 
+    {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
+        PreparedStatement RES = Con.prepareStatement("insert into ingredientes values (?,?,?,?,?,?,?,?)");
+
         RES.setInt(1, id_ingrediente);
         RES.setString(2, nombre);
         RES.setString(3, tipo);
-        RES.setFloat(4,stock_actual);
-        RES.setFloat(5,costo_unitario);
-        RES.setFloat(6,nivel_reorden);
-        RES.setInt(7,id_proveedor);
+        RES.setString(4, unidad_medida);
+        RES.setFloat(5, stock_actual);
+        RES.setFloat(6, costo_unitario);
+        RES.setFloat(7, nivel_reorden);
+        RES.setInt(8, id_proveedor);
+        
         RES.executeUpdate();
         Con.close();
     }
-    
-    public ResultSet Mostrar () throws SQLException
+
+    public boolean Buscar(int id) throws SQLException 
     {
-        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria","root","");
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
+        PreparedStatement SQL = Con.prepareStatement("Select * From ingredientes where id_ingrediente=?");
+        SQL.setInt(1, id);
+        ResultSet Res = SQL.executeQuery();
+        
+        if (Res.next()) {
+            this.id_ingrediente = Res.getInt("id_ingrediente");
+            this.nombre = Res.getString("nombre");
+            this.tipo = Res.getString("tipo");
+            this.unidad_medida = Res.getString("unidad_medida");
+            this.stock_actual = Res.getFloat("stock_actual");
+            this.costo_unitario = Res.getFloat("costo_unitario");
+            this.nivel_reorden = Res.getFloat("nivel_reorden");
+            this.id_proveedor = Res.getInt("proveedores_id_proveedor");
+            Con.close();
+            return true;
+        }
+        Con.close();
+        return false;
+    }
+
+    public void Modificar() throws SQLException 
+    {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
+        PreparedStatement RES = Con.prepareStatement("UPDATE ingredientes SET nombre=?, tipo=?, unidad_medida=?, stock_actual=?, costo_unitario=?, nivel_reorden=?, proveedores_id_proveedor=? WHERE id_ingrediente=?");
+        
+        RES.setString(1, nombre);
+        RES.setString(2, tipo);
+        RES.setString(3, unidad_medida);
+        RES.setFloat(4, stock_actual);
+        RES.setFloat(5, costo_unitario);
+        RES.setFloat(6, nivel_reorden);
+        RES.setInt(7, id_proveedor);
+        RES.setInt(8, id_ingrediente);
+        
+        RES.executeUpdate();
+        Con.close();
+    }
+
+    public void Borrar(int id) throws SQLException 
+    {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
+        PreparedStatement RES = Con.prepareStatement("DELETE from ingredientes WHERE id_ingrediente=?");
+        RES.setInt(1, id);
+        RES.executeUpdate();
+        Con.close();
+    }
+
+    public ResultSet Mostrar() throws SQLException 
+    {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
         PreparedStatement SQL = Con.prepareStatement("Select * from ingredientes");
         return SQL.executeQuery();
     }

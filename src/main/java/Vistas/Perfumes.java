@@ -288,6 +288,7 @@ public class Perfumes extends javax.swing.JInternalFrame {
         jTabbedPane1.addTab("Alta", jPanel7);
 
         jFormattedTextField7.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
+        jFormattedTextField7.setEnabled(false);
         jFormattedTextField7.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel20.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -297,9 +298,11 @@ public class Perfumes extends javax.swing.JInternalFrame {
         jLabel21.setText("Descripción:");
 
         jTextField8.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField8.setEnabled(false);
         jTextField8.addActionListener(this::jTextField8ActionPerformed);
 
         jTextField9.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField9.setEnabled(false);
         jTextField9.addActionListener(this::jTextField9ActionPerformed);
 
         jLabel22.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -309,9 +312,11 @@ public class Perfumes extends javax.swing.JInternalFrame {
         jLabel23.setText("Precio de venta:");
 
         jTextField10.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField10.setEnabled(false);
         jTextField10.addActionListener(this::jTextField10ActionPerformed);
 
         jFormattedTextField8.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
+        jFormattedTextField8.setEnabled(false);
         jFormattedTextField8.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel24.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -322,9 +327,11 @@ public class Perfumes extends javax.swing.JInternalFrame {
 
         jComboBox7.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Floral", "Amaderada", "Cítrica" }));
+        jComboBox7.setEnabled(false);
 
         jComboBox8.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "En desarrollo", "En producción", "Lanzado al mercado", "Descontinuado" }));
+        jComboBox8.setEnabled(false);
 
         jButton5.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jButton5.setText("Eliminar");
@@ -335,6 +342,7 @@ public class Perfumes extends javax.swing.JInternalFrame {
 
         jComboBox9.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Eau de parfum", "Eau de toilette", "Extracto" }));
+        jComboBox9.setEnabled(false);
 
         jLabel27.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel27.setText("Fecha de creación:");
@@ -343,6 +351,7 @@ public class Perfumes extends javax.swing.JInternalFrame {
         jLabel28.setText("Costo de producción:");
 
         jFormattedTextField9.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
+        jFormattedTextField9.setEnabled(false);
         jFormattedTextField9.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel29.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -444,6 +453,7 @@ public class Perfumes extends javax.swing.JInternalFrame {
         jTabbedPane1.addTab("Baja", jPanel3);
 
         jFormattedTextField10.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
+        jFormattedTextField10.setEnabled(false);
         jFormattedTextField10.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel30.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -453,9 +463,11 @@ public class Perfumes extends javax.swing.JInternalFrame {
         jLabel31.setText("Descripción:");
 
         jTextField12.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField12.setEnabled(false);
         jTextField12.addActionListener(this::jTextField12ActionPerformed);
 
         jTextField13.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField13.setEnabled(false);
         jTextField13.addActionListener(this::jTextField13ActionPerformed);
 
         jLabel32.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -465,9 +477,11 @@ public class Perfumes extends javax.swing.JInternalFrame {
         jLabel33.setText("Precio de venta:");
 
         jTextField14.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField14.setEnabled(false);
         jTextField14.addActionListener(this::jTextField14ActionPerformed);
 
         jFormattedTextField11.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
+        jFormattedTextField11.setEnabled(false);
         jFormattedTextField11.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel34.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -478,9 +492,11 @@ public class Perfumes extends javax.swing.JInternalFrame {
 
         jComboBox10.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jComboBox10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Floral", "Amaderada", "Cítrica" }));
+        jComboBox10.setEnabled(false);
 
         jComboBox11.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jComboBox11.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "En desarrollo", "En producción", "Lanzado al mercado", "Descontinuado" }));
+        jComboBox11.setEnabled(false);
 
         jButton6.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jButton6.setText("Modificar");
@@ -491,6 +507,7 @@ public class Perfumes extends javax.swing.JInternalFrame {
 
         jComboBox12.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jComboBox12.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Eau de parfum", "Eau de toilette", "Extracto" }));
+        jComboBox12.setEnabled(false);
 
         jLabel37.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel37.setText("Fecha de creación:");
@@ -499,6 +516,7 @@ public class Perfumes extends javax.swing.JInternalFrame {
         jLabel38.setText("Costo de producción:");
 
         jFormattedTextField12.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
+        jFormattedTextField12.setEnabled(false);
         jFormattedTextField12.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel39.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -600,6 +618,7 @@ public class Perfumes extends javax.swing.JInternalFrame {
         jTabbedPane1.addTab("Cambios", jPanel4);
 
         jFormattedTextField13.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
+        jFormattedTextField13.setEnabled(false);
         jFormattedTextField13.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel40.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -609,9 +628,11 @@ public class Perfumes extends javax.swing.JInternalFrame {
         jLabel41.setText("Descripción:");
 
         jTextField16.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField16.setEnabled(false);
         jTextField16.addActionListener(this::jTextField16ActionPerformed);
 
         jTextField17.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField17.setEnabled(false);
         jTextField17.addActionListener(this::jTextField17ActionPerformed);
 
         jLabel42.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -621,9 +642,11 @@ public class Perfumes extends javax.swing.JInternalFrame {
         jLabel43.setText("Precio de venta:");
 
         jTextField18.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField18.setEnabled(false);
         jTextField18.addActionListener(this::jTextField18ActionPerformed);
 
         jFormattedTextField14.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
+        jFormattedTextField14.setEnabled(false);
         jFormattedTextField14.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel44.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -634,9 +657,11 @@ public class Perfumes extends javax.swing.JInternalFrame {
 
         jComboBox13.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jComboBox13.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Floral", "Amaderada", "Cítrica" }));
+        jComboBox13.setEnabled(false);
 
         jComboBox14.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jComboBox14.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "En desarrollo", "En producción", "Lanzado al mercado", "Descontinuado" }));
+        jComboBox14.setEnabled(false);
 
         jButton7.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jButton7.setText("Buscar");
@@ -647,6 +672,7 @@ public class Perfumes extends javax.swing.JInternalFrame {
 
         jComboBox15.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jComboBox15.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Eau de parfum", "Eau de toilette", "Extracto" }));
+        jComboBox15.setEnabled(false);
 
         jLabel47.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel47.setText("Fecha de creación:");
@@ -655,6 +681,7 @@ public class Perfumes extends javax.swing.JInternalFrame {
         jLabel48.setText("Costo de producción:");
 
         jFormattedTextField15.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
+        jFormattedTextField15.setEnabled(false);
         jFormattedTextField15.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel49.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N

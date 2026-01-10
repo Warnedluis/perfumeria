@@ -101,27 +101,80 @@ public class facturas {
         this.estado = estado;
     }
     
-        public void guardar() throws SQLException {
-        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria","root","");
+public void guardar() throws SQLException 
+    {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
         PreparedStatement RES = Con.prepareStatement("insert into facturas values (?,?,?,?,?,?,?,?)");
         
         RES.setInt(1, id_factura);
-        java.sql.Date fechaSQL = new java.sql.Date(fecha_emision.getTime());
         RES.setInt(2, folio);
+        // Conversión de fecha de Java a SQL
+        java.sql.Date fechaSQL = new java.sql.Date(fecha_emision.getTime());
         RES.setDate(3, fechaSQL);
         RES.setFloat(4, monto_total);
-        RES.setFloat(5,impuestos);
+        RES.setFloat(5, impuestos);
         RES.setString(6, metodo_pago);
         RES.setString(7, estado);
-        RES.setInt(8,id_pedidos);
+        RES.setInt(8, id_pedidos);
+        
         RES.executeUpdate();
         Con.close();
     }
 
-public ResultSet Mostrar () throws SQLException
-{
-    Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria","root","");
-    PreparedStatement SQL = Con.prepareStatement("Select * from facturas");
-    return SQL.executeQuery();
-}
+    public boolean Buscar(int id) throws SQLException 
+    {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
+        PreparedStatement SQL = Con.prepareStatement("Select * From facturas where id_factura=?");
+        SQL.setInt(1, id);
+        ResultSet Res = SQL.executeQuery();
+        
+        if (Res.next()) {
+            this.id_factura = Res.getInt("id_factura");
+            this.folio = Res.getInt("folio");
+            this.fecha_emision = Res.getDate("fecha_emision");
+            this.monto_total = Res.getFloat("monto_total");
+            this.impuestos = Res.getFloat("impuestos");
+            this.metodo_pago = Res.getString("metodo_pago");
+            this.estado = Res.getString("estado");
+            this.id_pedidos = Res.getInt("id_pedidos");
+            Con.close();
+            return true;
+        }
+        Con.close();
+        return false;
+    }
+
+    public void Modificar() throws SQLException 
+    {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
+        PreparedStatement RES = Con.prepareStatement("UPDATE facturas SET folio=?, fecha_emision=?, monto_total=?, impuestos=?, metodo_pago=?, estado=?, id_pedidos=? WHERE id_factura=?");
+        
+        RES.setInt(1, folio);
+        RES.setDate(2, new java.sql.Date(fecha_emision.getTime()));
+        RES.setFloat(3, monto_total);
+        RES.setFloat(4, impuestos);
+        RES.setString(5, metodo_pago);
+        RES.setString(6, estado);
+        RES.setInt(7, id_pedidos);
+        RES.setInt(8, id_factura);
+        
+        RES.executeUpdate();
+        Con.close();
+    }
+
+    public void Borrar(int id) throws SQLException 
+    {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
+        PreparedStatement RES = Con.prepareStatement("DELETE from facturas WHERE id_factura=?");
+        RES.setInt(1, id);
+        RES.executeUpdate();
+        Con.close();
+    }
+
+    public ResultSet Mostrar() throws SQLException 
+    {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
+        PreparedStatement SQL = Con.prepareStatement("Select * from facturas");
+        return SQL.executeQuery();
+    }
 }

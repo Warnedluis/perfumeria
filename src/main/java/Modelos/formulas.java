@@ -73,23 +73,68 @@ public class formulas {
         this.fecha_registro = fecha_registro;
     }
     
-   public void guardar() throws SQLException {
-        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria","root","");
+public void guardar() throws SQLException {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
         PreparedStatement RES = Con.prepareStatement("insert into formulas values (?,?,?,?,?)");
         
         RES.setInt(1, id_formula);
         RES.setString(2, version);
         java.sql.Date fechaSQL = new java.sql.Date(fecha_registro.getTime());
         RES.setDate(3, fechaSQL);
-        RES.setString(4,observaciones);
+        RES.setString(4, observaciones);
         RES.setInt(5, id_perfume);
+        
         RES.executeUpdate();
         Con.close();
     }
-   
-    public ResultSet Mostrar () throws SQLException
+
+    public boolean Buscar(int id) throws SQLException 
     {
-        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria","root","");
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
+        PreparedStatement SQL = Con.prepareStatement("Select * From formulas where id_formula=?");
+        SQL.setInt(1, id);
+        ResultSet Res = SQL.executeQuery();
+        
+        if (Res.next()) {
+            this.id_formula = Res.getInt("id_formula");
+            this.version = Res.getString("version");
+            this.fecha_registro = Res.getDate("fecha_registro");
+            this.observaciones = Res.getString("observaciones");
+            this.id_perfume = Res.getInt("id_perfume");
+            Con.close();
+            return true;
+        }
+        Con.close();
+        return false;
+    }
+
+    public void Modificar() throws SQLException 
+    {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
+        PreparedStatement RES = Con.prepareStatement("UPDATE formulas SET version=?, fecha_registro=?, observaciones=?, id_perfume=? WHERE id_formula=?");
+        
+        RES.setString(1, version);
+        RES.setDate(2, new java.sql.Date(fecha_registro.getTime()));
+        RES.setString(3, observaciones);
+        RES.setInt(4, id_perfume);
+        RES.setInt(5, id_formula);
+        
+        RES.executeUpdate();
+        Con.close();
+    }
+
+    public void Borrar(int id) throws SQLException 
+    {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
+        PreparedStatement RES = Con.prepareStatement("DELETE from formulas WHERE id_formula=?");
+        RES.setInt(1, id);
+        RES.executeUpdate();
+        Con.close();
+    }
+
+    public ResultSet Mostrar() throws SQLException 
+    {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
         PreparedStatement SQL = Con.prepareStatement("Select * from formulas");
         return SQL.executeQuery();
     }

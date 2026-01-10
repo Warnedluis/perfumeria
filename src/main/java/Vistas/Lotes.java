@@ -274,6 +274,7 @@ public class Lotes extends javax.swing.JInternalFrame {
         BajaLotesProduccion.setPreferredSize(new java.awt.Dimension(752, 500));
 
         jFormattedTextField17.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
+        jFormattedTextField17.setEnabled(false);
         jFormattedTextField17.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel54.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -283,9 +284,11 @@ public class Lotes extends javax.swing.JInternalFrame {
         jLabel56.setText("Control de calidad:");
 
         jTextField26.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField26.setEnabled(false);
         jTextField26.addActionListener(this::jTextField26ActionPerformed);
 
         jTextField27.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField27.setEnabled(false);
         jTextField27.addActionListener(this::jTextField27ActionPerformed);
 
         jLabel57.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -315,9 +318,11 @@ public class Lotes extends javax.swing.JInternalFrame {
         jButton15.addActionListener(this::jButton15ActionPerformed);
 
         jFormattedTextField22.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
+        jFormattedTextField22.setEnabled(false);
         jFormattedTextField22.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jFormattedTextField23.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
+        jFormattedTextField23.setEnabled(false);
         jFormattedTextField23.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel84.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -327,12 +332,15 @@ public class Lotes extends javax.swing.JInternalFrame {
         jLabel85.setText("ID empleado:");
 
         jTextField29.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField29.setEnabled(false);
         jTextField29.addActionListener(this::jTextField29ActionPerformed);
 
         jTextField30.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField30.setEnabled(false);
         jTextField30.addActionListener(this::jTextField30ActionPerformed);
 
         jTextField31.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField31.setEnabled(false);
         jTextField31.addActionListener(this::jTextField31ActionPerformed);
 
         javax.swing.GroupLayout BajaLotesProduccionLayout = new javax.swing.GroupLayout(BajaLotesProduccion);
@@ -422,6 +430,7 @@ public class Lotes extends javax.swing.JInternalFrame {
         CambiosLotesProduccion.setPreferredSize(new java.awt.Dimension(752, 500));
 
         jFormattedTextField18.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
+        jFormattedTextField18.setEnabled(false);
         jFormattedTextField18.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel64.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -431,9 +440,11 @@ public class Lotes extends javax.swing.JInternalFrame {
         jLabel65.setText("Control de calidad:");
 
         jTextField32.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField32.setEnabled(false);
         jTextField32.addActionListener(this::jTextField32ActionPerformed);
 
         jTextField33.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField33.setEnabled(false);
         jTextField33.addActionListener(this::jTextField33ActionPerformed);
 
         jLabel66.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -463,9 +474,11 @@ public class Lotes extends javax.swing.JInternalFrame {
         jButton17.addActionListener(this::jButton17ActionPerformed);
 
         jFormattedTextField24.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
+        jFormattedTextField24.setEnabled(false);
         jFormattedTextField24.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jFormattedTextField25.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
+        jFormattedTextField25.setEnabled(false);
         jFormattedTextField25.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel86.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -475,12 +488,15 @@ public class Lotes extends javax.swing.JInternalFrame {
         jLabel87.setText("ID empleado:");
 
         jTextField35.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField35.setEnabled(false);
         jTextField35.addActionListener(this::jTextField35ActionPerformed);
 
         jTextField36.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField36.setEnabled(false);
         jTextField36.addActionListener(this::jTextField36ActionPerformed);
 
         jTextField37.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField37.setEnabled(false);
         jTextField37.addActionListener(this::jTextField37ActionPerformed);
 
         javax.swing.GroupLayout CambiosLotesProduccionLayout = new javax.swing.GroupLayout(CambiosLotesProduccion);
@@ -570,6 +586,7 @@ public class Lotes extends javax.swing.JInternalFrame {
         BuscarLotesProduccion.setPreferredSize(new java.awt.Dimension(752, 500));
 
         jFormattedTextField19.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
+        jFormattedTextField19.setEnabled(false);
         jFormattedTextField19.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel71.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -579,9 +596,11 @@ public class Lotes extends javax.swing.JInternalFrame {
         jLabel72.setText("Control de calidad:");
 
         jTextField38.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField38.setEnabled(false);
         jTextField38.addActionListener(this::jTextField38ActionPerformed);
 
         jTextField39.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField39.setEnabled(false);
         jTextField39.addActionListener(this::jTextField39ActionPerformed);
 
         jLabel73.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -611,9 +630,11 @@ public class Lotes extends javax.swing.JInternalFrame {
         jButton19.addActionListener(this::jButton19ActionPerformed);
 
         jFormattedTextField26.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
+        jFormattedTextField26.setEnabled(false);
         jFormattedTextField26.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jFormattedTextField27.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
+        jFormattedTextField27.setEnabled(false);
         jFormattedTextField27.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel88.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -623,12 +644,15 @@ public class Lotes extends javax.swing.JInternalFrame {
         jLabel89.setText("ID empleado:");
 
         jTextField41.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField41.setEnabled(false);
         jTextField41.addActionListener(this::jTextField41ActionPerformed);
 
         jTextField42.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField42.setEnabled(false);
         jTextField42.addActionListener(this::jTextField42ActionPerformed);
 
         jTextField43.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField43.setEnabled(false);
         jTextField43.addActionListener(this::jTextField43ActionPerformed);
 
         javax.swing.GroupLayout BuscarLotesProduccionLayout = new javax.swing.GroupLayout(BuscarLotesProduccion);

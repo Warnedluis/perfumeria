@@ -146,6 +146,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
 
         jComboBox16.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jComboBox16.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Aceites esenciales", "Fijadores", "Alcoholes", "Solventes" }));
+        jComboBox16.addActionListener(this::jComboBox16ActionPerformed);
 
         jComboBox17.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
@@ -261,6 +262,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         BajaIngredientes.setPreferredSize(new java.awt.Dimension(752, 450));
 
         jFormattedTextField17.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
+        jFormattedTextField17.setEnabled(false);
         jFormattedTextField17.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel54.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -270,9 +272,11 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jLabel57.setText("Nivel de reorden:");
 
         jTextField24.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField24.setEnabled(false);
         jTextField24.addActionListener(this::jTextField24ActionPerformed);
 
         jTextField25.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField25.setEnabled(false);
         jTextField25.addActionListener(this::jTextField25ActionPerformed);
 
         jLabel60.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -282,6 +286,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jLabel61.setText("ID Proveedor:");
 
         jTextField26.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField26.setEnabled(false);
         jTextField26.addActionListener(this::jTextField26ActionPerformed);
 
         jLabel62.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -289,8 +294,10 @@ public class Ingredientes extends javax.swing.JInternalFrame {
 
         jComboBox19.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jComboBox19.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Aceites esenciales", "Fijadores", "Alcoholes", "Solventes" }));
+        jComboBox19.setEnabled(false);
 
         jComboBox20.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jComboBox20.setEnabled(false);
 
         jButton14.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jButton14.setText("Eliminar");
@@ -301,6 +308,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
 
         jComboBox21.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jComboBox21.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mililitros", "Litros", "Miligramos", "Gramos", "Kilogramos" }));
+        jComboBox21.setEnabled(false);
 
         jLabel64.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel64.setText("Costo unitario:");
@@ -404,6 +412,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         Cambios.setPreferredSize(new java.awt.Dimension(752, 450));
 
         jFormattedTextField18.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
+        jFormattedTextField18.setEnabled(false);
         jFormattedTextField18.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel66.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -413,9 +422,11 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jLabel67.setText("Nivel de reorden:");
 
         jTextField28.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField28.setEnabled(false);
         jTextField28.addActionListener(this::jTextField28ActionPerformed);
 
         jTextField29.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField29.setEnabled(false);
         jTextField29.addActionListener(this::jTextField29ActionPerformed);
 
         jLabel68.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -425,6 +436,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jLabel69.setText("ID Proveedor:");
 
         jTextField30.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField30.setEnabled(false);
         jTextField30.addActionListener(this::jTextField30ActionPerformed);
 
         jLabel70.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -432,8 +444,10 @@ public class Ingredientes extends javax.swing.JInternalFrame {
 
         jComboBox22.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jComboBox22.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Aceites esenciales", "Fijadores", "Alcoholes", "Solventes" }));
+        jComboBox22.setEnabled(false);
 
         jComboBox23.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jComboBox23.setEnabled(false);
 
         jButton16.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jButton16.setText("Modificar");
@@ -444,6 +458,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
 
         jComboBox24.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jComboBox24.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mililitros", "Litros", "Miligramos", "Gramos", "Kilogramos" }));
+        jComboBox24.setEnabled(false);
 
         jLabel72.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel72.setText("Costo unitario:");
@@ -547,6 +562,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         BuscarIngredientes.setPreferredSize(new java.awt.Dimension(752, 450));
 
         jFormattedTextField19.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
+        jFormattedTextField19.setEnabled(false);
         jFormattedTextField19.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel74.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -556,9 +572,11 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jLabel75.setText("Nivel de reorden:");
 
         jTextField32.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField32.setEnabled(false);
         jTextField32.addActionListener(this::jTextField32ActionPerformed);
 
         jTextField33.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField33.setEnabled(false);
         jTextField33.addActionListener(this::jTextField33ActionPerformed);
 
         jLabel76.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -568,6 +586,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jLabel77.setText("ID Proveedor:");
 
         jTextField34.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField34.setEnabled(false);
         jTextField34.addActionListener(this::jTextField34ActionPerformed);
 
         jLabel78.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -575,8 +594,10 @@ public class Ingredientes extends javax.swing.JInternalFrame {
 
         jComboBox25.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jComboBox25.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Aceites esenciales", "Fijadores", "Alcoholes", "Solventes" }));
+        jComboBox25.setEnabled(false);
 
         jComboBox26.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jComboBox26.setEnabled(false);
 
         jButton18.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jButton18.setText("Buscar");
@@ -587,6 +608,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
 
         jComboBox27.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jComboBox27.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mililitros", "Litros", "Miligramos", "Gramos", "Kilogramos" }));
+        jComboBox27.setEnabled(false);
 
         jLabel80.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel80.setText("Costo unitario:");
@@ -825,6 +847,10 @@ public class Ingredientes extends javax.swing.JInternalFrame {
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton19ActionPerformed
+
+    private void jComboBox16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox16ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

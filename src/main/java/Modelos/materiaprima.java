@@ -45,8 +45,9 @@ public class materiaprima {
         this.id_ingredientes = id_ingredientes;
     }
     
-    public void guardar() throws SQLException {
-        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/prefumeria","root","");
+public void guardar() throws SQLException 
+    {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
         PreparedStatement RES = Con.prepareStatement("insert into materia_prima values (?,?)");
         
         RES.setInt(1, id_inventario);
@@ -54,10 +55,53 @@ public class materiaprima {
         RES.executeUpdate();
         Con.close();
     }
-    
-    public ResultSet Mostrar () throws SQLException
+
+    public boolean Buscar(int idInv, int idIng) throws SQLException 
     {
-        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria","root","");
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
+        PreparedStatement SQL = Con.prepareStatement("Select * From materia_prima where id_inventario=? AND id_ingredientes=?");
+        SQL.setInt(1, idInv);
+        SQL.setInt(2, idIng);
+        ResultSet Res = SQL.executeQuery();
+        
+        if (Res.next()) {
+            this.id_inventario = Res.getInt("id_inventario");
+            this.id_ingredientes = Res.getInt("id_ingredientes");
+            Con.close();
+            return true;
+        }
+        Con.close();
+        return false;
+    }
+
+    // Nota: En tablas de relación pura, "Modificar" suele implicar actualizar un vínculo existente.
+    public void Modificar(int idInvViejo, int idIngViejo) throws SQLException 
+    {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
+        PreparedStatement RES = Con.prepareStatement("UPDATE materia_prima SET id_inventario=?, id_ingredientes=? WHERE id_inventario=? AND id_ingredientes=?");
+        
+        RES.setInt(1, id_inventario);
+        RES.setInt(2, id_ingredientes);
+        RES.setInt(3, idInvViejo);
+        RES.setInt(4, idIngViejo);
+        
+        RES.executeUpdate();
+        Con.close();
+    }
+
+    public void Borrar(int idInv, int idIng) throws SQLException 
+    {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
+        PreparedStatement RES = Con.prepareStatement("DELETE from materia_prima WHERE id_inventario=? AND id_ingredientes=?");
+        RES.setInt(1, idInv);
+        RES.setInt(2, idIng);
+        RES.executeUpdate();
+        Con.close();
+    }
+
+    public ResultSet Mostrar() throws SQLException 
+    {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
         PreparedStatement SQL = Con.prepareStatement("Select * from materia_prima");
         return SQL.executeQuery();
     }

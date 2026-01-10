@@ -45,20 +45,63 @@ public class productoterminado {
         this.id_perfume = id_perfume;
     }
     
-    public void guardar() throws SQLException {
-        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria","root","");
-        PreparedStatement RES = Con.prepareStatement("insert into materia_prima values (?,?)");
+    public void guardar() throws SQLException 
+    {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
+        PreparedStatement RES = Con.prepareStatement("insert into producto_terminado values (?,?)");
         
         RES.setInt(1, id_inventario);
         RES.setInt(2, id_perfume);
         RES.executeUpdate();
         Con.close();
     }
-    
-    public ResultSet Mostrar () throws SQLException
+
+    public boolean Buscar(int idInv, int idPerf) throws SQLException 
     {
-        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria","root","");
-        PreparedStatement SQL = Con.prepareStatement("Select * from materia_prima");
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
+        PreparedStatement SQL = Con.prepareStatement("Select * From producto_terminado where id_inventario=? AND id_perfume=?");
+        SQL.setInt(1, idInv);
+        SQL.setInt(2, idPerf);
+        ResultSet Res = SQL.executeQuery();
+        
+        if (Res.next()) {
+            this.id_inventario = Res.getInt("id_inventario");
+            this.id_perfume = Res.getInt("id_perfume");
+            Con.close();
+            return true;
+        }
+        Con.close();
+        return false;
+    }
+
+    public void Modificar(int idInvViejo, int idPerfViejo) throws SQLException 
+    {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
+        PreparedStatement RES = Con.prepareStatement("UPDATE producto_terminado SET id_inventario=?, id_perfume=? WHERE id_inventario=? AND id_perfume=?");
+        
+        RES.setInt(1, id_inventario);
+        RES.setInt(2, id_perfume);
+        RES.setInt(3, idInvViejo);
+        RES.setInt(4, idPerfViejo);
+        
+        RES.executeUpdate();
+        Con.close();
+    }
+
+    public void Borrar(int idInv, int idPerf) throws SQLException 
+    {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
+        PreparedStatement RES = Con.prepareStatement("DELETE from producto_terminado WHERE id_inventario=? AND id_perfume=?");
+        RES.setInt(1, idInv);
+        RES.setInt(2, idPerf);
+        RES.executeUpdate();
+        Con.close();
+    }
+
+    public ResultSet Mostrar() throws SQLException 
+    {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
+        PreparedStatement SQL = Con.prepareStatement("Select * from producto_terminado");
         return SQL.executeQuery();
     }
 }

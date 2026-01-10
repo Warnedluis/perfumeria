@@ -63,22 +63,64 @@ public class contiene {
         this.proporcion = proporcion;
     }
     
-   public void guardar() throws SQLException {
-        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria","root","");
+public void guardar() throws SQLException 
+    {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
         PreparedStatement RES = Con.prepareStatement("insert into contiene values (?,?,?,?)");
-        
         RES.setInt(1, id_formula);
         RES.setInt(2, id_ingrediente);
         RES.setString(3, nota);
-        RES.setFloat(4,proporcion);
+        RES.setFloat(4, proporcion);
         RES.executeUpdate();
         Con.close();
     }
     
-   public ResultSet Mostrar () throws SQLException
-{
-    Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria","root","");
-    PreparedStatement SQL = Con.prepareStatement("Select * from contiene");
-    return SQL.executeQuery();
-}
+public boolean Buscar(int idF, int idI) throws SQLException 
+    {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
+        PreparedStatement SQL = Con.prepareStatement("Select * From contiene where id_formula=? AND id_ingrediente=?");
+        SQL.setInt(1, idF);
+        SQL.setInt(2, idI);
+        ResultSet Res = SQL.executeQuery();
+        
+        if (Res.next()) {
+            this.id_formula = Res.getInt("id_formula");
+            this.id_ingrediente = Res.getInt("id_ingrediente");
+            this.nota = Res.getString("nota");
+            this.proporcion = Res.getFloat("proporcion");
+            Con.close();
+            return true;
+        }
+        Con.close();
+        return false;
+    }
+
+public void Modificar() throws SQLException {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
+        // Actualizamos la nota y proporción basándonos en la combinación de IDs
+        PreparedStatement RES = Con.prepareStatement("UPDATE contiene SET nota=?, proporcion=? WHERE id_formula=? AND id_ingrediente=?");
+        RES.setString(1, nota);
+        RES.setFloat(2, proporcion);
+        RES.setInt(3, id_formula);
+        RES.setInt(4, id_ingrediente);
+        RES.executeUpdate();
+        Con.close();
+    }
+
+public void Borrar(int idF, int idI) throws SQLException 
+    {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
+        PreparedStatement RES = Con.prepareStatement("DELETE from contiene WHERE id_formula=? AND id_ingrediente=?");
+        RES.setInt(1, idF);
+        RES.setInt(2, idI);
+        RES.executeUpdate();
+        Con.close();
+    }
+
+public ResultSet Mostrar() throws SQLException 
+    {
+        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
+        PreparedStatement SQL = Con.prepareStatement("Select * from contiene");
+        return SQL.executeQuery();
+    }
 }
