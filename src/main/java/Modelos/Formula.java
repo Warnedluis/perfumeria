@@ -14,17 +14,17 @@ import java.util.Date;
  *
  * @author avila
  */
-public class Formulas {
+public class Formula {
     private int id_formula,id_perfume;
     private String version, observaciones;
     private Date fecha_registro;
     
-    public Formulas()
+    public Formula()
     {
         
     }
     
-    public Formulas(String version, String observaciones, Date fecha_registro, int id_formula, int id_perfume)
+    public Formula(String version, String observaciones, Date fecha_registro, int id_formula, int id_perfume)
     {
         this.fecha_registro = fecha_registro;
         this.id_formula = id_formula;

@@ -14,17 +14,17 @@ import java.util.Date;
  *
  * @author avila
  */
-public class Clientes {
+public class Cliente {
     private int id_cliente;
     private String rfc, nombre, ap_paterno, ap_materno, tipo, correo, telefono, direccion_envio;
     private Date fecha_registro; 
     
-    public Clientes()
+    public Cliente()
     {
         
     }
     
-    public Clientes(String rfc, String nombre, String ap_paterno, String ap_materno, String tipo, String correo, String telefono, String direccion_envio, int id_cliente, Date fecha_registro)
+    public Cliente(String rfc, String nombre, String ap_paterno, String ap_materno, String tipo, String correo, String telefono, String direccion_envio, int id_cliente, Date fecha_registro)
     {
         this.ap_materno = ap_materno;
         this.ap_paterno = ap_paterno;

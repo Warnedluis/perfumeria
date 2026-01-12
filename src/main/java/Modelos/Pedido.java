@@ -14,18 +14,18 @@ import java.util.Date;
  *
  * @author avila
  */
-public class Pedidos {
+public class Pedido {
     private int id_pedidos, id_cliente;
     private String estado;
     private Date fecha_pedido, fecha_entrega;
     private float total;
     
-    public Pedidos()
+    public Pedido()
     {
         
     }
     
-    public Pedidos(String estado, int id_pedidos, int id_cliente, Date fecha_pedido, Date fecha_entrega, float total)
+    public Pedido(String estado, int id_pedidos, int id_cliente, Date fecha_pedido, Date fecha_entrega, float total)
     {
         this.estado = estado;
         this.fecha_entrega = fecha_entrega;

@@ -14,17 +14,17 @@ import java.sql.SQLException;
  *
  * @author avila
  */
-public class Ingredientes {
+public class Ingrediente {
     private String nombre, tipo,unidad_medida;
     private int id_ingrediente,id_proveedor;
     private float stock_actual, costo_unitario, nivel_reorden;
     
-    public Ingredientes()
+    public Ingrediente()
     {
         
     }
     
-    public Ingredientes (String nombre, String tipo, String unidad_medida, int stock_actual, int costo_unitario, int nivel_reorden, int id_proveedor, int id_ingrediente)
+    public Ingrediente (String nombre, String tipo, String unidad_medida, int stock_actual, int costo_unitario, int nivel_reorden, int id_proveedor, int id_ingrediente)
     {
         this.costo_unitario = costo_unitario;
         this.id_ingrediente = id_ingrediente;

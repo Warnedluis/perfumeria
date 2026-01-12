@@ -14,16 +14,16 @@ import java.sql.SQLException;
  *
  * @author avila
  */
-public class Empleados {
+public class Empleado {
     private int id_empleado, activo;
     private String nombre, ap_paterno, ap_materno, puesto, correo, telefono, usuario, contrasenia;
     
-    public Empleados( )
+    public Empleado( )
     {
         
     }
     
-    public Empleados( String nombre, String ap_paterno, String ap_materno, String puesto, String correo, String telefono, String usuario, String contrasenia, int activo, int id_empleado)
+    public Empleado( String nombre, String ap_paterno, String ap_materno, String puesto, String correo, String telefono, String usuario, String contrasenia, int activo, int id_empleado)
     {
         this.activo = activo;
         this.ap_materno = ap_materno;

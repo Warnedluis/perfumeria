@@ -79,16 +79,16 @@
                               <EmptySpace min="-2" pref="172" max="-2" attributes="0"/>
                               <Component id="jButton13" min="-2" pref="140" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="TxtApellidoMaternoCliente" alignment="1" max="32767" attributes="0"/>
-                          <Component id="TxtApellidoPaternoCliente" alignment="1" max="32767" attributes="0"/>
+                          <Component id="TxtApaterno" alignment="1" max="32767" attributes="0"/>
                           <Component id="jComboBox1" alignment="1" max="32767" attributes="0"/>
-                          <Component id="TxtNombresClientes" alignment="1" max="32767" attributes="0"/>
                           <Component id="TxtRFCCliente" alignment="1" max="32767" attributes="0"/>
                           <Component id="TxtCorreoCliente" alignment="1" max="32767" attributes="0"/>
-                          <Component id="TxtDireccionCliente" alignment="1" max="32767" attributes="0"/>
-                          <Component id="TxtTelefonoCliente" alignment="1" max="32767" attributes="0"/>
+                          <Component id="TxtDirecCliente" alignment="1" max="32767" attributes="0"/>
+                          <Component id="TxtTelCliente" alignment="1" max="32767" attributes="0"/>
                           <Component id="TxtIDCliente" max="32767" attributes="0"/>
                           <Component id="TxtFechaRegistro" max="32767" attributes="0"/>
+                          <Component id="TxtAmaterno" max="32767" attributes="0"/>
+                          <Component id="TxtNombre" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
                   </Group>
@@ -109,18 +109,18 @@
                       </Group>
                       <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="TxtNombresClientes" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                           <Component id="jLabel50" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TxtNombre" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="TxtApellidoPaternoCliente" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="TxtApaterno" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel53" alignment="1" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="TxtApellidoMaternoCliente" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                          <Component id="TxtAmaterno" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -134,12 +134,12 @@
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="TxtTelefonoCliente" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                          <Component id="TxtTelCliente" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                           <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="TxtDireccionCliente" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                          <Component id="TxtDirecCliente" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                           <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
@@ -158,14 +158,14 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JTextField" name="TxtApellidoPaternoCliente">
+            <Component class="javax.swing.JTextField" name="TxtApaterno">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtApellidoPaternoClienteActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtApaternoActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JButton" name="jButton13">
@@ -178,16 +178,6 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton13ActionPerformed"/>
               </Events>
-            </Component>
-            <Component class="javax.swing.JFormattedTextField" name="TxtNombresClientes">
-              <Properties>
-                <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
-                  <Format format="dd/MM/yyyy" subtype="-1" type="1"/>
-                </Property>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Segoe UI Light" size="14" style="0"/>
-                </Property>
-              </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel53">
               <Properties>
@@ -242,11 +232,6 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnGuardarActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="TxtApellidoMaternoCliente">
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtApellidoMaternoClienteActionPerformed"/>
-              </Events>
-            </Component>
             <Component class="javax.swing.JLabel" name="jLabel2">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -258,11 +243,10 @@
             <Component class="javax.swing.JComboBox" name="jComboBox1">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                  <StringArray count="4">
-                    <StringItem index="0" value="Item 1"/>
-                    <StringItem index="1" value="Item 2"/>
-                    <StringItem index="2" value="Item 3"/>
-                    <StringItem index="3" value="Item 4"/>
+                  <StringArray count="3">
+                    <StringItem index="0" value="Mayorista"/>
+                    <StringItem index="1" value="Minorista"/>
+                    <StringItem index="2" value="Comprador en linea"/>
                   </StringArray>
                 </Property>
               </Properties>
@@ -310,12 +294,15 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtCorreoClienteActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="TxtDireccionCliente">
+            <Component class="javax.swing.JTextField" name="TxtDirecCliente">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtDireccionClienteActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtDirecClienteActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="TxtTelefonoCliente">
+            <Component class="javax.swing.JTextField" name="TxtTelCliente">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="###-###-####"/>
+              </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="TxtIDCliente">
               <Properties>
@@ -338,12 +325,19 @@
             <Component class="javax.swing.JFormattedTextField" name="TxtFechaRegistro">
               <Properties>
                 <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
-                  <Format format="dd/MM/yyyy" subtype="-1" type="1"/>
+                  <Format format="" subtype="-1" type="1"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
                 </Property>
               </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="TxtAmaterno">
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtAmaternoActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="TxtNombre">
             </Component>
           </SubComponents>
         </Container>

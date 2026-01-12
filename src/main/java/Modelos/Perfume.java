@@ -14,18 +14,18 @@ import java.util.Date;
  *
  * @author avila
  */
-public class Perfumes {
+public class Perfume {
     private String nombre, familia_olfativa, tipo_producto, perfumista, descripcion, estado;
     private float costo_produccion, precio_venta;
     private int id_perfume;
     private Date fecha_creacion;
     
-    public Perfumes()
+    public Perfume()
     {
         
     }
     
-    public Perfumes(String nombre, String familia_olfativa, String tipo_producto, String perfumista, String descripcion, String estado, float precio_venta, float costo_produccion, Date fecha_creacion, int id_perfume)
+    public Perfume(String nombre, String familia_olfativa, String tipo_producto, String perfumista, String descripcion, String estado, float precio_venta, float costo_produccion, Date fecha_creacion, int id_perfume)
     {
         this.costo_produccion = costo_produccion;
         this.descripcion =descripcion;
