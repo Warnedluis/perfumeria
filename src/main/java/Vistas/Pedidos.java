@@ -166,6 +166,7 @@ public class Pedidos extends javax.swing.JInternalFrame {
         jLabel55.setText("Productos solicitados:");
 
         jComboBox21.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jComboBox21.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mayorista", "Minorista", "Comprador en línea" }));
 
         FTxTFechaEntrega.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
         FTxTFechaEntrega.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -322,6 +323,7 @@ public class Pedidos extends javax.swing.JInternalFrame {
         jLabel81.setText("Productos solicitados:");
 
         jComboBox23.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jComboBox23.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mayorista", "Minorista", "Comprador en línea" }));
         jComboBox23.setEnabled(false);
 
         FTxTFechaEntrega1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
@@ -349,28 +351,9 @@ public class Pedidos extends javax.swing.JInternalFrame {
         BajaPedidosLayout.setHorizontalGroup(
             BajaPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(BajaPedidosLayout.createSequentialGroup()
-                .addGap(75, 75, 75)
-                .addGroup(BajaPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, BajaPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(BajaPedidosLayout.createSequentialGroup()
-                            .addGap(11, 11, 11)
-                            .addGroup(BajaPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jLabel79)
-                                .addComponent(jLabel80)
-                                .addComponent(jLabel78)
-                                .addComponent(jLabel76)
-                                .addComponent(jLabel77)
-                                .addComponent(jLabel81))
-                            .addGap(18, 18, 18)
-                            .addGroup(BajaPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(FTxTFechaPedido1)
-                                .addComponent(TxtIDFormula5)
-                                .addComponent(jComboBox22, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jComboBox23, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(FTxTFechaEntrega1)))
-                        .addComponent(jScrollPane7, javax.swing.GroupLayout.Alignment.TRAILING))
-                    .addGroup(BajaPedidosLayout.createSequentialGroup()
-                        .addGap(53, 53, 53)
+                .addGroup(BajaPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BajaPedidosLayout.createSequentialGroup()
+                        .addGap(128, 128, 128)
                         .addGroup(BajaPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(BtnAgregarFilaF2, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(BajaPedidosLayout.createSequentialGroup()
@@ -381,7 +364,29 @@ public class Pedidos extends javax.swing.JInternalFrame {
                                         .addComponent(BtnGuardarFormula4, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(TxtIDFormula6, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                    .addComponent(TxtIDFormula6, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(BajaPedidosLayout.createSequentialGroup()
+                        .addGap(75, 75, 75)
+                        .addGroup(BajaPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(BajaPedidosLayout.createSequentialGroup()
+                                .addComponent(jLabel81)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addGroup(BajaPedidosLayout.createSequentialGroup()
+                                .addGap(25, 25, 25)
+                                .addGroup(BajaPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel76)
+                                    .addComponent(jLabel78)
+                                    .addComponent(jLabel79)
+                                    .addComponent(jLabel77)
+                                    .addComponent(jLabel80))
+                                .addGap(29, 29, 29)
+                                .addGroup(BajaPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(FTxTFechaPedido1)
+                                    .addComponent(TxtIDFormula5)
+                                    .addComponent(jComboBox22, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jComboBox23, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(FTxTFechaEntrega1)))
+                            .addComponent(jScrollPane7, javax.swing.GroupLayout.DEFAULT_SIZE, 509, Short.MAX_VALUE))))
                 .addGap(104, 104, 104))
         );
         BajaPedidosLayout.setVerticalGroup(
@@ -404,9 +409,9 @@ public class Pedidos extends javax.swing.JInternalFrame {
                     .addComponent(jLabel76)
                     .addComponent(FTxTFechaEntrega1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(BajaPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel78)
-                    .addComponent(jComboBox22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(BajaPedidosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jComboBox22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel78))
                 .addGap(20, 20, 20)
                 .addComponent(jLabel81)
                 .addGap(18, 18, 18)
@@ -481,6 +486,7 @@ public class Pedidos extends javax.swing.JInternalFrame {
         jLabel62.setText("Productos solicitados:");
 
         jComboBox24.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jComboBox24.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mayorista", "Minorista", "Comprador en línea" }));
         jComboBox24.setEnabled(false);
 
         FTxTFechaEntrega2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
@@ -640,6 +646,7 @@ public class Pedidos extends javax.swing.JInternalFrame {
         jLabel68.setText("Productos solicitados:");
 
         jComboBox25.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jComboBox25.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mayorista", "Minorista", "Comprador en línea" }));
         jComboBox25.setEnabled(false);
 
         FTxTFechaEntrega3.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
@@ -786,11 +793,11 @@ public class Pedidos extends javax.swing.JInternalFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 656, Short.MAX_VALUE)
+            .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 656, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 688, Short.MAX_VALUE)
+            .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 688, Short.MAX_VALUE)
         );
 
         pack();
