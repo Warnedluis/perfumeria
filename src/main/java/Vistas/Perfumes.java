@@ -15,6 +15,7 @@ public class Perfumes extends javax.swing.JInternalFrame {
      */
     public Perfumes() {
         initComponents();
+        cargarTabla();
     }
 
     /**
@@ -1112,25 +1113,25 @@ int confirmar = javax.swing.JOptionPane.showConfirmDialog(this, "¿Seguro que de
         javax.swing.JOptionPane.showMessageDialog(this, "Error al buscar: " + e.getMessage());
     }
     }//GEN-LAST:event_BtnBuscar_CActionPerformed
-// Este método lo creas tú al final del archivo, antes de la última llave
-public void cargarTabla() {
+
+public void cargarTabla() 
+{
     try {
         Modelos.Perfume p = new Modelos.Perfume();
         java.sql.ResultSet rs = p.Mostrar(); //
         
-        // Obtenemos el modelo de la tabla que ya tienes en el diseño
         javax.swing.table.DefaultTableModel modelo = (javax.swing.table.DefaultTableModel) jTable1.getModel();
-        modelo.setRowCount(0); // Esto limpia la tabla para no duplicar datos
+        modelo.setRowCount(0);
         
         while (rs.next()) {
-            // Creamos una fila con las 10 columnas que definiste
             Object[] fila = new Object[10];
             for (int i = 0; i < 10; i++) {
                 fila[i] = rs.getObject(i + 1);
             }
             modelo.addRow(fila);
         }
-    } catch (Exception e) {
+    } catch (Exception e) 
+    {
         javax.swing.JOptionPane.showMessageDialog(this, "Error al cargar los datos: " + e.getMessage());
     }
 }
