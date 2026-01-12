@@ -169,6 +169,7 @@ public class Proveedores extends javax.swing.JInternalFrame {
 
         BtnLimpiar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         BtnLimpiar.setText("Limpiar");
+        BtnLimpiar.addActionListener(this::BtnLimpiarActionPerformed);
 
         jLabel37.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel37.setText("ID proveedor:");
@@ -314,6 +315,7 @@ public class Proveedores extends javax.swing.JInternalFrame {
 
         BtnLimpiarBaja.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         BtnLimpiarBaja.setText("Limpiar");
+        BtnLimpiarBaja.addActionListener(this::BtnLimpiarBajaActionPerformed);
 
         jLabel47.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel47.setText("ID proveedor:");
@@ -446,6 +448,7 @@ public class Proveedores extends javax.swing.JInternalFrame {
 
         BtnLimpiarModificar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         BtnLimpiarModificar.setText("Limpiar");
+        BtnLimpiarModificar.addActionListener(this::BtnLimpiarModificarActionPerformed);
 
         jLabel57.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel57.setText("ID proveedor:");
@@ -591,6 +594,7 @@ public class Proveedores extends javax.swing.JInternalFrame {
 
         BtnLimpiarBuscar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         BtnLimpiarBuscar.setText("Limpiar");
+        BtnLimpiarBuscar.addActionListener(this::BtnLimpiarBuscarActionPerformed);
 
         jLabel67.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel67.setText("ID proveedor:");
@@ -903,6 +907,60 @@ public class Proveedores extends javax.swing.JInternalFrame {
     private void CmbProgramaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CmbProgramaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_CmbProgramaActionPerformed
+
+    private void BtnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnLimpiarActionPerformed
+        // TODO add your handling code here:
+    TxtIDProveedor.setText("");
+    TxtNombre.setText("");
+    TxtContacto.setText("");
+    TxtApellidoPaterno.setText("");
+    TxtApellidoMaterno.setText("");
+    TxtTelefono.setText("");
+    TxtDireccion.setText("");
+    TxtCondicionesPago.setText("");
+    TxtCalificacion.setText("");
+    CmbPrograma.setSelectedIndex(0);
+    }//GEN-LAST:event_BtnLimpiarActionPerformed
+
+    private void BtnLimpiarBajaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnLimpiarBajaActionPerformed
+        // TODO add your handling code here:
+    TxtIDProveedorBaja.setText("");
+    TxtNombreBaja.setText("");
+    TxtContactoBaja.setText("");
+    TxtApellidoPaternoBaja.setText("");
+    TxtApellidoMaternoBaja.setText("");
+    TxtTelefonoBaja.setText("");
+    TxtDireccionBaja.setText("");
+    TxtCondicionesPagoBaja.setText("");
+    TxtCalificacionBaja.setText("");
+    }//GEN-LAST:event_BtnLimpiarBajaActionPerformed
+
+    private void BtnLimpiarModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnLimpiarModificarActionPerformed
+        // TODO add your handling code here:
+                TxtIDProveedorModificar.setText("");
+                TxtNombreModificar.setText("");
+                TxtContactoModificar.setText("");
+                TxtApellidoPaternoModificar.setText("");
+                TxtApellidoMaternoModificar.setText("");
+                TxtTelefonoModificar.setText("");
+                TxtDireccionModificar.setText("");
+                TxtCondicionesPagoModificar.setText("");
+                TxtCalificacionModificar.setText("");
+    }//GEN-LAST:event_BtnLimpiarModificarActionPerformed
+
+    private void BtnLimpiarBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnLimpiarBuscarActionPerformed
+        // TODO add your handling code here:
+    TxtIDProveedorBuscar.setText("");
+    TxtNombreBuscar.setText("");
+    TxtContactoBuscar.setText("");
+    TxtApellidoPaternoBuscar.setText("");
+    TxtApellidoMaternoBuscar.setText("");
+    TxtTelefonoBuscar.setText("");
+    TxtDireccionBuscar.setText("");
+    TxtCondicionesPagoBuscar.setText("");
+    TxtCalificacionBuscar.setText("");
+    // jComboBox7.setSelectedIndex(0);
+    }//GEN-LAST:event_BtnLimpiarBuscarActionPerformed
 
     
     private void CargarTabla() {

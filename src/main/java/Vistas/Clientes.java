@@ -805,6 +805,16 @@ public class Clientes extends javax.swing.JInternalFrame {
 
     private void BtnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnLimpiarActionPerformed
         // TODO add your handling code here:
+    TxtIDCliente.setText("");
+    TxtRFCCliente.setText("");
+    TxtNombre.setText("");
+    TxtApaterno.setText("");
+    TxtAmaterno.setText("");
+    jComboBox1.setSelectedIndex(0); // Reinicia el combo
+    TxtCorreoCliente.setText("");
+    TxtTelCliente.setText("");
+    TxtDirecCliente.setText("");
+    TxtFechaRegistro.setText("");
     }//GEN-LAST:event_BtnLimpiarActionPerformed
 
     private void TxtRFCClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtRFCClienteActionPerformed
@@ -886,6 +896,16 @@ public class Clientes extends javax.swing.JInternalFrame {
 
     private void BtnLimpiarBajaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnLimpiarBajaActionPerformed
         // TODO add your handling code here:
+        TxtIDClienteBaja.setText("");
+    TxtRFCClienteBaja.setText("");
+    TxtNombresClienteBaja.setText("");
+    TxtApellidoPaternoClienteBaja.setText("");
+    TxtApellidoMaternoClienteBaja.setText("");
+    // jComboBox5.setSelectedIndex(0); // Opcional, si quieres reiniciarlo aunque esté deshabilitado
+    TxtCorreoClienteBaja.setText("");
+    TxtTelefonoClienteBaja.setText("");
+    TxtDireccionClienteBaja.setText("");
+    TxtFechaRegistroClienteBaja.setText("");
     }//GEN-LAST:event_BtnLimpiarBajaActionPerformed
 
     private void TxtRFCClienteBajaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtRFCClienteBajaActionPerformed
@@ -929,6 +949,16 @@ public class Clientes extends javax.swing.JInternalFrame {
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
         // TODO add your handling code here:
+        TxtIDClienteModificar.setText("");
+    TxtRFCClienteModificar1.setText(""); // Nota: Tu variable tiene un '1' al final
+    TxtNombresClienteModificar.setText("");
+    TxtApellidoPaternoClienteModificar.setText("");
+    TxtApellidoMaternoClienteModificar.setText("");
+    jComboBox6.setSelectedIndex(0);
+    TxtCorreoClienteModificar.setText("");
+    TxtTelefonoClienteModificar.setText("");
+    TxtDireccionClienteModificar.setText("");
+    TxtFechaRegistroClienteModificar.setText("");
     }//GEN-LAST:event_jButton22ActionPerformed
 
     private void TxtNombresClienteModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtNombresClienteModificarActionPerformed
@@ -1008,6 +1038,16 @@ try {
 
     private void BtnLimpiarBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnLimpiarBuscarActionPerformed
         // TODO add your handling code here:
+        TxtIDClienteBuscar.setText("");
+    TxtRFCClienteBuscar.setText("");
+    TxtNombresClientesBuscar.setText(""); // Cuidado: esta variable está en plural "Clientes"
+    TxtApellidoPaternoClienteBuscar.setText("");
+    TxtApellidoMaternoClienteBuscar.setText("");
+    // jComboBox7.setSelectedIndex(0);
+    TxtCorreoClienteBuscar.setText("");
+    TxtTelefonoClienteBuscar.setText("");
+    TxtDireccionClienteBuscar.setText("");
+    TxtFechaRegistroClienteBuscar.setText("");
     }//GEN-LAST:event_BtnLimpiarBuscarActionPerformed
 
     private void TxtRFCClienteBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtRFCClienteBuscarActionPerformed
