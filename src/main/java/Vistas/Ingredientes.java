@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JInternalFrame.java to edit this template
  */
 package Vistas;
-
 /**
  *
  * @author hyper
@@ -59,7 +58,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         TxtNombre_B = new javax.swing.JTextField();
         jLabel62 = new javax.swing.JLabel();
         jComboBox19 = new javax.swing.JComboBox<>();
-        jComboBox20 = new javax.swing.JComboBox<>();
+        TxtProveedor_B = new javax.swing.JComboBox<>();
         BtnBorrar = new javax.swing.JButton();
         jLabel63 = new javax.swing.JLabel();
         jComboBox21 = new javax.swing.JComboBox<>();
@@ -147,7 +146,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jLabel55.setText("Tipo:");
 
         TxtTipo_A.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        TxtTipo_A.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Aceites esenciales", "Fijadores", "Alcoholes", "Solventes" }));
+        TxtTipo_A.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A. esenciales", "Fijadores", "Alcoholes", "Solventes" }));
         TxtTipo_A.addActionListener(this::TxtTipo_AActionPerformed);
 
         TxtProveedor_A.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -296,11 +295,11 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jLabel62.setText("Tipo:");
 
         jComboBox19.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jComboBox19.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Aceites esenciales", "Fijadores", "Alcoholes", "Solventes" }));
+        jComboBox19.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A. esenciales", "Fijadores", "Alcoholes", "Solventes" }));
         jComboBox19.setEnabled(false);
 
-        jComboBox20.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jComboBox20.setEnabled(false);
+        TxtProveedor_B.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtProveedor_B.setEnabled(false);
 
         BtnBorrar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         BtnBorrar.setText("Eliminar");
@@ -346,7 +345,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
                             .addComponent(TxtNombre_B)
                             .addComponent(TxtNivel_B)
                             .addComponent(jComboBox19, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jComboBox20, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(TxtProveedor_B, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jComboBox21, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BajaIngredientesLayout.createSequentialGroup()
                                 .addGap(0, 0, Short.MAX_VALUE)
@@ -402,7 +401,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(BajaIngredientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel61)
-                    .addComponent(jComboBox20))
+                    .addComponent(TxtProveedor_B))
                 .addGap(18, 18, 18)
                 .addGroup(BajaIngredientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BtnBorrar)
@@ -446,7 +445,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jLabel70.setText("Tipo:");
 
         TxtTipo_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        TxtTipo_C.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Aceites esenciales", "Fijadores", "Alcoholes", "Solventes" }));
+        TxtTipo_C.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A. esenciales", "Fijadores", "Alcoholes", "Solventes" }));
         TxtTipo_C.setEnabled(false);
 
         TxtProveedores_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -596,7 +595,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jLabel78.setText("Tipo:");
 
         TxtTipo_BU.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        TxtTipo_BU.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Aceites esenciales", "Fijadores", "Alcoholes", "Solventes" }));
+        TxtTipo_BU.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A. esenciales", "Fijadores", "Alcoholes", "Solventes" }));
         TxtTipo_BU.setEnabled(false);
 
         TxtProveedor_BU.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -857,7 +856,6 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         return;
     }
 
-    // 2. Pedimos confirmación
     int confirmar = javax.swing.JOptionPane.showConfirmDialog(this, 
             "¿Está seguro de eliminar el ingrediente '" + TxtNombre_B.getText() + "'?", 
             "Confirmar Baja", javax.swing.JOptionPane.YES_NO_OPTION);
@@ -866,8 +864,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         try {
             Modelos.Ingrediente i = new Modelos.Ingrediente();
             int id = Integer.parseInt(TxtID_B.getText());
-            
-            // 3. Ejecutamos el borrado en el modelo
+
             i.Borrar(id);
             
             javax.swing.JOptionPane.showMessageDialog(this, "Ingrediente eliminado correctamente.");
@@ -890,7 +887,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
     TxtStock_B.setText("");
     TxtCosto_B.setText("");
     TxtNivel_B.setText("");
-    jComboBox20.setSelectedIndex(0);
+    TxtProveedor_B.setSelectedIndex(0);
     }//GEN-LAST:event_BtnLimpiar_BActionPerformed
 
     private void TxtStock_CActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtStock_CActionPerformed
@@ -982,24 +979,19 @@ public class Ingredientes extends javax.swing.JInternalFrame {
             javax.swing.JOptionPane.showMessageDialog(this, "Por favor, ingrese un ID para buscar.");
             return;
         }
-
-        // 2. Instanciamos el modelo y buscamos por ID 
+ 
         int id = Integer.parseInt(TxtID_BU.getText().trim());
         Modelos.Ingrediente i = new Modelos.Ingrediente();
         
-        if (i.Buscar(id)) { // 
-            // 3. Llenamos los campos con la información encontrada 
+        if (i.Buscar(id)) { 
             TxtNombre_BU.setText(i.getNombre());
             TxtTipo_BU.setSelectedItem(i.getTipo());
             TxtUnidad_BU.setSelectedItem(i.getUnidad_medida());
             
-            // Convertimos los valores float a String para mostrarlos
             TxtStock_BU.setText(String.valueOf(i.getStock_actual()));
             TxtCosto_BU.setText(String.valueOf(i.getCosto_unitario()));
             TxtNivel_BU.setText(String.valueOf(i.getNivel_reorden()));
-            
-            // 4. Seleccionamos el proveedor en el combo 
-            // Nota: Buscamos el ítem que comience con el ID del proveedor (ej: "5 - ...")
+
             int idProv = i.getId_proveedor();
             boolean encontrado = false;
             for (int k = 0; k < TxtProveedor_BU.getItemCount(); k++) {
@@ -1010,14 +1002,13 @@ public class Ingredientes extends javax.swing.JInternalFrame {
                 }
             }
             
-            // Si no se encuentra en el combo (ID no coincide con texto), seleccionamos el ID directo
             if (!encontrado) {
                 TxtProveedor_BU.setSelectedItem(String.valueOf(idProv));
             }
             
         } else {
             javax.swing.JOptionPane.showMessageDialog(this, "No se encontró ningún ingrediente con el ID: " + id);
-            BtnLimpiar_BUActionPerformed(null); // Limpiamos la pestaña si no existe
+            BtnLimpiar_BUActionPerformed(null); 
         }
     } catch (NumberFormatException e) {
         javax.swing.JOptionPane.showMessageDialog(this, "Error: El ID debe ser un número entero.");
@@ -1051,40 +1042,38 @@ public class Ingredientes extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_TxtProveedor_AActionPerformed
 
 public void llenarComboProveedores() {
-try {
-        // 1. Instanciar la clase que conecta con la base de datos
+    try {
         Modelos.Proveedores objProveedores = new Modelos.Proveedores();
+  
+        javax.swing.table.DefaultTableModel modelo = objProveedores.Mostrar(); 
         
-        // 2. Obtener los resultados (rs)
-        java.sql.ResultSet rs = (java.sql.ResultSet) objProveedores.Mostrar();
-        
+ 
         TxtProveedor_A.removeAllItems(); 
-        jComboBox20.removeAllItems(); 
+        TxtProveedor_B.removeAllItems(); 
         TxtProveedores_C.removeAllItems(); 
         TxtProveedor_BU.removeAllItems(); 
         
-        // 4. Agregar la opción inicial por defecto
+ 
         String inicial = "0 - Seleccione un proveedor";
         TxtProveedor_A.addItem(inicial);
-        jComboBox20.addItem(inicial);
+        TxtProveedor_B.addItem(inicial);
         TxtProveedores_C.addItem(inicial);
         TxtProveedor_BU.addItem(inicial);
         
-        // 5. Llenar con los datos de la base de datos
-        while (rs.next()) {
-            // Se construye el texto: ID - Nombre
-            String item = rs.getInt("id_proveedor") + " - " + rs.getString("nombre_proveedor");
+        for (int i = 0; i < modelo.getRowCount(); i++) {
+            String id = modelo.getValueAt(i, 0).toString(); 
+            String nombre = modelo.getValueAt(i, 1).toString();
+            String item = id + " - " + nombre;
             
-            // Se agrega a las 4 listas
             TxtProveedor_A.addItem(item);
-            jComboBox20.addItem(item);
+            TxtProveedor_B.addItem(item);
             TxtProveedores_C.addItem(item);
             TxtProveedor_BU.addItem(item);
         }
         
     } catch (Exception e) {
-        // En caso de error, muestra el mensaje en la consola
-        System.out.println("Error al llenar proveedores: " + e.getMessage());
+        javax.swing.JOptionPane.showMessageDialog(this, 
+            "Error al cargar proveedores: " + e.getMessage());
     }
 }
 
@@ -1137,6 +1126,7 @@ public void cargarTabla() {
     private javax.swing.JTextField TxtNombre_BU;
     private javax.swing.JTextField TxtNombre_C;
     private javax.swing.JComboBox<String> TxtProveedor_A;
+    private javax.swing.JComboBox<String> TxtProveedor_B;
     private javax.swing.JComboBox<String> TxtProveedor_BU;
     private javax.swing.JComboBox<String> TxtProveedores_C;
     private javax.swing.JTextField TxtStock_A;
@@ -1150,7 +1140,6 @@ public void cargarTabla() {
     private javax.swing.JComboBox<String> TxtUnidad_BU;
     private javax.swing.JComboBox<String> TxtUnidad_C;
     private javax.swing.JComboBox<String> jComboBox19;
-    private javax.swing.JComboBox<String> jComboBox20;
     private javax.swing.JComboBox<String> jComboBox21;
     private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel51;
