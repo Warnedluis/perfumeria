@@ -3,7 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JInternalFrame.java to edit this template
  */
 package Vistas;
-
 /**
  *
  * @author hyper
@@ -30,7 +29,6 @@ public class Ingredientes extends javax.swing.JInternalFrame {
 
         jTabbedPane1 = new javax.swing.JTabbedPane();
         AltaIngredientes = new javax.swing.JPanel();
-        TxtCosto_A = new javax.swing.JFormattedTextField();
         jLabel50 = new javax.swing.JLabel();
         jLabel51 = new javax.swing.JLabel();
         TxtStock_A = new javax.swing.JTextField();
@@ -48,8 +46,8 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jLabel59 = new javax.swing.JLabel();
         TxtID_A = new javax.swing.JTextField();
         BtnLimpiar_A = new javax.swing.JButton();
+        TxtCosto_A = new javax.swing.JTextField();
         BajaIngredientes = new javax.swing.JPanel();
-        TxtCosto_B = new javax.swing.JFormattedTextField();
         jLabel54 = new javax.swing.JLabel();
         jLabel57 = new javax.swing.JLabel();
         TxtStock_B = new javax.swing.JTextField();
@@ -58,18 +56,17 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jLabel61 = new javax.swing.JLabel();
         TxtNombre_B = new javax.swing.JTextField();
         jLabel62 = new javax.swing.JLabel();
-        TxtTipo_B = new javax.swing.JComboBox<>();
+        jComboBox19 = new javax.swing.JComboBox<>();
         TxtProveedor_B = new javax.swing.JComboBox<>();
         BtnBorrar = new javax.swing.JButton();
         jLabel63 = new javax.swing.JLabel();
-        TxtUnidad_B = new javax.swing.JComboBox<>();
+        jComboBox21 = new javax.swing.JComboBox<>();
         jLabel64 = new javax.swing.JLabel();
         jLabel65 = new javax.swing.JLabel();
         TxtID_B = new javax.swing.JTextField();
         BtnLimpiar_B = new javax.swing.JButton();
-        BtnBuscar_B = new javax.swing.JButton();
+        TxtCosto_B = new javax.swing.JTextField();
         Cambios = new javax.swing.JPanel();
-        TxtCosto_C = new javax.swing.JFormattedTextField();
         jLabel66 = new javax.swing.JLabel();
         jLabel67 = new javax.swing.JLabel();
         TxtStock_C = new javax.swing.JTextField();
@@ -85,11 +82,10 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         TxtUnidad_C = new javax.swing.JComboBox<>();
         jLabel72 = new javax.swing.JLabel();
         jLabel73 = new javax.swing.JLabel();
-        TxtID_C = new javax.swing.JTextField();
+        jTextField31 = new javax.swing.JTextField();
         BtnLimpiar_C = new javax.swing.JButton();
-        BtnBuscar_C = new javax.swing.JButton();
+        TxtCosto_C = new javax.swing.JTextField();
         BuscarIngredientes = new javax.swing.JPanel();
-        TxtCosto_BU = new javax.swing.JFormattedTextField();
         jLabel74 = new javax.swing.JLabel();
         jLabel75 = new javax.swing.JLabel();
         TxtStock_BU = new javax.swing.JTextField();
@@ -106,7 +102,8 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jLabel80 = new javax.swing.JLabel();
         jLabel81 = new javax.swing.JLabel();
         TxtID_BU = new javax.swing.JTextField();
-        BtnLimpiar_BU = new javax.swing.JButton();
+        BtnLimpiar_Buscar = new javax.swing.JButton();
+        TxtCosto_BU = new javax.swing.JTextField();
         MostrarIngredientes = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
@@ -120,9 +117,6 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jTabbedPane1.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         AltaIngredientes.setPreferredSize(new java.awt.Dimension(752, 450));
-
-        TxtCosto_A.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
-        TxtCosto_A.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel50.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel50.setText("Stock actual:");
@@ -149,10 +143,11 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jLabel55.setText("Tipo:");
 
         TxtTipo_A.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        TxtTipo_A.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Aceites esenciales", "Fijadores", "Alcoholes", "Solventes" }));
+        TxtTipo_A.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A. esenciales", "Fijadores", "Alcoholes", "Solventes" }));
         TxtTipo_A.addActionListener(this::TxtTipo_AActionPerformed);
 
         TxtProveedor_A.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtProveedor_A.addActionListener(this::TxtProveedor_AActionPerformed);
 
         BtnGuardar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         BtnGuardar.setText("Guardar");
@@ -176,6 +171,9 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         BtnLimpiar_A.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         BtnLimpiar_A.setText("Limpiar");
         BtnLimpiar_A.addActionListener(this::BtnLimpiar_AActionPerformed);
+
+        TxtCosto_A.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtCosto_A.addActionListener(this::TxtCosto_AActionPerformed);
 
         javax.swing.GroupLayout AltaIngredientesLayout = new javax.swing.GroupLayout(AltaIngredientes);
         AltaIngredientes.setLayout(AltaIngredientesLayout);
@@ -244,8 +242,8 @@ public class Ingredientes extends javax.swing.JInternalFrame {
                     .addComponent(TxtStock_A))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(AltaIngredientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TxtCosto_A)
-                    .addComponent(jLabel58))
+                    .addComponent(jLabel58)
+                    .addComponent(TxtCosto_A))
                 .addGap(12, 12, 12)
                 .addGroup(AltaIngredientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel51)
@@ -264,10 +262,6 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jTabbedPane1.addTab("Alta", AltaIngredientes);
 
         BajaIngredientes.setPreferredSize(new java.awt.Dimension(752, 450));
-
-        TxtCosto_B.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
-        TxtCosto_B.setEnabled(false);
-        TxtCosto_B.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel54.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel54.setText("Stock actual:");
@@ -296,9 +290,9 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jLabel62.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel62.setText("Tipo:");
 
-        TxtTipo_B.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        TxtTipo_B.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Aceites esenciales", "Fijadores", "Alcoholes", "Solventes" }));
-        TxtTipo_B.setEnabled(false);
+        jComboBox19.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jComboBox19.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A. esenciales", "Fijadores", "Alcoholes", "Solventes" }));
+        jComboBox19.setEnabled(false);
 
         TxtProveedor_B.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         TxtProveedor_B.setEnabled(false);
@@ -310,9 +304,9 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jLabel63.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel63.setText("Unidad de medida:");
 
-        TxtUnidad_B.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        TxtUnidad_B.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mililitros", "Litros", "Miligramos", "Gramos", "Kilogramos" }));
-        TxtUnidad_B.setEnabled(false);
+        jComboBox21.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jComboBox21.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mililitros", "Litros", "Miligramos", "Gramos", "Kilogramos" }));
+        jComboBox21.setEnabled(false);
 
         jLabel64.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel64.setText("Costo unitario:");
@@ -327,9 +321,9 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         BtnLimpiar_B.setText("Limpiar");
         BtnLimpiar_B.addActionListener(this::BtnLimpiar_BActionPerformed);
 
-        BtnBuscar_B.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        BtnBuscar_B.setText("Buscar");
-        BtnBuscar_B.addActionListener(this::BtnBuscar_BActionPerformed);
+        TxtCosto_B.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtCosto_B.setEnabled(false);
+        TxtCosto_B.addActionListener(this::TxtCosto_BActionPerformed);
 
         javax.swing.GroupLayout BajaIngredientesLayout = new javax.swing.GroupLayout(BajaIngredientes);
         BajaIngredientes.setLayout(BajaIngredientesLayout);
@@ -350,15 +344,13 @@ public class Ingredientes extends javax.swing.JInternalFrame {
                         .addGroup(BajaIngredientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(TxtNombre_B)
                             .addComponent(TxtNivel_B)
-                            .addComponent(TxtTipo_B, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jComboBox19, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(TxtProveedor_B, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(TxtUnidad_B, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jComboBox21, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BajaIngredientesLayout.createSequentialGroup()
                                 .addGap(0, 0, Short.MAX_VALUE)
                                 .addComponent(BtnBorrar, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(BtnBuscar_B)
-                                .addGap(34, 34, 34)
+                                .addGap(127, 127, 127)
                                 .addComponent(BtnLimpiar_B, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(TxtID_B)))
                     .addGroup(BajaIngredientesLayout.createSequentialGroup()
@@ -389,19 +381,19 @@ public class Ingredientes extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(BajaIngredientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel62)
-                    .addComponent(TxtTipo_B))
+                    .addComponent(jComboBox19))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(BajaIngredientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel63)
-                    .addComponent(TxtUnidad_B))
+                    .addComponent(jComboBox21))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(BajaIngredientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel54)
                     .addComponent(TxtStock_B))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(BajaIngredientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TxtCosto_B)
-                    .addComponent(jLabel64))
+                    .addComponent(jLabel64)
+                    .addComponent(TxtCosto_B))
                 .addGap(12, 12, 12)
                 .addGroup(BajaIngredientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel57)
@@ -413,18 +405,13 @@ public class Ingredientes extends javax.swing.JInternalFrame {
                 .addGap(18, 18, 18)
                 .addGroup(BajaIngredientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BtnBorrar)
-                    .addComponent(BtnLimpiar_B, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BtnBuscar_B))
+                    .addComponent(BtnLimpiar_B, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(10, 10, 10))
         );
 
         jTabbedPane1.addTab("Baja", BajaIngredientes);
 
         Cambios.setPreferredSize(new java.awt.Dimension(752, 450));
-
-        TxtCosto_C.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
-        TxtCosto_C.setEnabled(false);
-        TxtCosto_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel66.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel66.setText("Stock actual:");
@@ -433,11 +420,9 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jLabel67.setText("Nivel de reorden:");
 
         TxtStock_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        TxtStock_C.setEnabled(false);
         TxtStock_C.addActionListener(this::TxtStock_CActionPerformed);
 
         TxtNivel_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        TxtNivel_C.setEnabled(false);
         TxtNivel_C.addActionListener(this::TxtNivel_CActionPerformed);
 
         jLabel68.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -447,18 +432,15 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jLabel69.setText("Proveedor:");
 
         TxtNombre_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        TxtNombre_C.setEnabled(false);
         TxtNombre_C.addActionListener(this::TxtNombre_CActionPerformed);
 
         jLabel70.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel70.setText("Tipo:");
 
         TxtTipo_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        TxtTipo_C.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Aceites esenciales", "Fijadores", "Alcoholes", "Solventes" }));
-        TxtTipo_C.setEnabled(false);
+        TxtTipo_C.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A. esenciales", "Fijadores", "Alcoholes", "Solventes" }));
 
         TxtProveedores_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        TxtProveedores_C.setEnabled(false);
 
         BtnModificar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         BtnModificar.setText("Modificar");
@@ -469,7 +451,6 @@ public class Ingredientes extends javax.swing.JInternalFrame {
 
         TxtUnidad_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         TxtUnidad_C.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mililitros", "Litros", "Miligramos", "Gramos", "Kilogramos" }));
-        TxtUnidad_C.setEnabled(false);
 
         jLabel72.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel72.setText("Costo unitario:");
@@ -477,16 +458,15 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jLabel73.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel73.setText("ID del ingrediente:");
 
-        TxtID_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        TxtID_C.addActionListener(this::TxtID_CActionPerformed);
+        jTextField31.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jTextField31.addActionListener(this::jTextField31ActionPerformed);
 
         BtnLimpiar_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         BtnLimpiar_C.setText("Limpiar");
         BtnLimpiar_C.addActionListener(this::BtnLimpiar_CActionPerformed);
 
-        BtnBuscar_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        BtnBuscar_C.setText("Buscar");
-        BtnBuscar_C.addActionListener(this::BtnBuscar_CActionPerformed);
+        TxtCosto_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtCosto_C.addActionListener(this::TxtCosto_CActionPerformed);
 
         javax.swing.GroupLayout CambiosLayout = new javax.swing.GroupLayout(Cambios);
         Cambios.setLayout(CambiosLayout);
@@ -513,11 +493,9 @@ public class Ingredientes extends javax.swing.JInternalFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CambiosLayout.createSequentialGroup()
                                 .addGap(0, 0, Short.MAX_VALUE)
                                 .addComponent(BtnModificar, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(BtnBuscar_C)
-                                .addGap(34, 34, 34)
+                                .addGap(127, 127, 127)
                                 .addComponent(BtnLimpiar_C, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(TxtID_C)))
+                            .addComponent(jTextField31)))
                     .addGroup(CambiosLayout.createSequentialGroup()
                         .addGap(28, 28, 28)
                         .addGroup(CambiosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -538,7 +516,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
                 .addGap(32, 32, 32)
                 .addGroup(CambiosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel73)
-                    .addComponent(TxtID_C))
+                    .addComponent(jTextField31))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(CambiosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel68)
@@ -557,8 +535,8 @@ public class Ingredientes extends javax.swing.JInternalFrame {
                     .addComponent(TxtStock_C))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(CambiosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TxtCosto_C)
-                    .addComponent(jLabel72))
+                    .addComponent(jLabel72)
+                    .addComponent(TxtCosto_C))
                 .addGap(12, 12, 12)
                 .addGroup(CambiosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel67)
@@ -570,18 +548,13 @@ public class Ingredientes extends javax.swing.JInternalFrame {
                 .addGap(18, 18, 18)
                 .addGroup(CambiosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BtnModificar)
-                    .addComponent(BtnLimpiar_C, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BtnBuscar_C))
+                    .addComponent(BtnLimpiar_C, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(10, 10, 10))
         );
 
         jTabbedPane1.addTab("Cambios", Cambios);
 
         BuscarIngredientes.setPreferredSize(new java.awt.Dimension(752, 450));
-
-        TxtCosto_BU.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
-        TxtCosto_BU.setEnabled(false);
-        TxtCosto_BU.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel74.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel74.setText("Stock actual:");
@@ -611,7 +584,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jLabel78.setText("Tipo:");
 
         TxtTipo_BU.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        TxtTipo_BU.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Aceites esenciales", "Fijadores", "Alcoholes", "Solventes" }));
+        TxtTipo_BU.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A. esenciales", "Fijadores", "Alcoholes", "Solventes" }));
         TxtTipo_BU.setEnabled(false);
 
         TxtProveedor_BU.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -637,9 +610,13 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         TxtID_BU.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         TxtID_BU.addActionListener(this::TxtID_BUActionPerformed);
 
-        BtnLimpiar_BU.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        BtnLimpiar_BU.setText("Limpiar");
-        BtnLimpiar_BU.addActionListener(this::BtnLimpiar_BUActionPerformed);
+        BtnLimpiar_Buscar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        BtnLimpiar_Buscar.setText("Limpiar");
+        BtnLimpiar_Buscar.addActionListener(this::BtnLimpiar_BuscarActionPerformed);
+
+        TxtCosto_BU.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtCosto_BU.setEnabled(false);
+        TxtCosto_BU.addActionListener(this::TxtCosto_BUActionPerformed);
 
         javax.swing.GroupLayout BuscarIngredientesLayout = new javax.swing.GroupLayout(BuscarIngredientes);
         BuscarIngredientes.setLayout(BuscarIngredientesLayout);
@@ -667,7 +644,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
                                 .addGap(0, 0, Short.MAX_VALUE)
                                 .addComponent(BtnBuscar_BU, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(127, 127, 127)
-                                .addComponent(BtnLimpiar_BU, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(BtnLimpiar_Buscar, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(TxtID_BU)))
                     .addGroup(BuscarIngredientesLayout.createSequentialGroup()
                         .addGap(28, 28, 28)
@@ -708,8 +685,8 @@ public class Ingredientes extends javax.swing.JInternalFrame {
                     .addComponent(TxtStock_BU))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(BuscarIngredientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TxtCosto_BU)
-                    .addComponent(jLabel80))
+                    .addComponent(jLabel80)
+                    .addComponent(TxtCosto_BU))
                 .addGap(12, 12, 12)
                 .addGroup(BuscarIngredientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel75)
@@ -721,7 +698,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
                 .addGap(18, 18, 18)
                 .addGroup(BuscarIngredientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BtnBuscar_BU)
-                    .addComponent(BtnLimpiar_BU, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(BtnLimpiar_Buscar, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(10, 10, 10))
         );
 
@@ -747,7 +724,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         MostrarIngredientes.setLayout(MostrarIngredientesLayout);
         MostrarIngredientesLayout.setHorizontalGroup(
             MostrarIngredientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 737, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 752, Short.MAX_VALUE)
         );
         MostrarIngredientesLayout.setVerticalGroup(
             MostrarIngredientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -772,7 +749,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void BtnLimpiar_AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnLimpiar_AActionPerformed
+    private void BtnLimpiar_BUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnLimpiar_AActionPerformed
         // TODO add your handling code here:
     TxtID_A.setText("");
     TxtNombre_A.setText("");
@@ -784,6 +761,20 @@ public class Ingredientes extends javax.swing.JInternalFrame {
     TxtProveedor_A.setSelectedIndex(0);
     }//GEN-LAST:event_BtnLimpiar_AActionPerformed
 
+    private void BtnLimpiar_AActionPerformed(java.awt.event.ActionEvent evt) {                                             
+        // TODO add your handling code here:
+    TxtID_A.setText("");
+    TxtNombre_A.setText("");
+    TxtTipo_A.setSelectedIndex(0);
+    TxtUnidad_A.setSelectedIndex(0);
+    TxtStock_A.setText("");
+    TxtCosto_A.setText("");
+    TxtNivel_A.setText("");
+    TxtProveedor_A.setSelectedIndex(0);
+    }                                            
+
+    
+    
     private void TxtID_AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtID_AActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TxtID_AActionPerformed
@@ -801,7 +792,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         
         // Conversiones numéricas según tu modelo float
         i.setStock_actual(Float.parseFloat(TxtStock_A.getText()));
-        i.setCosto_unitario(Float.parseFloat(TxtCosto_A.getText()));
+        i.setCosto_unitario(Float.parseFloat(TxtStock_A.getText()));
         i.setNivel_reorden(Float.parseFloat(TxtNivel_A.getText()));
         
         // --- MANEJO DE LA LLAVE FORÁNEA ---
@@ -858,7 +849,6 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         return;
     }
 
-    // 2. Pedimos confirmación
     int confirmar = javax.swing.JOptionPane.showConfirmDialog(this, 
             "¿Está seguro de eliminar el ingrediente '" + TxtNombre_B.getText() + "'?", 
             "Confirmar Baja", javax.swing.JOptionPane.YES_NO_OPTION);
@@ -867,8 +857,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         try {
             Modelos.Ingrediente i = new Modelos.Ingrediente();
             int id = Integer.parseInt(TxtID_B.getText());
-            
-            // 3. Ejecutamos el borrado en el modelo
+
             i.Borrar(id);
             
             javax.swing.JOptionPane.showMessageDialog(this, "Ingrediente eliminado correctamente.");
@@ -886,7 +875,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
 
     private void BtnLimpiar_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnLimpiar_BActionPerformed
         // TODO add your handling code here:
-        TxtID_B.setText("");
+    TxtID_B.setText("");
     TxtNombre_B.setText("");
     TxtStock_B.setText("");
     TxtCosto_B.setText("");
@@ -912,7 +901,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         Modelos.Ingrediente i = new Modelos.Ingrediente();
         
         // Asignamos los valores actuales de los campos
-        i.setId_ingrediente(Integer.parseInt(TxtID_C.getText()));
+        i.setId_ingrediente(Integer.parseInt(jTextField31.getText()));
         i.setNombre(TxtNombre_C.getText());
         i.setTipo(TxtTipo_C.getSelectedItem().toString());
         i.setUnidad_medida(TxtUnidad_C.getSelectedItem().toString());
@@ -938,13 +927,13 @@ public class Ingredientes extends javax.swing.JInternalFrame {
     }
     }//GEN-LAST:event_BtnModificarActionPerformed
 
-    private void TxtID_CActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtID_CActionPerformed
+    private void jTextField31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField31ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_TxtID_CActionPerformed
+    }//GEN-LAST:event_jTextField31ActionPerformed
 
     private void BtnLimpiar_CActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnLimpiar_CActionPerformed
         // TODO add your handling code here:
-        TxtID_C.setText("");
+    jTextField31.setText("");
     TxtNombre_C.setText("");
     TxtStock_C.setText("");
     TxtCosto_C.setText("");
@@ -983,24 +972,19 @@ public class Ingredientes extends javax.swing.JInternalFrame {
             javax.swing.JOptionPane.showMessageDialog(this, "Por favor, ingrese un ID para buscar.");
             return;
         }
-
-        // 2. Instanciamos el modelo y buscamos por ID 
+ 
         int id = Integer.parseInt(TxtID_BU.getText().trim());
         Modelos.Ingrediente i = new Modelos.Ingrediente();
         
-        if (i.Buscar(id)) { // 
-            // 3. Llenamos los campos con la información encontrada 
+        if (i.Buscar(id)) { 
             TxtNombre_BU.setText(i.getNombre());
             TxtTipo_BU.setSelectedItem(i.getTipo());
             TxtUnidad_BU.setSelectedItem(i.getUnidad_medida());
             
-            // Convertimos los valores float a String para mostrarlos
             TxtStock_BU.setText(String.valueOf(i.getStock_actual()));
             TxtCosto_BU.setText(String.valueOf(i.getCosto_unitario()));
             TxtNivel_BU.setText(String.valueOf(i.getNivel_reorden()));
-            
-            // 4. Seleccionamos el proveedor en el combo 
-            // Nota: Buscamos el ítem que comience con el ID del proveedor (ej: "5 - ...")
+
             int idProv = i.getId_proveedor();
             boolean encontrado = false;
             for (int k = 0; k < TxtProveedor_BU.getItemCount(); k++) {
@@ -1011,14 +995,13 @@ public class Ingredientes extends javax.swing.JInternalFrame {
                 }
             }
             
-            // Si no se encuentra en el combo (ID no coincide con texto), seleccionamos el ID directo
             if (!encontrado) {
                 TxtProveedor_BU.setSelectedItem(String.valueOf(idProv));
             }
             
         } else {
             javax.swing.JOptionPane.showMessageDialog(this, "No se encontró ningún ingrediente con el ID: " + id);
-            BtnLimpiar_BUActionPerformed(null); // Limpiamos la pestaña si no existe
+            BtnLimpiar_BUActionPerformed(null); 
         }
     } catch (NumberFormatException e) {
         javax.swing.JOptionPane.showMessageDialog(this, "Error: El ID debe ser un número entero.");
@@ -1031,9 +1014,9 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_TxtID_BUActionPerformed
 
-    private void BtnLimpiar_BUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnLimpiar_BUActionPerformed
+    private void BtnLimpiar_BuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnLimpiar_BuscarActionPerformed
         // TODO add your handling code here:
-        TxtID_BU.setText("");
+    TxtID_BU.setText("");
     TxtNombre_BU.setText("");
     TxtTipo_BU.setSelectedIndex(0);
     TxtUnidad_BU.setSelectedIndex(0);
@@ -1041,100 +1024,66 @@ public class Ingredientes extends javax.swing.JInternalFrame {
     TxtCosto_BU.setText("");
     TxtNivel_BU.setText("");
     TxtProveedor_BU.setSelectedIndex(0);
-    }//GEN-LAST:event_BtnLimpiar_BUActionPerformed
+    }//GEN-LAST:event_BtnLimpiar_BuscarActionPerformed
 
     private void TxtTipo_AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtTipo_AActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TxtTipo_AActionPerformed
 
-    private void BtnBuscar_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnBuscar_BActionPerformed
+    private void TxtProveedor_AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtProveedor_AActionPerformed
         // TODO add your handling code here:
-        try {
-        // 1. Obtenemos el ID de la pestaña Baja
-        int id = Integer.parseInt(TxtID_B.getText());
-        Modelos.Ingrediente i = new Modelos.Ingrediente();
-        
-        // 2. Buscamos en la base de datos
-        if (i.Buscar(id)) {
-            // 3. Llenamos los campos de texto
-            TxtNombre_B.setText(i.getNombre());
-            TxtStock_B.setText(String.valueOf(i.getStock_actual()));
-            TxtCosto_B.setText(String.valueOf(i.getCosto_unitario()));
-            
-            // Para el proveedor, seleccionamos el ID correspondiente en el combo
-            // Nota: Esto asume que llenaste el combo con el método llenarComboProveedores
-            TxtProveedor_B.setSelectedItem(i.getId_proveedor() + " - " + /* nombre opcional */ "");
-            
-        } else {
-            javax.swing.JOptionPane.showMessageDialog(this, "Ingrediente no encontrado.");
-            BtnLimpiar_BActionPerformed(null);
-        }
-    } catch (NumberFormatException e) {
-        javax.swing.JOptionPane.showMessageDialog(this, "Ingrese un ID numérico válido.");
-    } catch (Exception e) {
-        javax.swing.JOptionPane.showMessageDialog(this, "Error: " + e.getMessage());
-    }
-    }//GEN-LAST:event_BtnBuscar_BActionPerformed
+    }//GEN-LAST:event_TxtProveedor_AActionPerformed
 
-    private void BtnBuscar_CActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnBuscar_CActionPerformed
+    private void TxtCosto_AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtCosto_AActionPerformed
         // TODO add your handling code here:
-        try {
-        int id = Integer.parseInt(TxtID_C.getText());
-        Modelos.Ingrediente i = new Modelos.Ingrediente();
-        
-        if (i.Buscar(id)) { //
-            // 1. Habilitamos los campos para edición
-            TxtNombre_C.setEnabled(true);
-            TxtTipo_C.setEnabled(true);
-            TxtUnidad_C.setEnabled(true);
-            TxtStock_C.setEnabled(true);
-            TxtCosto_C.setEnabled(true);
-            TxtNivel_C.setEnabled(true);
-            TxtProveedores_C.setEnabled(true);
+    }//GEN-LAST:event_TxtCosto_AActionPerformed
 
-            // 2. Cargamos los datos en la interfaz
-            TxtNombre_C.setText(i.getNombre());
-            TxtTipo_C.setSelectedItem(i.getTipo());
-            TxtUnidad_C.setSelectedItem(i.getUnidad_medida());
-            TxtStock_C.setText(String.valueOf(i.getStock_actual()));
-            TxtCosto_C.setText(String.valueOf(i.getCosto_unitario()));
-            TxtNivel_C.setText(String.valueOf(i.getNivel_reorden()));
-            
-            // 3. Seleccionamos el proveedor correcto en el combo
-            int idProvGuardado = i.getId_proveedor();
-            for (int k = 0; k < TxtProveedores_C.getItemCount(); k++) {
-                if (TxtProveedores_C.getItemAt(k).startsWith(idProvGuardado + " - ")) {
-                    TxtProveedores_C.setSelectedIndex(k);
-                    break;
-                }
-            }
-        } else {
-            javax.swing.JOptionPane.showMessageDialog(this, "ID de ingrediente no encontrado.");
-        }
-    } catch (Exception e) {
-        javax.swing.JOptionPane.showMessageDialog(this, "Error al buscar: " + e.getMessage());
-    }
-    }//GEN-LAST:event_BtnBuscar_CActionPerformed
+    private void TxtCosto_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtCosto_BActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TxtCosto_BActionPerformed
+
+    private void TxtCosto_CActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtCosto_CActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TxtCosto_CActionPerformed
+
+    private void TxtCosto_BUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtCosto_BUActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TxtCosto_BUActionPerformed
 
 public void llenarComboProveedores() {
     try {
-        Modelos.Proveedores p = new Modelos.Proveedores();
-        java.sql.ResultSet rs = (java.sql.ResultSet) p.Mostrar();
+
+        Modelos.Proveedores objProveedores = new Modelos.Proveedores();
+  
+        javax.swing.table.DefaultTableModel modelo = objProveedores.Mostrar(); 
         
+ 
         TxtProveedor_A.removeAllItems(); 
-        TxtProveedores_C.removeAllItems(); // <-- Añade esta línea
+        TxtProveedor_B.removeAllItems(); 
+        TxtProveedores_C.removeAllItems(); 
+        TxtProveedor_BU.removeAllItems(); 
         
+ 
         String inicial = "0 - Seleccione un proveedor";
         TxtProveedor_A.addItem(inicial);
+        TxtProveedor_B.addItem(inicial);
         TxtProveedores_C.addItem(inicial);
+        TxtProveedor_BU.addItem(inicial);
         
-        while (rs.next()) {
-            String item = rs.getInt("id_proveedor") + " - " + rs.getString("nombre_proveedor");
+        for (int i = 0; i < modelo.getRowCount(); i++) {
+            String id = modelo.getValueAt(i, 0).toString(); 
+            String nombre = modelo.getValueAt(i, 1).toString();
+            String item = id + " - " + nombre;
+            
             TxtProveedor_A.addItem(item);
-            TxtProveedores_C.addItem(item); // <-- Añade esta línea
+            TxtProveedor_B.addItem(item);
+            TxtProveedores_C.addItem(item);
+            TxtProveedor_BU.addItem(item);
         }
+        
     } catch (Exception e) {
-        System.out.println("Error al llenar proveedores: " + e.getMessage());
+        javax.swing.JOptionPane.showMessageDialog(this, 
+            "Error al cargar proveedores: " + e.getMessage());
     }
 }
 
@@ -1161,26 +1110,23 @@ public void cargarTabla() {
     private javax.swing.JPanel AltaIngredientes;
     private javax.swing.JPanel BajaIngredientes;
     private javax.swing.JButton BtnBorrar;
-    private javax.swing.JButton BtnBuscar_B;
     private javax.swing.JButton BtnBuscar_BU;
-    private javax.swing.JButton BtnBuscar_C;
     private javax.swing.JButton BtnGuardar;
     private javax.swing.JButton BtnLimpiar_A;
     private javax.swing.JButton BtnLimpiar_B;
-    private javax.swing.JButton BtnLimpiar_BU;
+    private javax.swing.JButton BtnLimpiar_Buscar;
     private javax.swing.JButton BtnLimpiar_C;
     private javax.swing.JButton BtnModificar;
     private javax.swing.JPanel BuscarIngredientes;
     private javax.swing.JPanel Cambios;
     private javax.swing.JPanel MostrarIngredientes;
-    private javax.swing.JFormattedTextField TxtCosto_A;
-    private javax.swing.JFormattedTextField TxtCosto_B;
-    private javax.swing.JFormattedTextField TxtCosto_BU;
-    private javax.swing.JFormattedTextField TxtCosto_C;
+    private javax.swing.JTextField TxtCosto_A;
+    private javax.swing.JTextField TxtCosto_B;
+    private javax.swing.JTextField TxtCosto_BU;
+    private javax.swing.JTextField TxtCosto_C;
     private javax.swing.JTextField TxtID_A;
     private javax.swing.JTextField TxtID_B;
     private javax.swing.JTextField TxtID_BU;
-    private javax.swing.JTextField TxtID_C;
     private javax.swing.JTextField TxtNivel_A;
     private javax.swing.JTextField TxtNivel_B;
     private javax.swing.JTextField TxtNivel_BU;
@@ -1198,13 +1144,13 @@ public void cargarTabla() {
     private javax.swing.JTextField TxtStock_BU;
     private javax.swing.JTextField TxtStock_C;
     private javax.swing.JComboBox<String> TxtTipo_A;
-    private javax.swing.JComboBox<String> TxtTipo_B;
     private javax.swing.JComboBox<String> TxtTipo_BU;
     private javax.swing.JComboBox<String> TxtTipo_C;
     private javax.swing.JComboBox<String> TxtUnidad_A;
-    private javax.swing.JComboBox<String> TxtUnidad_B;
     private javax.swing.JComboBox<String> TxtUnidad_BU;
     private javax.swing.JComboBox<String> TxtUnidad_C;
+    private javax.swing.JComboBox<String> jComboBox19;
+    private javax.swing.JComboBox<String> jComboBox21;
     private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel51;
     private javax.swing.JLabel jLabel52;
@@ -1240,5 +1186,6 @@ public void cargarTabla() {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTable jTable1;
+    private javax.swing.JTextField jTextField31;
     // End of variables declaration//GEN-END:variables
 }

@@ -849,10 +849,12 @@ public class Proveedores extends javax.swing.JInternalFrame {
 
     private void BtnBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnBuscarActionPerformed
         // TODO add your handling code here:
+
         try {
             // 1. Validar que el campo ID no esté vacío
             if (!TxtIDProveedorBuscar.getText().isEmpty()) {
                 
+
                 Modelos.Proveedores Ob = new Modelos.Proveedores();
                 
                 // 2. Convertir el ID a entero
@@ -887,9 +889,14 @@ public class Proveedores extends javax.swing.JInternalFrame {
             } else {
                 JOptionPane.showMessageDialog(this, "Por favor escribe un ID para buscar.");
             }
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(this, "Error: " + e.toString());
+
         }
+        catch (Exception e)
+        {
+            JOptionPane.showMessageDialog(this,e.toString());
+        }
+
+
     }//GEN-LAST:event_BtnBuscarActionPerformed
 
     private void CmbProgramaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CmbProgramaActionPerformed
