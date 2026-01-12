@@ -194,11 +194,51 @@ public void Borrar(int id) throws SQLException
         Con.close();
     }
 
-public ResultSet Mostrar() throws SQLException 
-    {
-        Connection Con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
-        PreparedStatement SQL = Con.prepareStatement("Select * from clientes");
-        return SQL.executeQuery();
+public javax.swing.table.DefaultTableModel Mostrar() {
+        
+        String [] titulos = {"ID", "Nombre", "Tipo", "Contacto", "Ap. Paterno", "Ap. Materno", "Teléfono", "Dirección", "Pago", "Calificación"};
+        javax.swing.table.DefaultTableModel modelo = new javax.swing.table.DefaultTableModel(null, titulos);
+        
+        Connection con = null;
+        PreparedStatement pst = null;
+        ResultSet rs = null;
+
+        try {
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/perfumeria", "root", "");
+            
+            String sql = "SELECT * FROM clientes";
+            pst = con.prepareStatement(sql);
+            
+            rs = pst.executeQuery();
+            
+            while(rs.next()) {
+                Object[] fila = new Object[10];
+                
+                fila[0] = rs.getInt("id_cliente");
+                fila[1] = rs.getString("rfc");
+                fila[2] = rs.getString("nombre");
+                fila[3] = rs.getString("ap_paterno");
+                fila[4] = rs.getString("ap_materno");
+                fila[5] = rs.getString("tipo");
+                fila[6] = rs.getString("correo");
+                fila[7] = rs.getString("telefono");
+                fila[8] = rs.getString("direccion_envio");
+                fila[9] = rs.getDate("fecha_registro");
+                
+                modelo.addRow(fila);
+            }
+        } catch (SQLException e) {
+            System.out.println("Error al mostrar los datos: " + e);
+        } finally {
+            try {
+                if (rs != null) rs.close();
+                if (pst != null) pst.close();
+                if (con != null) con.close();
+            } catch (SQLException ex) {
+                System.out.println("Error al cerrar conexión: " + ex);
+            }
+        }
+        return modelo;
     }
     
 }
