@@ -177,23 +177,17 @@ public class PantallaPrincipal extends javax.swing.JFrame {
 
     private void MnLotesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnLotesActionPerformed
         // TODO add your handling code here:
-        Lotes Ventana = new Lotes ();
-        Escritorio.add(Ventana);
-        Ventana.show();
+
     }//GEN-LAST:event_MnLotesActionPerformed
 
     private void MnMateriasPrimasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnMateriasPrimasActionPerformed
         // TODO add your handling code here:
-        Materiaprima Ventana = new Materiaprima();
-        Escritorio.add(Ventana);
-        Ventana.show();
+
     }//GEN-LAST:event_MnMateriasPrimasActionPerformed
 
     private void MnEmpleadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnEmpleadosActionPerformed
         // TODO add your handling code here:
-        Empleados Ventana = new Empleados ();
-        Escritorio.add(Ventana);
-        Ventana.show();
+
     }//GEN-LAST:event_MnEmpleadosActionPerformed
 
     private void MnProveedoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnProveedoresActionPerformed
@@ -233,9 +227,7 @@ public class PantallaPrincipal extends javax.swing.JFrame {
 
     private void MnProductosTerminadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnProductosTerminadosActionPerformed
         // TODO add your handling code here:
-        Productos_terminado Ventana = new Productos_terminado();
-        Escritorio.add(Ventana);
-        Ventana.show();
+
     }//GEN-LAST:event_MnProductosTerminadosActionPerformed
 
     private void MnPedidosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnPedidosActionPerformed
@@ -247,16 +239,12 @@ public class PantallaPrincipal extends javax.swing.JFrame {
 
     private void MnFacturasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnFacturasActionPerformed
         // TODO add your handling code here:
-        Facturacion Ventana = new Facturacion ();
-        Escritorio.add(Ventana);
-        Ventana.show();
+
     }//GEN-LAST:event_MnFacturasActionPerformed
 
     private void MnInventarioGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnInventarioGActionPerformed
         // TODO add your handling code here:
-        Inventario Ventana = new Inventario ();
-        Escritorio.add(Ventana);
-        Ventana.show();
+
     }//GEN-LAST:event_MnInventarioGActionPerformed
 
     /**
