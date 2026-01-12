@@ -29,7 +29,6 @@ public class Ingredientes extends javax.swing.JInternalFrame {
 
         jTabbedPane1 = new javax.swing.JTabbedPane();
         AltaIngredientes = new javax.swing.JPanel();
-        TxtCosto_A = new javax.swing.JFormattedTextField();
         jLabel50 = new javax.swing.JLabel();
         jLabel51 = new javax.swing.JLabel();
         TxtStock_A = new javax.swing.JTextField();
@@ -47,8 +46,8 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jLabel59 = new javax.swing.JLabel();
         TxtID_A = new javax.swing.JTextField();
         BtnLimpiar_A = new javax.swing.JButton();
+        TxtCosto_A = new javax.swing.JTextField();
         BajaIngredientes = new javax.swing.JPanel();
-        TxtCosto_B = new javax.swing.JFormattedTextField();
         jLabel54 = new javax.swing.JLabel();
         jLabel57 = new javax.swing.JLabel();
         TxtStock_B = new javax.swing.JTextField();
@@ -66,8 +65,8 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jLabel65 = new javax.swing.JLabel();
         TxtID_B = new javax.swing.JTextField();
         BtnLimpiar_B = new javax.swing.JButton();
+        TxtCosto_B = new javax.swing.JTextField();
         Cambios = new javax.swing.JPanel();
-        TxtCosto_C = new javax.swing.JFormattedTextField();
         jLabel66 = new javax.swing.JLabel();
         jLabel67 = new javax.swing.JLabel();
         TxtStock_C = new javax.swing.JTextField();
@@ -85,8 +84,8 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jLabel73 = new javax.swing.JLabel();
         jTextField31 = new javax.swing.JTextField();
         BtnLimpiar_C = new javax.swing.JButton();
+        TxtCosto_C = new javax.swing.JTextField();
         BuscarIngredientes = new javax.swing.JPanel();
-        TxtCosto_BU = new javax.swing.JFormattedTextField();
         jLabel74 = new javax.swing.JLabel();
         jLabel75 = new javax.swing.JLabel();
         TxtStock_BU = new javax.swing.JTextField();
@@ -104,6 +103,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jLabel81 = new javax.swing.JLabel();
         TxtID_BU = new javax.swing.JTextField();
         BtnLimpiar_Buscar = new javax.swing.JButton();
+        TxtCosto_BU = new javax.swing.JTextField();
         MostrarIngredientes = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
@@ -117,9 +117,6 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jTabbedPane1.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         AltaIngredientes.setPreferredSize(new java.awt.Dimension(752, 450));
-
-        TxtCosto_A.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(java.text.NumberFormat.getCurrencyInstance())));
-        TxtCosto_A.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel50.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel50.setText("Stock actual:");
@@ -174,6 +171,9 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         BtnLimpiar_A.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         BtnLimpiar_A.setText("Limpiar");
         BtnLimpiar_A.addActionListener(this::BtnLimpiar_AActionPerformed);
+
+        TxtCosto_A.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtCosto_A.addActionListener(this::TxtCosto_AActionPerformed);
 
         javax.swing.GroupLayout AltaIngredientesLayout = new javax.swing.GroupLayout(AltaIngredientes);
         AltaIngredientes.setLayout(AltaIngredientesLayout);
@@ -242,8 +242,8 @@ public class Ingredientes extends javax.swing.JInternalFrame {
                     .addComponent(TxtStock_A))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(AltaIngredientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TxtCosto_A)
-                    .addComponent(jLabel58))
+                    .addComponent(jLabel58)
+                    .addComponent(TxtCosto_A))
                 .addGap(12, 12, 12)
                 .addGroup(AltaIngredientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel51)
@@ -262,10 +262,6 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jTabbedPane1.addTab("Alta", AltaIngredientes);
 
         BajaIngredientes.setPreferredSize(new java.awt.Dimension(752, 450));
-
-        TxtCosto_B.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(java.text.NumberFormat.getCurrencyInstance())));
-        TxtCosto_B.setEnabled(false);
-        TxtCosto_B.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel54.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel54.setText("Stock actual:");
@@ -324,6 +320,10 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         BtnLimpiar_B.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         BtnLimpiar_B.setText("Limpiar");
         BtnLimpiar_B.addActionListener(this::BtnLimpiar_BActionPerformed);
+
+        TxtCosto_B.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtCosto_B.setEnabled(false);
+        TxtCosto_B.addActionListener(this::TxtCosto_BActionPerformed);
 
         javax.swing.GroupLayout BajaIngredientesLayout = new javax.swing.GroupLayout(BajaIngredientes);
         BajaIngredientes.setLayout(BajaIngredientesLayout);
@@ -392,8 +392,8 @@ public class Ingredientes extends javax.swing.JInternalFrame {
                     .addComponent(TxtStock_B))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(BajaIngredientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TxtCosto_B)
-                    .addComponent(jLabel64))
+                    .addComponent(jLabel64)
+                    .addComponent(TxtCosto_B))
                 .addGap(12, 12, 12)
                 .addGroup(BajaIngredientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel57)
@@ -413,10 +413,6 @@ public class Ingredientes extends javax.swing.JInternalFrame {
 
         Cambios.setPreferredSize(new java.awt.Dimension(752, 450));
 
-        TxtCosto_C.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(java.text.NumberFormat.getCurrencyInstance())));
-        TxtCosto_C.setEnabled(false);
-        TxtCosto_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-
         jLabel66.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel66.setText("Stock actual:");
 
@@ -424,11 +420,9 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jLabel67.setText("Nivel de reorden:");
 
         TxtStock_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        TxtStock_C.setEnabled(false);
         TxtStock_C.addActionListener(this::TxtStock_CActionPerformed);
 
         TxtNivel_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        TxtNivel_C.setEnabled(false);
         TxtNivel_C.addActionListener(this::TxtNivel_CActionPerformed);
 
         jLabel68.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -438,7 +432,6 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jLabel69.setText("Proveedor:");
 
         TxtNombre_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        TxtNombre_C.setEnabled(false);
         TxtNombre_C.addActionListener(this::TxtNombre_CActionPerformed);
 
         jLabel70.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -446,10 +439,8 @@ public class Ingredientes extends javax.swing.JInternalFrame {
 
         TxtTipo_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         TxtTipo_C.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A. esenciales", "Fijadores", "Alcoholes", "Solventes" }));
-        TxtTipo_C.setEnabled(false);
 
         TxtProveedores_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        TxtProveedores_C.setEnabled(false);
 
         BtnModificar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         BtnModificar.setText("Modificar");
@@ -460,7 +451,6 @@ public class Ingredientes extends javax.swing.JInternalFrame {
 
         TxtUnidad_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         TxtUnidad_C.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mililitros", "Litros", "Miligramos", "Gramos", "Kilogramos" }));
-        TxtUnidad_C.setEnabled(false);
 
         jLabel72.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel72.setText("Costo unitario:");
@@ -474,6 +464,9 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         BtnLimpiar_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         BtnLimpiar_C.setText("Limpiar");
         BtnLimpiar_C.addActionListener(this::BtnLimpiar_CActionPerformed);
+
+        TxtCosto_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtCosto_C.addActionListener(this::TxtCosto_CActionPerformed);
 
         javax.swing.GroupLayout CambiosLayout = new javax.swing.GroupLayout(Cambios);
         Cambios.setLayout(CambiosLayout);
@@ -542,8 +535,8 @@ public class Ingredientes extends javax.swing.JInternalFrame {
                     .addComponent(TxtStock_C))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(CambiosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TxtCosto_C)
-                    .addComponent(jLabel72))
+                    .addComponent(jLabel72)
+                    .addComponent(TxtCosto_C))
                 .addGap(12, 12, 12)
                 .addGroup(CambiosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel67)
@@ -562,10 +555,6 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jTabbedPane1.addTab("Cambios", Cambios);
 
         BuscarIngredientes.setPreferredSize(new java.awt.Dimension(752, 450));
-
-        TxtCosto_BU.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(java.text.NumberFormat.getCurrencyInstance())));
-        TxtCosto_BU.setEnabled(false);
-        TxtCosto_BU.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel74.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel74.setText("Stock actual:");
@@ -624,6 +613,10 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         BtnLimpiar_Buscar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         BtnLimpiar_Buscar.setText("Limpiar");
         BtnLimpiar_Buscar.addActionListener(this::BtnLimpiar_BuscarActionPerformed);
+
+        TxtCosto_BU.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtCosto_BU.setEnabled(false);
+        TxtCosto_BU.addActionListener(this::TxtCosto_BUActionPerformed);
 
         javax.swing.GroupLayout BuscarIngredientesLayout = new javax.swing.GroupLayout(BuscarIngredientes);
         BuscarIngredientes.setLayout(BuscarIngredientesLayout);
@@ -692,8 +685,8 @@ public class Ingredientes extends javax.swing.JInternalFrame {
                     .addComponent(TxtStock_BU))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(BuscarIngredientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TxtCosto_BU)
-                    .addComponent(jLabel80))
+                    .addComponent(jLabel80)
+                    .addComponent(TxtCosto_BU))
                 .addGap(12, 12, 12)
                 .addGroup(BuscarIngredientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel75)
@@ -731,7 +724,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         MostrarIngredientes.setLayout(MostrarIngredientesLayout);
         MostrarIngredientesLayout.setHorizontalGroup(
             MostrarIngredientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 737, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 752, Short.MAX_VALUE)
         );
         MostrarIngredientesLayout.setVerticalGroup(
             MostrarIngredientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1041,6 +1034,22 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_TxtProveedor_AActionPerformed
 
+    private void TxtCosto_AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtCosto_AActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TxtCosto_AActionPerformed
+
+    private void TxtCosto_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtCosto_BActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TxtCosto_BActionPerformed
+
+    private void TxtCosto_CActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtCosto_CActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TxtCosto_CActionPerformed
+
+    private void TxtCosto_BUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtCosto_BUActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TxtCosto_BUActionPerformed
+
 public void llenarComboProveedores() {
     try {
         Modelos.Proveedores objProveedores = new Modelos.Proveedores();
@@ -1110,10 +1119,10 @@ public void cargarTabla() {
     private javax.swing.JPanel BuscarIngredientes;
     private javax.swing.JPanel Cambios;
     private javax.swing.JPanel MostrarIngredientes;
-    private javax.swing.JFormattedTextField TxtCosto_A;
-    private javax.swing.JFormattedTextField TxtCosto_B;
-    private javax.swing.JFormattedTextField TxtCosto_BU;
-    private javax.swing.JFormattedTextField TxtCosto_C;
+    private javax.swing.JTextField TxtCosto_A;
+    private javax.swing.JTextField TxtCosto_B;
+    private javax.swing.JTextField TxtCosto_BU;
+    private javax.swing.JTextField TxtCosto_C;
     private javax.swing.JTextField TxtID_A;
     private javax.swing.JTextField TxtID_B;
     private javax.swing.JTextField TxtID_BU;
