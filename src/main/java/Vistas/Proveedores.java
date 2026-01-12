@@ -17,6 +17,7 @@ public class Proveedores extends javax.swing.JInternalFrame {
     /**
      * Creates new form Proveedores
      */
+    //Hola
     public Proveedores() {
         initComponents();
         CargarTabla();
