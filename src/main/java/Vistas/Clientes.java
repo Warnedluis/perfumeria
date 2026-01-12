@@ -82,10 +82,9 @@ public class Clientes extends javax.swing.JInternalFrame {
         jPanel7 = new javax.swing.JPanel();
         TxtApellidoPaternoClienteModificar = new javax.swing.JTextField();
         jButton22 = new javax.swing.JButton();
-        TxtNombresClienteModificar = new javax.swing.JFormattedTextField();
         jLabel67 = new javax.swing.JLabel();
         jLabel68 = new javax.swing.JLabel();
-        TxtRFCClienteModificar = new javax.swing.JTextField();
+        TxtNombresClienteModificar = new javax.swing.JTextField();
         jLabel31 = new javax.swing.JLabel();
         jLabel69 = new javax.swing.JLabel();
         BtnModificar = new javax.swing.JButton();
@@ -102,10 +101,10 @@ public class Clientes extends javax.swing.JInternalFrame {
         TxtIDClienteModificar = new javax.swing.JTextField();
         jLabel70 = new javax.swing.JLabel();
         TxtFechaRegistroClienteModificar = new javax.swing.JFormattedTextField();
+        TxtRFCClienteModificar1 = new javax.swing.JTextField();
         jPanel8 = new javax.swing.JPanel();
         TxtApellidoPaternoClienteBuscar = new javax.swing.JTextField();
         BtnLimpiarBuscar = new javax.swing.JButton();
-        TxtNombresClientesBuscar = new javax.swing.JFormattedTextField();
         jLabel71 = new javax.swing.JLabel();
         jLabel72 = new javax.swing.JLabel();
         TxtRFCClienteBuscar = new javax.swing.JTextField();
@@ -125,6 +124,7 @@ public class Clientes extends javax.swing.JInternalFrame {
         TxtIDClienteBuscar = new javax.swing.JTextField();
         jLabel74 = new javax.swing.JLabel();
         TxtFechaRegistroClienteBuscar = new javax.swing.JFormattedTextField();
+        TxtNombresClientesBuscar = new javax.swing.JTextField();
         jPanel5 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
@@ -321,7 +321,7 @@ public class Clientes extends javax.swing.JInternalFrame {
         jLabel26.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel26.setText("Correo electrónico:");
 
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mayorista", "Item 2", "Item 3", "Item 4" }));
         jComboBox5.setDoubleBuffered(true);
         jComboBox5.setEnabled(false);
         jComboBox5.addActionListener(this::jComboBox5ActionPerformed);
@@ -449,16 +449,11 @@ public class Clientes extends javax.swing.JInternalFrame {
         jTabbedPane1.addTab("Baja", jPanel6);
 
         TxtApellidoPaternoClienteModificar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        TxtApellidoPaternoClienteModificar.setEnabled(false);
         TxtApellidoPaternoClienteModificar.addActionListener(this::TxtApellidoPaternoClienteModificarActionPerformed);
 
         jButton22.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jButton22.setText("Limpiar");
         jButton22.addActionListener(this::jButton22ActionPerformed);
-
-        TxtNombresClienteModificar.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
-        TxtNombresClienteModificar.setEnabled(false);
-        TxtNombresClienteModificar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel67.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel67.setText("Apellido paterno:");
@@ -466,8 +461,8 @@ public class Clientes extends javax.swing.JInternalFrame {
         jLabel68.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel68.setText("Nombres:");
 
-        TxtRFCClienteModificar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        TxtRFCClienteModificar.addActionListener(this::TxtRFCClienteModificarActionPerformed);
+        TxtNombresClienteModificar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtNombresClienteModificar.addActionListener(this::TxtNombresClienteModificarActionPerformed);
 
         jLabel31.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel31.setText("Apellido materno:");
@@ -479,14 +474,12 @@ public class Clientes extends javax.swing.JInternalFrame {
         BtnModificar.setText("Modificar");
         BtnModificar.addActionListener(this::BtnModificarActionPerformed);
 
-        TxtApellidoMaternoClienteModificar.setEnabled(false);
         TxtApellidoMaternoClienteModificar.addActionListener(this::TxtApellidoMaternoClienteModificarActionPerformed);
 
         jLabel32.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel32.setText("Correo electrónico:");
 
-        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jComboBox6.setEnabled(false);
+        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mayorista", "Minorista", "Comprador en linea" }));
         jComboBox6.addActionListener(this::jComboBox6ActionPerformed);
 
         jLabel33.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -501,13 +494,9 @@ public class Clientes extends javax.swing.JInternalFrame {
         jLabel36.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel36.setText("Fecha de registro:");
 
-        TxtCorreoClienteModificar.setEnabled(false);
         TxtCorreoClienteModificar.addActionListener(this::TxtCorreoClienteModificarActionPerformed);
 
-        TxtDireccionClienteModificar.setEnabled(false);
         TxtDireccionClienteModificar.addActionListener(this::TxtDireccionClienteModificarActionPerformed);
-
-        TxtTelefonoClienteModificar.setEnabled(false);
 
         TxtIDClienteModificar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         TxtIDClienteModificar.addActionListener(this::TxtIDClienteModificarActionPerformed);
@@ -516,8 +505,10 @@ public class Clientes extends javax.swing.JInternalFrame {
         jLabel70.setText("ID cliente:");
 
         TxtFechaRegistroClienteModificar.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
-        TxtFechaRegistroClienteModificar.setEnabled(false);
         TxtFechaRegistroClienteModificar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+
+        TxtRFCClienteModificar1.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtRFCClienteModificar1.addActionListener(this::TxtRFCClienteModificar1ActionPerformed);
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -547,12 +538,12 @@ public class Clientes extends javax.swing.JInternalFrame {
                     .addComponent(TxtApellidoPaternoClienteModificar, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jComboBox6, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(TxtNombresClienteModificar, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(TxtRFCClienteModificar, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(TxtCorreoClienteModificar, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(TxtDireccionClienteModificar, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(TxtTelefonoClienteModificar, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(TxtIDClienteModificar)
-                    .addComponent(TxtFechaRegistroClienteModificar))
+                    .addComponent(TxtFechaRegistroClienteModificar)
+                    .addComponent(TxtRFCClienteModificar1))
                 .addGap(73, 73, 73))
         );
         jPanel7Layout.setVerticalGroup(
@@ -565,11 +556,11 @@ public class Clientes extends javax.swing.JInternalFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel69)
-                    .addComponent(TxtRFCClienteModificar, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(TxtRFCClienteModificar1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TxtNombresClienteModificar, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel68))
+                    .addComponent(jLabel68)
+                    .addComponent(TxtNombresClienteModificar, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(TxtApellidoPaternoClienteModificar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -615,10 +606,6 @@ public class Clientes extends javax.swing.JInternalFrame {
         BtnLimpiarBuscar.setText("Limpiar");
         BtnLimpiarBuscar.addActionListener(this::BtnLimpiarBuscarActionPerformed);
 
-        TxtNombresClientesBuscar.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
-        TxtNombresClientesBuscar.setEnabled(false);
-        TxtNombresClientesBuscar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-
         jLabel71.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel71.setText("Apellido paterno:");
 
@@ -644,7 +631,7 @@ public class Clientes extends javax.swing.JInternalFrame {
         jLabel38.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel38.setText("Correo electrónico:");
 
-        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mayorista", "Minorista", "Comprador en linea" }));
         jComboBox7.setEnabled(false);
         jComboBox7.addActionListener(this::jComboBox7ActionPerformed);
 
@@ -678,6 +665,9 @@ public class Clientes extends javax.swing.JInternalFrame {
         TxtFechaRegistroClienteBuscar.setEnabled(false);
         TxtFechaRegistroClienteBuscar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
+        TxtNombresClientesBuscar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtNombresClientesBuscar.addActionListener(this::TxtNombresClientesBuscarActionPerformed);
+
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
         jPanel8Layout.setHorizontalGroup(
@@ -705,13 +695,13 @@ public class Clientes extends javax.swing.JInternalFrame {
                     .addComponent(TxtApellidoMaternoClienteBuscar, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(TxtApellidoPaternoClienteBuscar, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jComboBox7, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(TxtNombresClientesBuscar, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(TxtRFCClienteBuscar, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(TxtCorreoClienteBuscar, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(TxtDireccionClienteBuscar, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(TxtTelefonoClienteBuscar, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(TxtIDClienteBuscar)
-                    .addComponent(TxtFechaRegistroClienteBuscar))
+                    .addComponent(TxtFechaRegistroClienteBuscar)
+                    .addComponent(TxtNombresClientesBuscar))
                 .addGap(73, 73, 73))
         );
         jPanel8Layout.setVerticalGroup(
@@ -727,8 +717,8 @@ public class Clientes extends javax.swing.JInternalFrame {
                     .addComponent(TxtRFCClienteBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TxtNombresClientesBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel72))
+                    .addComponent(jLabel72)
+                    .addComponent(TxtNombresClientesBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(TxtApellidoPaternoClienteBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -941,9 +931,9 @@ public class Clientes extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton22ActionPerformed
 
-    private void TxtRFCClienteModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtRFCClienteModificarActionPerformed
+    private void TxtNombresClienteModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtNombresClienteModificarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_TxtRFCClienteModificarActionPerformed
+    }//GEN-LAST:event_TxtNombresClienteModificarActionPerformed
 
     private void BtnModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnModificarActionPerformed
         // TODO add your handling code here:
@@ -960,7 +950,7 @@ try {
                 Ob.setNombre(TxtNombresClienteModificar.getText().trim());
                 Ob.setAp_paterno(TxtApellidoPaternoClienteModificar.getText().trim());
                 Ob.setAp_materno(TxtApellidoMaternoClienteModificar.getText().trim());
-                Ob.setRfc(TxtRFCClienteModificar.getText().trim());
+                Ob.setRfc(TxtNombresClienteModificar.getText().trim());
                 Ob.setCorreo(TxtCorreoClienteModificar.getText().trim());
                 Ob.setTelefono(TxtTelefonoClienteModificar.getText().trim());
                 Ob.setDireccion_envio(TxtDireccionClienteModificar.getText().trim());
@@ -979,7 +969,7 @@ try {
                 TxtNombresClienteModificar.setText("");
                 TxtApellidoPaternoClienteModificar.setText("");
                 TxtApellidoMaternoClienteModificar.setText("");
-                TxtRFCClienteModificar.setText("");
+                TxtNombresClienteModificar.setText("");
                 TxtCorreoClienteModificar.setText("");
                 TxtTelefonoClienteModificar.setText("");
                 TxtDireccionClienteModificar.setText("");
@@ -1090,6 +1080,14 @@ try {
         // TODO add your handling code here:
     }//GEN-LAST:event_TxtDirecClienteActionPerformed
 
+    private void TxtNombresClientesBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtNombresClientesBuscarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TxtNombresClientesBuscarActionPerformed
+
+    private void TxtRFCClienteModificar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtRFCClienteModificar1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TxtRFCClienteModificar1ActionPerformed
+
         private void CargarTabla() {
         try {
             Modelos.Cliente Ob = new Modelos.Cliente();
@@ -1134,12 +1132,12 @@ try {
     private javax.swing.JTextField TxtIDClienteModificar;
     private javax.swing.JTextField TxtNombre;
     private javax.swing.JFormattedTextField TxtNombresClienteBaja;
-    private javax.swing.JFormattedTextField TxtNombresClienteModificar;
-    private javax.swing.JFormattedTextField TxtNombresClientesBuscar;
+    private javax.swing.JTextField TxtNombresClienteModificar;
+    private javax.swing.JTextField TxtNombresClientesBuscar;
     private javax.swing.JTextField TxtRFCCliente;
     private javax.swing.JTextField TxtRFCClienteBaja;
     private javax.swing.JTextField TxtRFCClienteBuscar;
-    private javax.swing.JTextField TxtRFCClienteModificar;
+    private javax.swing.JTextField TxtRFCClienteModificar1;
     private javax.swing.JTextField TxtTelCliente;
     private javax.swing.JTextField TxtTelefonoClienteBaja;
     private javax.swing.JTextField TxtTelefonoClienteBuscar;

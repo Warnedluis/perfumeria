@@ -142,6 +142,7 @@ public class Proveedores extends javax.swing.JInternalFrame {
         jLabel3.setText("Tipo:");
 
         CmbPrograma.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        CmbPrograma.addActionListener(this::CmbProgramaActionPerformed);
 
         jLabel4.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel4.setText("Apellido paterno:");
@@ -890,6 +891,10 @@ public class Proveedores extends javax.swing.JInternalFrame {
             JOptionPane.showMessageDialog(this, "Error: " + e.toString());
         }
     }//GEN-LAST:event_BtnBuscarActionPerformed
+
+    private void CmbProgramaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CmbProgramaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CmbProgramaActionPerformed
 
     
     private void CargarTabla() {
