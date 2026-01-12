@@ -14,18 +14,18 @@ import java.util.Date;
  *
  * @author avila
  */
-public class lotespoduccion {
+public class Lotesproduccion {
     private int id_lote, id_perfume, id_empleado, cantidad_producida;
     private Date fecha_inicio, fecha_fin;
     private String control_calidad, observaciones;
     private float costo_total;
     
-    public lotespoduccion()
+    public Lotesproduccion()
     {
         
     }
     
-    public lotespoduccion(String control_calidad, String observaciones, int id_lote, int id_perfume, int id_empleado, int cantidad_producida, Date fecha_inicio, Date fecha_fin, float costo_total)
+    public Lotesproduccion(String control_calidad, String observaciones, int id_lote, int id_perfume, int id_empleado, int cantidad_producida, Date fecha_inicio, Date fecha_fin, float costo_total)
     {
         this.cantidad_producida = cantidad_producida;
         this.control_calidad = control_calidad;

@@ -14,16 +14,16 @@ import java.sql.SQLException;
  *
  * @author avila
  */
-public class materiaprima {
+public class MateriaPrima {
     
     private int id_inventario,id_ingredientes;
     
-    public materiaprima()
+    public MateriaPrima()
     {
         
     }
     
-    public materiaprima(int id_inventario, int id_ingrediente)
+    public MateriaPrima(int id_inventario, int id_ingrediente)
     {
         this.id_ingredientes = id_ingrediente;
         this.id_inventario = id_inventario;

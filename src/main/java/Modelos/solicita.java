@@ -14,16 +14,16 @@ import java.sql.SQLException;
  *
  * @author avila
  */
-public class solicita {
+public class Solicita {
     private int id_pedidos, id_perfume, cantidad;
     private float subtotal, precio_unitario;
     
-    public solicita()
+    public Solicita()
     {
         
     }
     
-    public solicita(int id_pedidos, int id_perfume, int cantidad, float subtotal, float precio_unitario)
+    public Solicita(int id_pedidos, int id_perfume, int cantidad, float subtotal, float precio_unitario)
     {
         this.cantidad = cantidad;
         this.id_pedidos = id_pedidos;

@@ -14,18 +14,18 @@ import java.util.Date;
  *
  * @author avila
  */
-public class inventario {
+public class Inventario {
     private String ubicacion;
     private float cantidad;
     private int id_inventario;
     private Date fecha_actualizacion;
     
-   public inventario()
+   public Inventario()
    {
        
    }
    
-   public inventario(String ubicacion, float cantidad, int id_inventario, Date fecha_actualizacion)
+   public Inventario(String ubicacion, float cantidad, int id_inventario, Date fecha_actualizacion)
    {
        this.cantidad =cantidad;
        this.fecha_actualizacion = fecha_actualizacion;

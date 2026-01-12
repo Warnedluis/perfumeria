@@ -14,16 +14,16 @@ import java.sql.SQLException;
  *
  * @author avila
  */
-public class contiene {
+public class Contiene {
     private int id_formula,id_ingrediente;
     private String nota;
     private float proporcion;
     
-    public contiene()
+    public Contiene()
     {
     }
     
-    public contiene (int id_formula, int id_ingrediente, String nota, float proporcion)
+    public Contiene (int id_formula, int id_ingrediente, String nota, float proporcion)
     {
         this.id_formula = id_formula;
         this.id_ingrediente = id_ingrediente;

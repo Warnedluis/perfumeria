@@ -4,6 +4,8 @@
  */
 package Vistas;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author david
@@ -28,28 +30,28 @@ public class Clientes extends javax.swing.JInternalFrame {
 
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
-        jTextField21 = new javax.swing.JTextField();
+        TxtApellidoPaternoCliente = new javax.swing.JTextField();
         jButton13 = new javax.swing.JButton();
-        jFormattedTextField16 = new javax.swing.JFormattedTextField();
+        TxtNombresClientes = new javax.swing.JFormattedTextField();
         jLabel53 = new javax.swing.JLabel();
         jLabel50 = new javax.swing.JLabel();
-        jTextField23 = new javax.swing.JTextField();
+        TxtRFCCliente = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel54 = new javax.swing.JLabel();
-        jButton12 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
+        BtnGuardar = new javax.swing.JButton();
+        TxtApellidoMaternoCliente = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField29 = new javax.swing.JTextField();
+        TxtCorreoCliente = new javax.swing.JTextField();
+        TxtDireccionCliente = new javax.swing.JTextField();
+        TxtTelefonoCliente = new javax.swing.JTextField();
+        TxtIDCliente = new javax.swing.JTextField();
         jLabel62 = new javax.swing.JLabel();
-        jFormattedTextField20 = new javax.swing.JFormattedTextField();
+        TxtFechaRegistro = new javax.swing.JFormattedTextField();
         jPanel6 = new javax.swing.JPanel();
         jTextField30 = new javax.swing.JTextField();
         jButton20 = new javax.swing.JButton();
@@ -127,15 +129,15 @@ public class Clientes extends javax.swing.JInternalFrame {
         setIconifiable(true);
         setMaximizable(true);
 
-        jTextField21.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jTextField21.addActionListener(this::jTextField21ActionPerformed);
+        TxtApellidoPaternoCliente.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtApellidoPaternoCliente.addActionListener(this::TxtApellidoPaternoClienteActionPerformed);
 
         jButton13.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jButton13.setText("Limpiar");
         jButton13.addActionListener(this::jButton13ActionPerformed);
 
-        jFormattedTextField16.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
-        jFormattedTextField16.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtNombresClientes.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
+        TxtNombresClientes.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel53.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel53.setText("Apellido paterno:");
@@ -143,8 +145,8 @@ public class Clientes extends javax.swing.JInternalFrame {
         jLabel50.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel50.setText("Nombres:");
 
-        jTextField23.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jTextField23.addActionListener(this::jTextField23ActionPerformed);
+        TxtRFCCliente.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtRFCCliente.addActionListener(this::TxtRFCClienteActionPerformed);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel1.setText("Apellido materno:");
@@ -152,11 +154,11 @@ public class Clientes extends javax.swing.JInternalFrame {
         jLabel54.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel54.setText("RFC:");
 
-        jButton12.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jButton12.setText("Guardar");
-        jButton12.addActionListener(this::jButton12ActionPerformed);
+        BtnGuardar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        BtnGuardar.setText("Guardar");
+        BtnGuardar.addActionListener(this::BtnGuardarActionPerformed);
 
-        jTextField1.addActionListener(this::jTextField1ActionPerformed);
+        TxtApellidoMaternoCliente.addActionListener(this::TxtApellidoMaternoClienteActionPerformed);
 
         jLabel2.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel2.setText("Correo electrónico:");
@@ -176,18 +178,18 @@ public class Clientes extends javax.swing.JInternalFrame {
         jLabel6.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel6.setText("Fecha de registro:");
 
-        jTextField2.addActionListener(this::jTextField2ActionPerformed);
+        TxtCorreoCliente.addActionListener(this::TxtCorreoClienteActionPerformed);
 
-        jTextField3.addActionListener(this::jTextField3ActionPerformed);
+        TxtDireccionCliente.addActionListener(this::TxtDireccionClienteActionPerformed);
 
-        jTextField29.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jTextField29.addActionListener(this::jTextField29ActionPerformed);
+        TxtIDCliente.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtIDCliente.addActionListener(this::TxtIDClienteActionPerformed);
 
         jLabel62.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel62.setText("ID cliente:");
 
-        jFormattedTextField20.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
-        jFormattedTextField20.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtFechaRegistro.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
+        TxtFechaRegistro.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -210,19 +212,19 @@ public class Clientes extends javax.swing.JInternalFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(BtnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(172, 172, 172)
                         .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jTextField21, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(TxtApellidoMaternoCliente, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(TxtApellidoPaternoCliente, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jComboBox1, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jFormattedTextField16, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jTextField23, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jTextField29)
-                    .addComponent(jFormattedTextField20))
+                    .addComponent(TxtNombresClientes, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(TxtRFCCliente, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(TxtCorreoCliente, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(TxtDireccionCliente, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(TxtTelefonoCliente, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(TxtIDCliente)
+                    .addComponent(TxtFechaRegistro))
                 .addGap(73, 73, 73))
         );
         jPanel1Layout.setVerticalGroup(
@@ -231,46 +233,46 @@ public class Clientes extends javax.swing.JInternalFrame {
                 .addGap(31, 31, 31)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel62)
-                    .addComponent(jTextField29, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(TxtIDCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel54)
-                    .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(TxtRFCCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jFormattedTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TxtNombresClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel50))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TxtApellidoPaternoCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel53))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(TxtApellidoMaternoCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TxtCorreoCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TxtTelefonoCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TxtDireccionCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel5))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
-                    .addComponent(jFormattedTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(TxtFechaRegistro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(34, 34, 34)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton12)
+                    .addComponent(BtnGuardar)
                     .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(36, 36, 36))
         );
@@ -813,33 +815,79 @@ public class Clientes extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton13ActionPerformed
 
-    private void jTextField23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField23ActionPerformed
+    private void TxtRFCClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtRFCClienteActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField23ActionPerformed
+    }//GEN-LAST:event_TxtRFCClienteActionPerformed
 
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+    private void BtnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnGuardarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton12ActionPerformed
+        try
+        {
+                if (!(TxtIDCliente.getText().isEmpty()) && !(TxtRFCCliente.getText().isEmpty()) 
+                && !(TxtNombresClientes.getText().isEmpty()) && !(TxtApellidoPaternoCliente.getText().isEmpty()) 
+                && !(TxtApellidoMaternoCliente.getText().isEmpty()) && !(TxtCorreoCliente.getText().isEmpty()) 
+                && !(TxtTelefonoCliente.getText().isEmpty()) && !(TxtDireccionCliente.getText().isEmpty()) 
+                && TxtFechaRegistro.getValue() != null)
+            {
+                Modelos.Clientes Ob = new Modelos.Clientes();
+                
+                Ob.setNombre(TxtNombresClientes.getText().trim());
+                Ob.setAp_paterno(TxtApellidoPaternoCliente.getText().trim());
+                Ob.setAp_materno(TxtApellidoMaternoCliente.getText().trim());
+                Ob.setRfc(TxtRFCCliente.getText().trim());
+                Ob.setCorreo(TxtCorreoCliente.getText().trim());
+                Ob.setTelefono(TxtTelefonoCliente.getText().trim());
+                Ob.setDireccion_envio(TxtDireccionCliente.getText().trim());
+                
+                int Id = Integer.parseInt(TxtIDCliente.getText().trim());
+                Ob.setId_cliente(Id);
+                
+                String Tipo = (String) jComboBox1.getSelectedItem();
+                Ob.setTipo(Tipo);
+                
+                java.util.Date fecha = (java.util.Date) TxtFechaRegistro.getValue();
+                Ob.setFecha_registro(fecha);
+                
+                Ob.guardar();
+                
+                TxtIDCliente.setText("");
+                TxtRFCCliente.setText("");
+                TxtNombresClientes.setText("");
+                TxtApellidoPaternoCliente.setText("");
+                TxtApellidoMaternoCliente.setText("");
+                TxtCorreoCliente.setText("");
+                TxtTelefonoCliente.setText("");
+                TxtDireccionCliente.setText("");
+                TxtFechaRegistro.setValue(null);
+                
+                javax.swing.JOptionPane.showMessageDialog(this, "Registro exitoso");                
+        }
+        } 
+        catch(Exception e)
+        {
+            JOptionPane.showMessageDialog(this, e.toString());
+        }
+    }//GEN-LAST:event_BtnGuardarActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void TxtApellidoMaternoClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtApellidoMaternoClienteActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_TxtApellidoMaternoClienteActionPerformed
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void TxtCorreoClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtCorreoClienteActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_TxtCorreoClienteActionPerformed
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+    private void TxtDireccionClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtDireccionClienteActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+    }//GEN-LAST:event_TxtDireccionClienteActionPerformed
 
-    private void jTextField29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField29ActionPerformed
+    private void TxtIDClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtIDClienteActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField29ActionPerformed
+    }//GEN-LAST:event_TxtIDClienteActionPerformed
 
     private void jTextField30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField30ActionPerformed
         // TODO add your handling code here:
@@ -949,13 +997,22 @@ public class Clientes extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField50ActionPerformed
 
-    private void jTextField21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField21ActionPerformed
+    private void TxtApellidoPaternoClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtApellidoPaternoClienteActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField21ActionPerformed
+    }//GEN-LAST:event_TxtApellidoPaternoClienteActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton12;
+    private javax.swing.JButton BtnGuardar;
+    private javax.swing.JTextField TxtApellidoMaternoCliente;
+    private javax.swing.JTextField TxtApellidoPaternoCliente;
+    private javax.swing.JTextField TxtCorreoCliente;
+    private javax.swing.JTextField TxtDireccionCliente;
+    private javax.swing.JFormattedTextField TxtFechaRegistro;
+    private javax.swing.JTextField TxtIDCliente;
+    private javax.swing.JFormattedTextField TxtNombresClientes;
+    private javax.swing.JTextField TxtRFCCliente;
+    private javax.swing.JTextField TxtTelefonoCliente;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton20;
     private javax.swing.JButton jButton21;
@@ -967,8 +1024,6 @@ public class Clientes extends javax.swing.JInternalFrame {
     private javax.swing.JComboBox<String> jComboBox5;
     private javax.swing.JComboBox<String> jComboBox6;
     private javax.swing.JComboBox<String> jComboBox7;
-    private javax.swing.JFormattedTextField jFormattedTextField16;
-    private javax.swing.JFormattedTextField jFormattedTextField20;
     private javax.swing.JFormattedTextField jFormattedTextField21;
     private javax.swing.JFormattedTextField jFormattedTextField22;
     private javax.swing.JFormattedTextField jFormattedTextField23;
@@ -1023,12 +1078,6 @@ public class Clientes extends javax.swing.JInternalFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField21;
-    private javax.swing.JTextField jTextField23;
-    private javax.swing.JTextField jTextField29;
-    private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField30;
     private javax.swing.JTextField jTextField31;
     private javax.swing.JTextField jTextField32;
@@ -1039,7 +1088,6 @@ public class Clientes extends javax.swing.JInternalFrame {
     private javax.swing.JTextField jTextField37;
     private javax.swing.JTextField jTextField38;
     private javax.swing.JTextField jTextField39;
-    private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField40;
     private javax.swing.JTextField jTextField41;
     private javax.swing.JTextField jTextField42;

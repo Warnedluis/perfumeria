@@ -14,18 +14,18 @@ import java.util.Date;
  *
  * @author avila
  */
-public class facturas {
+public class Facturas {
     private int id_factura, folio, id_pedidos;
     private Date fecha_emision;
     private float monto_total, impuestos;
     private String metodo_pago, estado;
     
-    public facturas()
+    public Facturas()
     {
         
     }
     
-    public facturas(int id_factura, int folio, int id_pedidos, Date fecha_emision, float monto_total, float impuestos, String metodo_pago, String estado)
+    public Facturas(int id_factura, int folio, int id_pedidos, Date fecha_emision, float monto_total, float impuestos, String metodo_pago, String estado)
     {
         this.estado = estado;
         this.fecha_emision = fecha_emision;
