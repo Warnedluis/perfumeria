@@ -28,97 +28,99 @@ public class Perfumes extends javax.swing.JInternalFrame {
 
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel7 = new javax.swing.JPanel();
-        jFormattedTextField16 = new javax.swing.JFormattedTextField();
         jLabel50 = new javax.swing.JLabel();
         jLabel51 = new javax.swing.JLabel();
-        jTextField20 = new javax.swing.JTextField();
-        jTextField21 = new javax.swing.JTextField();
+        TxtNombrePerfume_A = new javax.swing.JTextField();
+        TxtDescripcion_A = new javax.swing.JTextField();
         jLabel52 = new javax.swing.JLabel();
         jLabel53 = new javax.swing.JLabel();
-        jTextField22 = new javax.swing.JTextField();
-        jFormattedTextField17 = new javax.swing.JFormattedTextField();
+        TxtNombre_A = new javax.swing.JTextField();
         jLabel54 = new javax.swing.JLabel();
         jLabel55 = new javax.swing.JLabel();
-        jComboBox16 = new javax.swing.JComboBox<>();
-        jComboBox17 = new javax.swing.JComboBox<>();
-        jButton12 = new javax.swing.JButton();
+        TxtFamilia_A = new javax.swing.JComboBox<>();
+        TxtEstado_A = new javax.swing.JComboBox<>();
+        BtnGuardar = new javax.swing.JButton();
         jLabel56 = new javax.swing.JLabel();
-        jComboBox18 = new javax.swing.JComboBox<>();
+        TxtTipo_A = new javax.swing.JComboBox<>();
         jLabel57 = new javax.swing.JLabel();
         jLabel58 = new javax.swing.JLabel();
-        jFormattedTextField18 = new javax.swing.JFormattedTextField();
+        TxtFecha_A = new javax.swing.JFormattedTextField();
         jLabel59 = new javax.swing.JLabel();
-        jTextField23 = new javax.swing.JTextField();
-        jButton13 = new javax.swing.JButton();
+        TxtID_A = new javax.swing.JTextField();
+        BtnLimpiar_A = new javax.swing.JButton();
+        TxtCosto_A = new javax.swing.JTextField();
+        TxtPrecio_A = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
-        jFormattedTextField7 = new javax.swing.JFormattedTextField();
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
-        jTextField8 = new javax.swing.JTextField();
-        jTextField9 = new javax.swing.JTextField();
+        TxtNombrePerfumista_B = new javax.swing.JTextField();
+        TxtDescripcion_B = new javax.swing.JTextField();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
-        jTextField10 = new javax.swing.JTextField();
-        jFormattedTextField8 = new javax.swing.JFormattedTextField();
+        TxtNombre_B = new javax.swing.JTextField();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
-        jComboBox7 = new javax.swing.JComboBox<>();
-        jComboBox8 = new javax.swing.JComboBox<>();
-        jButton5 = new javax.swing.JButton();
+        TxtFamilia_B = new javax.swing.JComboBox<>();
+        TxtEstado_B = new javax.swing.JComboBox<>();
+        BtnEliminar = new javax.swing.JButton();
         jLabel26 = new javax.swing.JLabel();
-        jComboBox9 = new javax.swing.JComboBox<>();
+        TxtTipo_B = new javax.swing.JComboBox<>();
         jLabel27 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
-        jFormattedTextField9 = new javax.swing.JFormattedTextField();
+        TxtFecha_B = new javax.swing.JFormattedTextField();
         jLabel29 = new javax.swing.JLabel();
-        jTextField11 = new javax.swing.JTextField();
-        jButton9 = new javax.swing.JButton();
+        TxtID_B = new javax.swing.JTextField();
+        BtnLimpiar_B = new javax.swing.JButton();
+        TxtPrecio_B = new javax.swing.JTextField();
+        TxtCosto_B = new javax.swing.JTextField();
+        BtnBuscar_B = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
-        jFormattedTextField10 = new javax.swing.JFormattedTextField();
         jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
-        jTextField12 = new javax.swing.JTextField();
-        jTextField13 = new javax.swing.JTextField();
+        TxtNombrePerfumista_C = new javax.swing.JTextField();
+        TxtDescripcion_C = new javax.swing.JTextField();
         jLabel32 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
-        jTextField14 = new javax.swing.JTextField();
-        jFormattedTextField11 = new javax.swing.JFormattedTextField();
+        TxtNombre_C = new javax.swing.JTextField();
         jLabel34 = new javax.swing.JLabel();
         jLabel35 = new javax.swing.JLabel();
-        jComboBox10 = new javax.swing.JComboBox<>();
-        jComboBox11 = new javax.swing.JComboBox<>();
-        jButton6 = new javax.swing.JButton();
+        TxtFamilia_C = new javax.swing.JComboBox<>();
+        TxtEstado_C = new javax.swing.JComboBox<>();
+        BtnModificar = new javax.swing.JButton();
         jLabel36 = new javax.swing.JLabel();
         jComboBox12 = new javax.swing.JComboBox<>();
         jLabel37 = new javax.swing.JLabel();
         jLabel38 = new javax.swing.JLabel();
-        jFormattedTextField12 = new javax.swing.JFormattedTextField();
+        TxtFecha_C = new javax.swing.JFormattedTextField();
         jLabel39 = new javax.swing.JLabel();
-        jTextField15 = new javax.swing.JTextField();
-        jButton10 = new javax.swing.JButton();
+        TxtID_C = new javax.swing.JTextField();
+        BtnLimpiar_C = new javax.swing.JButton();
+        TxtPrecio_C = new javax.swing.JTextField();
+        TxtCosto_C = new javax.swing.JTextField();
+        BtnBuscar_C = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
-        jFormattedTextField13 = new javax.swing.JFormattedTextField();
         jLabel40 = new javax.swing.JLabel();
         jLabel41 = new javax.swing.JLabel();
-        jTextField16 = new javax.swing.JTextField();
-        jTextField17 = new javax.swing.JTextField();
+        TxtNombrePerfumista_BU = new javax.swing.JTextField();
+        TxtDescripcion_BU = new javax.swing.JTextField();
         jLabel42 = new javax.swing.JLabel();
         jLabel43 = new javax.swing.JLabel();
-        jTextField18 = new javax.swing.JTextField();
-        jFormattedTextField14 = new javax.swing.JFormattedTextField();
+        TxtNombre_BU = new javax.swing.JTextField();
         jLabel44 = new javax.swing.JLabel();
         jLabel45 = new javax.swing.JLabel();
-        jComboBox13 = new javax.swing.JComboBox<>();
-        jComboBox14 = new javax.swing.JComboBox<>();
-        jButton7 = new javax.swing.JButton();
+        TxtFamilia_BU = new javax.swing.JComboBox<>();
+        TxtEstado_BU = new javax.swing.JComboBox<>();
+        BtnBuscar = new javax.swing.JButton();
         jLabel46 = new javax.swing.JLabel();
-        jComboBox15 = new javax.swing.JComboBox<>();
+        TxtTipo_BU = new javax.swing.JComboBox<>();
         jLabel47 = new javax.swing.JLabel();
         jLabel48 = new javax.swing.JLabel();
-        jFormattedTextField15 = new javax.swing.JFormattedTextField();
+        TxtFecha_BU = new javax.swing.JFormattedTextField();
         jLabel49 = new javax.swing.JLabel();
-        jTextField19 = new javax.swing.JTextField();
-        jButton11 = new javax.swing.JButton();
+        TxtID_BU = new javax.swing.JTextField();
+        BtnLimpiar_BU = new javax.swing.JButton();
+        TxtPrecio_BU = new javax.swing.JTextField();
+        TxtCosto_BU = new javax.swing.JTextField();
         jPanel6 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
@@ -131,20 +133,17 @@ public class Perfumes extends javax.swing.JInternalFrame {
 
         jTabbedPane1.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
-        jFormattedTextField16.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
-        jFormattedTextField16.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-
         jLabel50.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel50.setText("Nombre del perfumista:");
 
         jLabel51.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel51.setText("Descripción:");
 
-        jTextField20.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jTextField20.addActionListener(this::jTextField20ActionPerformed);
+        TxtNombrePerfume_A.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtNombrePerfume_A.addActionListener(this::TxtNombrePerfume_AActionPerformed);
 
-        jTextField21.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jTextField21.addActionListener(this::jTextField21ActionPerformed);
+        TxtDescripcion_A.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtDescripcion_A.addActionListener(this::TxtDescripcion_AActionPerformed);
 
         jLabel52.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel52.setText("Nombre:");
@@ -152,11 +151,8 @@ public class Perfumes extends javax.swing.JInternalFrame {
         jLabel53.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel53.setText("Precio de venta:");
 
-        jTextField22.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jTextField22.addActionListener(this::jTextField22ActionPerformed);
-
-        jFormattedTextField17.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
-        jFormattedTextField17.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtNombre_A.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtNombre_A.addActionListener(this::TxtNombre_AActionPerformed);
 
         jLabel54.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel54.setText("Estado actual:");
@@ -164,21 +160,21 @@ public class Perfumes extends javax.swing.JInternalFrame {
         jLabel55.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel55.setText("Familia olfativa:");
 
-        jComboBox16.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jComboBox16.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Floral", "Amaderada", "Cítrica" }));
+        TxtFamilia_A.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtFamilia_A.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Floral", "Amaderada", "Cítrica" }));
 
-        jComboBox17.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jComboBox17.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "En desarrollo", "En producción", "Lanzado al mercado", "Descontinuado" }));
+        TxtEstado_A.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtEstado_A.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "En desarrollo", "En producción", "Lanzado al mercado", "Descontinuado" }));
 
-        jButton12.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jButton12.setText("Guardar");
-        jButton12.addActionListener(this::jButton12ActionPerformed);
+        BtnGuardar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        BtnGuardar.setText("Guardar");
+        BtnGuardar.addActionListener(this::BtnGuardarActionPerformed);
 
         jLabel56.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel56.setText("Tipo de producto:");
 
-        jComboBox18.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jComboBox18.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Eau de parfum", "Eau de toilette", "Extracto" }));
+        TxtTipo_A.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtTipo_A.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Eau de parfum", "Eau de toilette", "Extracto" }));
 
         jLabel57.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel57.setText("Fecha de creación:");
@@ -186,18 +182,18 @@ public class Perfumes extends javax.swing.JInternalFrame {
         jLabel58.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel58.setText("Costo de producción:");
 
-        jFormattedTextField18.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
-        jFormattedTextField18.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtFecha_A.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
+        TxtFecha_A.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel59.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel59.setText("ID del perfume:");
 
-        jTextField23.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jTextField23.addActionListener(this::jTextField23ActionPerformed);
+        TxtID_A.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtID_A.addActionListener(this::TxtID_AActionPerformed);
 
-        jButton13.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jButton13.setText("Limpiar");
-        jButton13.addActionListener(this::jButton13ActionPerformed);
+        BtnLimpiar_A.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        BtnLimpiar_A.setText("Limpiar");
+        BtnLimpiar_A.addActionListener(this::BtnLimpiar_AActionPerformed);
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -218,21 +214,21 @@ public class Perfumes extends javax.swing.JInternalFrame {
                     .addComponent(jLabel59, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addGap(35, 35, 35)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField22)
-                    .addComponent(jFormattedTextField16)
-                    .addComponent(jTextField20)
-                    .addComponent(jTextField21)
-                    .addComponent(jFormattedTextField17)
-                    .addComponent(jComboBox16, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jComboBox17, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jComboBox18, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jFormattedTextField18)
+                    .addComponent(TxtNombre_A)
+                    .addComponent(TxtNombrePerfume_A)
+                    .addComponent(TxtDescripcion_A)
+                    .addComponent(TxtFamilia_A, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(TxtEstado_A, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(TxtTipo_A, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(TxtFecha_A)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(BtnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(127, 127, 127)
-                        .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jTextField23))
+                        .addComponent(BtnLimpiar_A, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(TxtID_A)
+                    .addComponent(TxtCosto_A)
+                    .addComponent(TxtPrecio_A))
                 .addGap(79, 79, 79))
         );
         jPanel7Layout.setVerticalGroup(
@@ -241,55 +237,51 @@ public class Perfumes extends javax.swing.JInternalFrame {
                 .addGap(19, 19, 19)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel59)
-                    .addComponent(jTextField23))
+                    .addComponent(TxtID_A))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel52)
-                    .addComponent(jTextField22))
+                    .addComponent(TxtNombre_A))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel55)
-                    .addComponent(jComboBox16))
+                    .addComponent(TxtFamilia_A))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel56)
-                    .addComponent(jComboBox18))
+                    .addComponent(TxtTipo_A))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel57)
-                    .addComponent(jFormattedTextField18))
+                    .addComponent(TxtFecha_A))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel50)
-                    .addComponent(jTextField20))
+                    .addComponent(TxtNombrePerfume_A))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel51)
-                    .addComponent(jTextField21))
+                    .addComponent(TxtDescripcion_A))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jFormattedTextField17)
-                    .addComponent(jLabel53))
+                    .addComponent(jLabel53)
+                    .addComponent(TxtPrecio_A, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jFormattedTextField16)
-                    .addComponent(jLabel58))
+                    .addComponent(jLabel58)
+                    .addComponent(TxtCosto_A, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox17)
+                    .addComponent(TxtEstado_A)
                     .addComponent(jLabel54))
                 .addGap(32, 32, 32)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton12)
-                    .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(BtnGuardar)
+                    .addComponent(BtnLimpiar_A, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(33, 33, 33))
         );
 
         jTabbedPane1.addTab("Alta", jPanel7);
-
-        jFormattedTextField7.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
-        jFormattedTextField7.setEnabled(false);
-        jFormattedTextField7.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel20.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel20.setText("Nombre del perfumista:");
@@ -297,13 +289,13 @@ public class Perfumes extends javax.swing.JInternalFrame {
         jLabel21.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel21.setText("Descripción:");
 
-        jTextField8.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jTextField8.setEnabled(false);
-        jTextField8.addActionListener(this::jTextField8ActionPerformed);
+        TxtNombrePerfumista_B.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtNombrePerfumista_B.setEnabled(false);
+        TxtNombrePerfumista_B.addActionListener(this::TxtNombrePerfumista_BActionPerformed);
 
-        jTextField9.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jTextField9.setEnabled(false);
-        jTextField9.addActionListener(this::jTextField9ActionPerformed);
+        TxtDescripcion_B.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtDescripcion_B.setEnabled(false);
+        TxtDescripcion_B.addActionListener(this::TxtDescripcion_BActionPerformed);
 
         jLabel22.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel22.setText("Nombre:");
@@ -311,13 +303,9 @@ public class Perfumes extends javax.swing.JInternalFrame {
         jLabel23.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel23.setText("Precio de venta:");
 
-        jTextField10.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jTextField10.setEnabled(false);
-        jTextField10.addActionListener(this::jTextField10ActionPerformed);
-
-        jFormattedTextField8.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
-        jFormattedTextField8.setEnabled(false);
-        jFormattedTextField8.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtNombre_B.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtNombre_B.setEnabled(false);
+        TxtNombre_B.addActionListener(this::TxtNombre_BActionPerformed);
 
         jLabel24.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel24.setText("Estado actual:");
@@ -325,25 +313,25 @@ public class Perfumes extends javax.swing.JInternalFrame {
         jLabel25.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel25.setText("Familia olfativa:");
 
-        jComboBox7.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Floral", "Amaderada", "Cítrica" }));
-        jComboBox7.setEnabled(false);
+        TxtFamilia_B.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtFamilia_B.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Floral", "Amaderada", "Cítrica" }));
+        TxtFamilia_B.setEnabled(false);
 
-        jComboBox8.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "En desarrollo", "En producción", "Lanzado al mercado", "Descontinuado" }));
-        jComboBox8.setEnabled(false);
+        TxtEstado_B.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtEstado_B.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "En desarrollo", "En producción", "Lanzado al mercado", "Descontinuado" }));
+        TxtEstado_B.setEnabled(false);
 
-        jButton5.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jButton5.setText("Eliminar");
-        jButton5.addActionListener(this::jButton5ActionPerformed);
+        BtnEliminar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        BtnEliminar.setText("Eliminar");
+        BtnEliminar.addActionListener(this::BtnEliminarActionPerformed);
 
         jLabel26.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel26.setText("Tipo de producto:");
 
-        jComboBox9.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Eau de parfum", "Eau de toilette", "Extracto" }));
-        jComboBox9.setEnabled(false);
-        jComboBox9.addActionListener(this::jComboBox9ActionPerformed);
+        TxtTipo_B.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtTipo_B.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Eau de parfum", "Eau de toilette", "Extracto" }));
+        TxtTipo_B.setEnabled(false);
+        TxtTipo_B.addActionListener(this::TxtTipo_BActionPerformed);
 
         jLabel27.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel27.setText("Fecha de creación:");
@@ -351,19 +339,27 @@ public class Perfumes extends javax.swing.JInternalFrame {
         jLabel28.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel28.setText("Costo de producción:");
 
-        jFormattedTextField9.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
-        jFormattedTextField9.setEnabled(false);
-        jFormattedTextField9.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtFecha_B.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
+        TxtFecha_B.setEnabled(false);
+        TxtFecha_B.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel29.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel29.setText("ID del perfume:");
 
-        jTextField11.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jTextField11.addActionListener(this::jTextField11ActionPerformed);
+        TxtID_B.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtID_B.addActionListener(this::TxtID_BActionPerformed);
 
-        jButton9.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jButton9.setText("Limpiar");
-        jButton9.addActionListener(this::jButton9ActionPerformed);
+        BtnLimpiar_B.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        BtnLimpiar_B.setText("Limpiar");
+        BtnLimpiar_B.addActionListener(this::BtnLimpiar_BActionPerformed);
+
+        TxtPrecio_B.setEnabled(false);
+
+        TxtCosto_B.setEnabled(false);
+
+        BtnBuscar_B.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        BtnBuscar_B.setText("Buscar");
+        BtnBuscar_B.addActionListener(this::BtnBuscar_BActionPerformed);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -384,21 +380,23 @@ public class Perfumes extends javax.swing.JInternalFrame {
                     .addComponent(jLabel29, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addGap(35, 35, 35)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField10)
-                    .addComponent(jFormattedTextField7)
-                    .addComponent(jTextField8)
-                    .addComponent(jTextField9)
-                    .addComponent(jFormattedTextField8)
-                    .addComponent(jComboBox7, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jComboBox8, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jComboBox9, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jFormattedTextField9)
+                    .addComponent(TxtNombre_B)
+                    .addComponent(TxtNombrePerfumista_B)
+                    .addComponent(TxtDescripcion_B)
+                    .addComponent(TxtFamilia_B, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(TxtEstado_B, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(TxtTipo_B, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(TxtFecha_B)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(127, 127, 127)
-                        .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jTextField11))
+                        .addComponent(BtnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(BtnBuscar_B)
+                        .addGap(34, 34, 34)
+                        .addComponent(BtnLimpiar_B, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(TxtID_B)
+                    .addComponent(TxtPrecio_B)
+                    .addComponent(TxtCosto_B))
                 .addGap(79, 79, 79))
         );
         jPanel3Layout.setVerticalGroup(
@@ -407,55 +405,52 @@ public class Perfumes extends javax.swing.JInternalFrame {
                 .addGap(19, 19, 19)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel29)
-                    .addComponent(jTextField11))
+                    .addComponent(TxtID_B))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel22)
-                    .addComponent(jTextField10))
+                    .addComponent(TxtNombre_B))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel25)
-                    .addComponent(jComboBox7))
+                    .addComponent(TxtFamilia_B))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel26)
-                    .addComponent(jComboBox9))
+                    .addComponent(TxtTipo_B))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel27)
-                    .addComponent(jFormattedTextField9))
+                    .addComponent(TxtFecha_B))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel20)
-                    .addComponent(jTextField8))
+                    .addComponent(TxtNombrePerfumista_B))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel21)
-                    .addComponent(jTextField9))
+                    .addComponent(TxtDescripcion_B))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jFormattedTextField8)
-                    .addComponent(jLabel23))
+                    .addComponent(jLabel23)
+                    .addComponent(TxtPrecio_B, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jFormattedTextField7)
-                    .addComponent(jLabel28))
+                    .addComponent(jLabel28)
+                    .addComponent(TxtCosto_B, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox8)
+                    .addComponent(TxtEstado_B)
                     .addComponent(jLabel24))
                 .addGap(32, 32, 32)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton5)
-                    .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(BtnEliminar)
+                    .addComponent(BtnLimpiar_B, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BtnBuscar_B))
                 .addGap(33, 33, 33))
         );
 
         jTabbedPane1.addTab("Baja", jPanel3);
-
-        jFormattedTextField10.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
-        jFormattedTextField10.setEnabled(false);
-        jFormattedTextField10.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel30.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel30.setText("Nombre del perfumista:");
@@ -463,13 +458,13 @@ public class Perfumes extends javax.swing.JInternalFrame {
         jLabel31.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel31.setText("Descripción:");
 
-        jTextField12.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jTextField12.setEnabled(false);
-        jTextField12.addActionListener(this::jTextField12ActionPerformed);
+        TxtNombrePerfumista_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtNombrePerfumista_C.setEnabled(false);
+        TxtNombrePerfumista_C.addActionListener(this::TxtNombrePerfumista_CActionPerformed);
 
-        jTextField13.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jTextField13.setEnabled(false);
-        jTextField13.addActionListener(this::jTextField13ActionPerformed);
+        TxtDescripcion_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtDescripcion_C.setEnabled(false);
+        TxtDescripcion_C.addActionListener(this::TxtDescripcion_CActionPerformed);
 
         jLabel32.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel32.setText("Nombre:");
@@ -477,13 +472,9 @@ public class Perfumes extends javax.swing.JInternalFrame {
         jLabel33.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel33.setText("Precio de venta:");
 
-        jTextField14.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jTextField14.setEnabled(false);
-        jTextField14.addActionListener(this::jTextField14ActionPerformed);
-
-        jFormattedTextField11.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
-        jFormattedTextField11.setEnabled(false);
-        jFormattedTextField11.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtNombre_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtNombre_C.setEnabled(false);
+        TxtNombre_C.addActionListener(this::TxtNombre_CActionPerformed);
 
         jLabel34.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel34.setText("Estado actual:");
@@ -491,17 +482,17 @@ public class Perfumes extends javax.swing.JInternalFrame {
         jLabel35.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel35.setText("Familia olfativa:");
 
-        jComboBox10.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jComboBox10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Floral", "Amaderada", "Cítrica" }));
-        jComboBox10.setEnabled(false);
+        TxtFamilia_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtFamilia_C.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Floral", "Amaderada", "Cítrica" }));
+        TxtFamilia_C.setEnabled(false);
 
-        jComboBox11.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jComboBox11.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "En desarrollo", "En producción", "Lanzado al mercado", "Descontinuado" }));
-        jComboBox11.setEnabled(false);
+        TxtEstado_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtEstado_C.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "En desarrollo", "En producción", "Lanzado al mercado", "Descontinuado" }));
+        TxtEstado_C.setEnabled(false);
 
-        jButton6.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jButton6.setText("Modificar");
-        jButton6.addActionListener(this::jButton6ActionPerformed);
+        BtnModificar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        BtnModificar.setText("Modificar");
+        BtnModificar.addActionListener(this::BtnModificarActionPerformed);
 
         jLabel36.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel36.setText("Tipo de producto:");
@@ -516,19 +507,27 @@ public class Perfumes extends javax.swing.JInternalFrame {
         jLabel38.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel38.setText("Costo de producción:");
 
-        jFormattedTextField12.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
-        jFormattedTextField12.setEnabled(false);
-        jFormattedTextField12.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtFecha_C.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
+        TxtFecha_C.setEnabled(false);
+        TxtFecha_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel39.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel39.setText("ID del perfume:");
 
-        jTextField15.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jTextField15.addActionListener(this::jTextField15ActionPerformed);
+        TxtID_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtID_C.addActionListener(this::TxtID_CActionPerformed);
 
-        jButton10.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jButton10.setText("Limpiar");
-        jButton10.addActionListener(this::jButton10ActionPerformed);
+        BtnLimpiar_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        BtnLimpiar_C.setText("Limpiar");
+        BtnLimpiar_C.addActionListener(this::BtnLimpiar_CActionPerformed);
+
+        TxtPrecio_C.setEnabled(false);
+
+        TxtCosto_C.setEnabled(false);
+
+        BtnBuscar_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        BtnBuscar_C.setText("Buscar");
+        BtnBuscar_C.addActionListener(this::BtnBuscar_CActionPerformed);
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -549,21 +548,23 @@ public class Perfumes extends javax.swing.JInternalFrame {
                     .addComponent(jLabel39))
                 .addGap(35, 35, 35)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField14)
-                    .addComponent(jFormattedTextField10)
-                    .addComponent(jTextField12)
-                    .addComponent(jTextField13)
-                    .addComponent(jFormattedTextField11)
-                    .addComponent(jComboBox10, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jComboBox11, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(TxtNombre_C)
+                    .addComponent(TxtNombrePerfumista_C)
+                    .addComponent(TxtDescripcion_C)
+                    .addComponent(TxtFamilia_C, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(TxtEstado_C, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jComboBox12, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jFormattedTextField12)
+                    .addComponent(TxtFecha_C)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(127, 127, 127)
-                        .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jTextField15))
+                        .addComponent(BtnModificar, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(BtnBuscar_C)
+                        .addGap(34, 34, 34)
+                        .addComponent(BtnLimpiar_C, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(TxtID_C)
+                    .addComponent(TxtPrecio_C)
+                    .addComponent(TxtCosto_C))
                 .addGap(79, 79, 79))
         );
         jPanel4Layout.setVerticalGroup(
@@ -572,15 +573,15 @@ public class Perfumes extends javax.swing.JInternalFrame {
                 .addGap(19, 19, 19)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel39)
-                    .addComponent(jTextField15))
+                    .addComponent(TxtID_C))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel32)
-                    .addComponent(jTextField14))
+                    .addComponent(TxtNombre_C))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel35)
-                    .addComponent(jComboBox10))
+                    .addComponent(TxtFamilia_C))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel36)
@@ -588,39 +589,36 @@ public class Perfumes extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel37)
-                    .addComponent(jFormattedTextField12))
+                    .addComponent(TxtFecha_C))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel30)
-                    .addComponent(jTextField12))
+                    .addComponent(TxtNombrePerfumista_C))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel31)
-                    .addComponent(jTextField13))
+                    .addComponent(TxtDescripcion_C))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jFormattedTextField11)
-                    .addComponent(jLabel33))
+                    .addComponent(jLabel33)
+                    .addComponent(TxtPrecio_C, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jFormattedTextField10)
-                    .addComponent(jLabel38))
+                    .addComponent(jLabel38)
+                    .addComponent(TxtCosto_C, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox11)
+                    .addComponent(TxtEstado_C)
                     .addComponent(jLabel34))
                 .addGap(32, 32, 32)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton6)
-                    .addComponent(jButton10))
+                    .addComponent(BtnModificar)
+                    .addComponent(BtnLimpiar_C)
+                    .addComponent(BtnBuscar_C))
                 .addGap(33, 33, 33))
         );
 
         jTabbedPane1.addTab("Cambios", jPanel4);
-
-        jFormattedTextField13.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
-        jFormattedTextField13.setEnabled(false);
-        jFormattedTextField13.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel40.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel40.setText("Nombre del perfumista:");
@@ -628,13 +626,13 @@ public class Perfumes extends javax.swing.JInternalFrame {
         jLabel41.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel41.setText("Descripción:");
 
-        jTextField16.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jTextField16.setEnabled(false);
-        jTextField16.addActionListener(this::jTextField16ActionPerformed);
+        TxtNombrePerfumista_BU.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtNombrePerfumista_BU.setEnabled(false);
+        TxtNombrePerfumista_BU.addActionListener(this::TxtNombrePerfumista_BUActionPerformed);
 
-        jTextField17.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jTextField17.setEnabled(false);
-        jTextField17.addActionListener(this::jTextField17ActionPerformed);
+        TxtDescripcion_BU.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtDescripcion_BU.setEnabled(false);
+        TxtDescripcion_BU.addActionListener(this::TxtDescripcion_BUActionPerformed);
 
         jLabel42.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel42.setText("Nombre:");
@@ -642,13 +640,9 @@ public class Perfumes extends javax.swing.JInternalFrame {
         jLabel43.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel43.setText("Precio de venta:");
 
-        jTextField18.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jTextField18.setEnabled(false);
-        jTextField18.addActionListener(this::jTextField18ActionPerformed);
-
-        jFormattedTextField14.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
-        jFormattedTextField14.setEnabled(false);
-        jFormattedTextField14.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtNombre_BU.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtNombre_BU.setEnabled(false);
+        TxtNombre_BU.addActionListener(this::TxtNombre_BUActionPerformed);
 
         jLabel44.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel44.setText("Estado actual:");
@@ -656,24 +650,24 @@ public class Perfumes extends javax.swing.JInternalFrame {
         jLabel45.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel45.setText("Familia olfativa:");
 
-        jComboBox13.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jComboBox13.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Floral", "Amaderada", "Cítrica" }));
-        jComboBox13.setEnabled(false);
+        TxtFamilia_BU.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtFamilia_BU.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Floral", "Amaderada", "Cítrica" }));
+        TxtFamilia_BU.setEnabled(false);
 
-        jComboBox14.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jComboBox14.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "En desarrollo", "En producción", "Lanzado al mercado", "Descontinuado" }));
-        jComboBox14.setEnabled(false);
+        TxtEstado_BU.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtEstado_BU.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "En desarrollo", "En producción", "Lanzado al mercado", "Descontinuado" }));
+        TxtEstado_BU.setEnabled(false);
 
-        jButton7.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jButton7.setText("Buscar");
-        jButton7.addActionListener(this::jButton7ActionPerformed);
+        BtnBuscar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        BtnBuscar.setText("Buscar");
+        BtnBuscar.addActionListener(this::BtnBuscarActionPerformed);
 
         jLabel46.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel46.setText("Tipo de producto:");
 
-        jComboBox15.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jComboBox15.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Eau de parfum", "Eau de toilette", "Extracto" }));
-        jComboBox15.setEnabled(false);
+        TxtTipo_BU.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtTipo_BU.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Eau de parfum", "Eau de toilette", "Extracto" }));
+        TxtTipo_BU.setEnabled(false);
 
         jLabel47.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel47.setText("Fecha de creación:");
@@ -681,19 +675,23 @@ public class Perfumes extends javax.swing.JInternalFrame {
         jLabel48.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel48.setText("Costo de producción:");
 
-        jFormattedTextField15.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
-        jFormattedTextField15.setEnabled(false);
-        jFormattedTextField15.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtFecha_BU.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
+        TxtFecha_BU.setEnabled(false);
+        TxtFecha_BU.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel49.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel49.setText("ID del perfume:");
 
-        jTextField19.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jTextField19.addActionListener(this::jTextField19ActionPerformed);
+        TxtID_BU.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        TxtID_BU.addActionListener(this::TxtID_BUActionPerformed);
 
-        jButton11.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jButton11.setText("Limpiar");
-        jButton11.addActionListener(this::jButton11ActionPerformed);
+        BtnLimpiar_BU.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        BtnLimpiar_BU.setText("Limpiar");
+        BtnLimpiar_BU.addActionListener(this::BtnLimpiar_BUActionPerformed);
+
+        TxtPrecio_BU.setEnabled(false);
+
+        TxtCosto_BU.setEnabled(false);
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -714,20 +712,21 @@ public class Perfumes extends javax.swing.JInternalFrame {
                     .addComponent(jLabel49))
                 .addGap(35, 35, 35)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField18)
-                    .addComponent(jFormattedTextField13)
-                    .addComponent(jTextField16)
-                    .addComponent(jTextField17)
-                    .addComponent(jFormattedTextField14)
-                    .addComponent(jComboBox13, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jComboBox14, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jComboBox15, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jFormattedTextField15)
+                    .addComponent(TxtNombre_BU)
+                    .addComponent(TxtNombrePerfumista_BU)
+                    .addComponent(TxtDescripcion_BU)
+                    .addComponent(TxtFamilia_BU, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(TxtEstado_BU, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(TxtTipo_BU, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(TxtFecha_BU)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                        .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(BtnBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(127, 127, 127)
-                        .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jTextField19))
+                        .addComponent(BtnLimpiar_BU, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(TxtID_BU)
+                    .addComponent(TxtPrecio_BU)
+                    .addComponent(TxtCosto_BU))
                 .addGap(79, 79, 79))
         );
         jPanel5Layout.setVerticalGroup(
@@ -736,47 +735,47 @@ public class Perfumes extends javax.swing.JInternalFrame {
                 .addGap(19, 19, 19)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel49)
-                    .addComponent(jTextField19))
+                    .addComponent(TxtID_BU))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel42)
-                    .addComponent(jTextField18))
+                    .addComponent(TxtNombre_BU))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel45)
-                    .addComponent(jComboBox13))
+                    .addComponent(TxtFamilia_BU))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel46)
-                    .addComponent(jComboBox15))
+                    .addComponent(TxtTipo_BU))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel47)
-                    .addComponent(jFormattedTextField15))
+                    .addComponent(TxtFecha_BU))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel40)
-                    .addComponent(jTextField16))
+                    .addComponent(TxtNombrePerfumista_BU))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel41)
-                    .addComponent(jTextField17))
+                    .addComponent(TxtDescripcion_BU))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jFormattedTextField14)
-                    .addComponent(jLabel43))
+                    .addComponent(jLabel43)
+                    .addComponent(TxtPrecio_BU, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jFormattedTextField13)
-                    .addComponent(jLabel48))
+                    .addComponent(jLabel48)
+                    .addComponent(TxtCosto_BU, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox14)
+                    .addComponent(TxtEstado_BU)
                     .addComponent(jLabel44))
                 .addGap(32, 32, 32)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton7)
-                    .addComponent(jButton11))
+                    .addComponent(BtnBuscar)
+                    .addComponent(BtnLimpiar_BU))
                 .addGap(33, 33, 33))
         );
 
@@ -806,7 +805,7 @@ public class Perfumes extends javax.swing.JInternalFrame {
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 478, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 479, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("Mostrar todo", jPanel6);
@@ -825,140 +824,368 @@ public class Perfumes extends javax.swing.JInternalFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField11ActionPerformed
+    private void TxtID_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtID_BActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField11ActionPerformed
+    }//GEN-LAST:event_TxtID_BActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void BtnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnEliminarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+int confirmar = javax.swing.JOptionPane.showConfirmDialog(this, "¿Seguro que desea eliminar este perfume?", "Confirmar", javax.swing.JOptionPane.YES_NO_OPTION);
+    if (confirmar == javax.swing.JOptionPane.YES_OPTION) {
+        try {
+            Modelos.Perfume p = new Modelos.Perfume();
+            p.Borrar(Integer.parseInt(TxtID_B.getText())); //
+            javax.swing.JOptionPane.showMessageDialog(this, "Perfume eliminado.");
+            BtnLimpiar_BActionPerformed(null);
+        } catch (Exception e) {
+            javax.swing.JOptionPane.showMessageDialog(this, "Error: " + e.getMessage());
+        }
+    }
+    }//GEN-LAST:event_BtnEliminarActionPerformed
 
-    private void jTextField10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField10ActionPerformed
+    private void TxtNombre_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtNombre_BActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField10ActionPerformed
+    }//GEN-LAST:event_TxtNombre_BActionPerformed
 
-    private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField9ActionPerformed
+    private void TxtDescripcion_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtDescripcion_BActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField9ActionPerformed
+    }//GEN-LAST:event_TxtDescripcion_BActionPerformed
 
-    private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8ActionPerformed
+    private void TxtNombrePerfumista_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtNombrePerfumista_BActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField8ActionPerformed
+    }//GEN-LAST:event_TxtNombrePerfumista_BActionPerformed
 
-    private void jTextField12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField12ActionPerformed
+    private void TxtNombrePerfumista_CActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtNombrePerfumista_CActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField12ActionPerformed
+    }//GEN-LAST:event_TxtNombrePerfumista_CActionPerformed
 
-    private void jTextField13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField13ActionPerformed
+    private void TxtDescripcion_CActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtDescripcion_CActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField13ActionPerformed
+    }//GEN-LAST:event_TxtDescripcion_CActionPerformed
 
-    private void jTextField14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField14ActionPerformed
+    private void TxtNombre_CActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtNombre_CActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField14ActionPerformed
+    }//GEN-LAST:event_TxtNombre_CActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void BtnModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnModificarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+        try {
+        Modelos.Perfume p = new Modelos.Perfume();
+        p.setId_perfume(Integer.parseInt(TxtID_C.getText()));
+        p.setNombre(TxtNombre_C.getText());
+        p.setFamilia_olfativa(TxtFamilia_C.getSelectedItem().toString());
+        p.setTipo_producto(jComboBox12.getSelectedItem().toString()); //
+        
+        java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("dd/MM/yyyy");
+        p.setFecha_creacion(sdf.parse(TxtFecha_C.getText()));
+        
+        p.setPerfumista(TxtNombrePerfumista_C.getText());
+        p.setDescripcion(TxtDescripcion_C.getText());
+        p.setPrecio_venta(Float.parseFloat(TxtPrecio_C.getText()));
+        p.setCosto_produccion(Float.parseFloat(TxtCosto_C.getText()));
+        p.setEstado(TxtEstado_C.getSelectedItem().toString());
+        
+        p.Modificar(); //
+        javax.swing.JOptionPane.showMessageDialog(this, "Datos actualizados correctamente.");
+    } catch (Exception e) {
+        javax.swing.JOptionPane.showMessageDialog(this, "Error al modificar: " + e.getMessage());
+    }
+    }//GEN-LAST:event_BtnModificarActionPerformed
 
-    private void jTextField15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField15ActionPerformed
+    private void TxtID_CActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtID_CActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField15ActionPerformed
+    }//GEN-LAST:event_TxtID_CActionPerformed
 
-    private void jTextField16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField16ActionPerformed
+    private void TxtNombrePerfumista_BUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtNombrePerfumista_BUActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField16ActionPerformed
+    }//GEN-LAST:event_TxtNombrePerfumista_BUActionPerformed
 
-    private void jTextField17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField17ActionPerformed
+    private void TxtDescripcion_BUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtDescripcion_BUActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField17ActionPerformed
+    }//GEN-LAST:event_TxtDescripcion_BUActionPerformed
 
-    private void jTextField18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField18ActionPerformed
+    private void TxtNombre_BUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtNombre_BUActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField18ActionPerformed
+    }//GEN-LAST:event_TxtNombre_BUActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void BtnBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnBuscarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
+        try {
+        int id = Integer.parseInt(TxtID_BU.getText());
+        Modelos.Perfume p = new Modelos.Perfume();
+        
+        if (p.Buscar(id)) { //
+            TxtNombre_BU.setText(p.getNombre());
+            TxtFamilia_BU.setSelectedItem(p.getFamilia_olfativa());
+            TxtTipo_BU.setSelectedItem(p.getTipo_producto());
+            
+            java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("dd/MM/yyyy");
+            TxtFecha_BU.setText(sdf.format(p.getFecha_creacion()));
+            
+            TxtNombrePerfumista_BU.setText(p.getPerfumista());
+            TxtDescripcion_BU.setText(p.getDescripcion());
+            TxtPrecio_BU.setText(String.valueOf(p.getPrecio_venta()));
+            TxtCosto_BU.setText(String.valueOf(p.getCosto_produccion()));
+            TxtEstado_BU.setSelectedItem(p.getEstado());
+        } else {
+            javax.swing.JOptionPane.showMessageDialog(this, "Perfume no encontrado.");
+        }
+    } catch (Exception e) {
+        javax.swing.JOptionPane.showMessageDialog(this, "Error: " + e.getMessage());
+    }
+    }//GEN-LAST:event_BtnBuscarActionPerformed
 
-    private void jTextField19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField19ActionPerformed
+    private void TxtID_BUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtID_BUActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField19ActionPerformed
+    }//GEN-LAST:event_TxtID_BUActionPerformed
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+    private void BtnLimpiar_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnLimpiar_BActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton9ActionPerformed
+        TxtID_B.setText("");
+    TxtNombre_B.setText("");
+    TxtFamilia_B.setSelectedIndex(0);
+    TxtTipo_B.setSelectedIndex(0);
+    TxtFecha_B.setText("");
+    TxtNombrePerfumista_B.setText("");
+    TxtDescripcion_B.setText("");
+    TxtPrecio_B.setText("");
+    TxtCosto_B.setText("");
+    TxtEstado_B.setSelectedIndex(0);
+    }//GEN-LAST:event_BtnLimpiar_BActionPerformed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    private void BtnLimpiar_CActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnLimpiar_CActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton10ActionPerformed
+        TxtID_C.setText("");
+    TxtNombre_C.setText("");
+    TxtFamilia_C.setSelectedIndex(0);
+    jComboBox12.setSelectedIndex(0); //
+    TxtFecha_C.setText("");
+    TxtNombrePerfumista_C.setText("");
+    TxtDescripcion_C.setText("");
+    TxtPrecio_C.setText("");
+    TxtCosto_C.setText("");
+    TxtEstado_C.setSelectedIndex(0);
+    }//GEN-LAST:event_BtnLimpiar_CActionPerformed
 
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+    private void BtnLimpiar_BUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnLimpiar_BUActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton11ActionPerformed
+        TxtID_BU.setText("");
+    TxtNombre_BU.setText("");
+    TxtFamilia_BU.setSelectedIndex(0);
+    TxtTipo_BU.setSelectedIndex(0);
+    TxtFecha_BU.setText("");
+    TxtNombrePerfumista_BU.setText("");
+    TxtDescripcion_BU.setText("");
+    TxtPrecio_BU.setText("");
+    TxtCosto_BU.setText("");
+    TxtEstado_BU.setSelectedIndex(0);
+    }//GEN-LAST:event_BtnLimpiar_BUActionPerformed
 
-    private void jTextField20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField20ActionPerformed
+    private void TxtNombrePerfume_AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtNombrePerfume_AActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField20ActionPerformed
+    }//GEN-LAST:event_TxtNombrePerfume_AActionPerformed
 
-    private void jTextField21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField21ActionPerformed
+    private void TxtDescripcion_AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtDescripcion_AActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField21ActionPerformed
+    }//GEN-LAST:event_TxtDescripcion_AActionPerformed
 
-    private void jTextField22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField22ActionPerformed
+    private void TxtNombre_AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtNombre_AActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField22ActionPerformed
+    }//GEN-LAST:event_TxtNombre_AActionPerformed
 
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+    private void BtnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnGuardarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton12ActionPerformed
+        try {
+        Modelos.Perfume p = new Modelos.Perfume();
+        
+        
+        p.setId_perfume(Integer.parseInt(TxtID_A.getText()));
+        p.setNombre(TxtNombre_A.getText());
+        p.setFamilia_olfativa(TxtFamilia_A.getSelectedItem().toString());
+        p.setTipo_producto(TxtTipo_A.getSelectedItem().toString());
+        
+        java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("dd/MM/yyyy");
+        java.util.Date fecha = sdf.parse(TxtFecha_A.getText());
+        p.setFecha_creacion(fecha);
+        
+        p.setPerfumista(TxtNombrePerfume_A.getText());
+        p.setDescripcion(TxtDescripcion_A.getText());
+        
+        p.setPrecio_venta(Float.parseFloat(TxtPrecio_A.getText()));
+        p.setCosto_produccion(Float.parseFloat(TxtCosto_A.getText()));
+        
+        p.setEstado(TxtEstado_A.getSelectedItem().toString());
+        
+        p.guardar();
+        
+        javax.swing.JOptionPane.showMessageDialog(this, "¡Perfume '" + p.getNombre() + "' guardado con éxito!");
+        
+    } catch (NumberFormatException e) {
+        javax.swing.JOptionPane.showMessageDialog(this, "Error: Verifique que los campos de ID y Precios sean numéricos.");
+    } catch (java.text.ParseException e) {
+        javax.swing.JOptionPane.showMessageDialog(this, "Error de fecha: Use el formato dd/MM/yyyy.");
+    } catch (Exception e) {
+        javax.swing.JOptionPane.showMessageDialog(this, "Error al guardar: " + e.getMessage());
+    }
+    }//GEN-LAST:event_BtnGuardarActionPerformed
 
-    private void jTextField23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField23ActionPerformed
+    private void TxtID_AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtID_AActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField23ActionPerformed
+    }//GEN-LAST:event_TxtID_AActionPerformed
 
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+    private void BtnLimpiar_AActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnLimpiar_AActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton13ActionPerformed
+    TxtID_A.setText("");
+    TxtNombre_A.setText("");
+    TxtFamilia_A.setSelectedIndex(0);
+    TxtTipo_A.setSelectedIndex(0);
+    TxtFecha_A.setText("");
+    TxtNombrePerfume_A.setText("");
+    TxtDescripcion_A.setText("");
+    TxtPrecio_A.setText("");
+    TxtCosto_A.setText("");
+    TxtEstado_A.setSelectedIndex(0);
+    }//GEN-LAST:event_BtnLimpiar_AActionPerformed
 
-    private void jComboBox9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox9ActionPerformed
+    private void TxtTipo_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtTipo_BActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox9ActionPerformed
+    }//GEN-LAST:event_TxtTipo_BActionPerformed
 
+    private void BtnBuscar_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnBuscar_BActionPerformed
+        // TODO add your handling code here:
+        try {
+        int id = Integer.parseInt(TxtID_B.getText());
+        Modelos.Perfume p = new Modelos.Perfume();
+        if (p.Buscar(id)) { //
+            TxtNombre_B.setText(p.getNombre());
+            TxtNombrePerfumista_B.setText(p.getPerfumista());
+            TxtDescripcion_B.setText(p.getDescripcion());
+            TxtPrecio_B.setText(String.valueOf(p.getPrecio_venta()));
+            TxtCosto_B.setText(String.valueOf(p.getCosto_produccion()));
+            TxtEstado_B.setSelectedItem(p.getEstado());
+        }
+    } catch (Exception e) { /* Manejar error */ }
+    }//GEN-LAST:event_BtnBuscar_BActionPerformed
+
+    private void BtnBuscar_CActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnBuscar_CActionPerformed
+        // TODO add your handling code here:
+        try {
+        // 1. Capturamos el ID desde el campo de la pestaña Cambios
+        int id = Integer.parseInt(TxtID_C.getText());
+        Modelos.Perfume p = new Modelos.Perfume();
+        
+        // 2. Ejecutamos la búsqueda en el modelo
+        if (p.Buscar(id)) {
+            // 3. Habilitamos los campos para que el usuario pueda editar
+            TxtNombre_C.setEnabled(true);
+            TxtFamilia_C.setEnabled(true);
+            jComboBox12.setEnabled(true); // Este es el combo de Tipo en Cambios
+            TxtFecha_C.setEnabled(true);
+            TxtNombrePerfumista_C.setEnabled(true);
+            TxtDescripcion_C.setEnabled(true);
+            TxtPrecio_C.setEnabled(true);
+            TxtCosto_C.setEnabled(true);
+            TxtEstado_C.setEnabled(true);
+
+            // 4. Llenamos los campos con la información encontrada
+            TxtNombre_C.setText(p.getNombre());
+            TxtFamilia_C.setSelectedItem(p.getFamilia_olfativa());
+            jComboBox12.setSelectedItem(p.getTipo_producto());
+            
+            java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("dd/MM/yyyy");
+            TxtFecha_C.setText(sdf.format(p.getFecha_creacion()));
+            
+            TxtNombrePerfumista_C.setText(p.getPerfumista());
+            TxtDescripcion_C.setText(p.getDescripcion());
+            TxtPrecio_C.setText(String.valueOf(p.getPrecio_venta()));
+            TxtCosto_C.setText(String.valueOf(p.getCosto_produccion()));
+            TxtEstado_C.setSelectedItem(p.getEstado());
+            
+        } else {
+            javax.swing.JOptionPane.showMessageDialog(this, "El ID del perfume no existe.");
+            // Si no existe, es mejor limpiar y bloquear los campos
+            BtnLimpiar_CActionPerformed(null);
+        }
+    } catch (NumberFormatException e) {
+        javax.swing.JOptionPane.showMessageDialog(this, "Por favor, ingrese un ID numérico válido.");
+    } catch (Exception e) {
+        javax.swing.JOptionPane.showMessageDialog(this, "Error al buscar: " + e.getMessage());
+    }
+    }//GEN-LAST:event_BtnBuscar_CActionPerformed
+// Este método lo creas tú al final del archivo, antes de la última llave
+public void cargarTabla() {
+    try {
+        Modelos.Perfume p = new Modelos.Perfume();
+        java.sql.ResultSet rs = p.Mostrar(); //
+        
+        // Obtenemos el modelo de la tabla que ya tienes en el diseño
+        javax.swing.table.DefaultTableModel modelo = (javax.swing.table.DefaultTableModel) jTable1.getModel();
+        modelo.setRowCount(0); // Esto limpia la tabla para no duplicar datos
+        
+        while (rs.next()) {
+            // Creamos una fila con las 10 columnas que definiste
+            Object[] fila = new Object[10];
+            for (int i = 0; i < 10; i++) {
+                fila[i] = rs.getObject(i + 1);
+            }
+            modelo.addRow(fila);
+        }
+    } catch (Exception e) {
+        javax.swing.JOptionPane.showMessageDialog(this, "Error al cargar los datos: " + e.getMessage());
+    }
+}
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton9;
-    private javax.swing.JComboBox<String> jComboBox10;
-    private javax.swing.JComboBox<String> jComboBox11;
+    private javax.swing.JButton BtnBuscar;
+    private javax.swing.JButton BtnBuscar_B;
+    private javax.swing.JButton BtnBuscar_C;
+    private javax.swing.JButton BtnEliminar;
+    private javax.swing.JButton BtnGuardar;
+    private javax.swing.JButton BtnLimpiar_A;
+    private javax.swing.JButton BtnLimpiar_B;
+    private javax.swing.JButton BtnLimpiar_BU;
+    private javax.swing.JButton BtnLimpiar_C;
+    private javax.swing.JButton BtnModificar;
+    private javax.swing.JTextField TxtCosto_A;
+    private javax.swing.JTextField TxtCosto_B;
+    private javax.swing.JTextField TxtCosto_BU;
+    private javax.swing.JTextField TxtCosto_C;
+    private javax.swing.JTextField TxtDescripcion_A;
+    private javax.swing.JTextField TxtDescripcion_B;
+    private javax.swing.JTextField TxtDescripcion_BU;
+    private javax.swing.JTextField TxtDescripcion_C;
+    private javax.swing.JComboBox<String> TxtEstado_A;
+    private javax.swing.JComboBox<String> TxtEstado_B;
+    private javax.swing.JComboBox<String> TxtEstado_BU;
+    private javax.swing.JComboBox<String> TxtEstado_C;
+    private javax.swing.JComboBox<String> TxtFamilia_A;
+    private javax.swing.JComboBox<String> TxtFamilia_B;
+    private javax.swing.JComboBox<String> TxtFamilia_BU;
+    private javax.swing.JComboBox<String> TxtFamilia_C;
+    private javax.swing.JFormattedTextField TxtFecha_A;
+    private javax.swing.JFormattedTextField TxtFecha_B;
+    private javax.swing.JFormattedTextField TxtFecha_BU;
+    private javax.swing.JFormattedTextField TxtFecha_C;
+    private javax.swing.JTextField TxtID_A;
+    private javax.swing.JTextField TxtID_B;
+    private javax.swing.JTextField TxtID_BU;
+    private javax.swing.JTextField TxtID_C;
+    private javax.swing.JTextField TxtNombrePerfume_A;
+    private javax.swing.JTextField TxtNombrePerfumista_B;
+    private javax.swing.JTextField TxtNombrePerfumista_BU;
+    private javax.swing.JTextField TxtNombrePerfumista_C;
+    private javax.swing.JTextField TxtNombre_A;
+    private javax.swing.JTextField TxtNombre_B;
+    private javax.swing.JTextField TxtNombre_BU;
+    private javax.swing.JTextField TxtNombre_C;
+    private javax.swing.JTextField TxtPrecio_A;
+    private javax.swing.JTextField TxtPrecio_B;
+    private javax.swing.JTextField TxtPrecio_BU;
+    private javax.swing.JTextField TxtPrecio_C;
+    private javax.swing.JComboBox<String> TxtTipo_A;
+    private javax.swing.JComboBox<String> TxtTipo_B;
+    private javax.swing.JComboBox<String> TxtTipo_BU;
     private javax.swing.JComboBox<String> jComboBox12;
-    private javax.swing.JComboBox<String> jComboBox13;
-    private javax.swing.JComboBox<String> jComboBox14;
-    private javax.swing.JComboBox<String> jComboBox15;
-    private javax.swing.JComboBox<String> jComboBox16;
-    private javax.swing.JComboBox<String> jComboBox17;
-    private javax.swing.JComboBox<String> jComboBox18;
-    private javax.swing.JComboBox<String> jComboBox7;
-    private javax.swing.JComboBox<String> jComboBox8;
-    private javax.swing.JComboBox<String> jComboBox9;
-    private javax.swing.JFormattedTextField jFormattedTextField10;
-    private javax.swing.JFormattedTextField jFormattedTextField11;
-    private javax.swing.JFormattedTextField jFormattedTextField12;
-    private javax.swing.JFormattedTextField jFormattedTextField13;
-    private javax.swing.JFormattedTextField jFormattedTextField14;
-    private javax.swing.JFormattedTextField jFormattedTextField15;
-    private javax.swing.JFormattedTextField jFormattedTextField16;
-    private javax.swing.JFormattedTextField jFormattedTextField17;
-    private javax.swing.JFormattedTextField jFormattedTextField18;
-    private javax.swing.JFormattedTextField jFormattedTextField7;
-    private javax.swing.JFormattedTextField jFormattedTextField8;
-    private javax.swing.JFormattedTextField jFormattedTextField9;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
@@ -1007,21 +1234,5 @@ public class Perfumes extends javax.swing.JInternalFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField16;
-    private javax.swing.JTextField jTextField17;
-    private javax.swing.JTextField jTextField18;
-    private javax.swing.JTextField jTextField19;
-    private javax.swing.JTextField jTextField20;
-    private javax.swing.JTextField jTextField21;
-    private javax.swing.JTextField jTextField22;
-    private javax.swing.JTextField jTextField23;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
     // End of variables declaration//GEN-END:variables
 }

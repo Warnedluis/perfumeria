@@ -34,7 +34,7 @@ public class Clientes extends javax.swing.JInternalFrame {
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
         TxtApaterno = new javax.swing.JTextField();
-        jButton13 = new javax.swing.JButton();
+        BtnLimpiar = new javax.swing.JButton();
         jLabel53 = new javax.swing.JLabel();
         jLabel50 = new javax.swing.JLabel();
         TxtRFCCliente = new javax.swing.JTextField();
@@ -135,9 +135,9 @@ public class Clientes extends javax.swing.JInternalFrame {
         TxtApaterno.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         TxtApaterno.addActionListener(this::TxtApaternoActionPerformed);
 
-        jButton13.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        jButton13.setText("Limpiar");
-        jButton13.addActionListener(this::jButton13ActionPerformed);
+        BtnLimpiar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        BtnLimpiar.setText("Limpiar");
+        BtnLimpiar.addActionListener(this::BtnLimpiarActionPerformed);
 
         jLabel53.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel53.setText("Apellido paterno:");
@@ -215,7 +215,7 @@ public class Clientes extends javax.swing.JInternalFrame {
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(BtnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(172, 172, 172)
-                        .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(BtnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(TxtApaterno, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jComboBox1, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(TxtRFCCliente, javax.swing.GroupLayout.Alignment.TRAILING)
@@ -274,7 +274,7 @@ public class Clientes extends javax.swing.JInternalFrame {
                 .addGap(32, 32, 32)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BtnGuardar)
-                    .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(BtnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(36, 36, 36))
         );
 
@@ -812,9 +812,9 @@ public class Clientes extends javax.swing.JInternalFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+    private void BtnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnLimpiarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton13ActionPerformed
+    }//GEN-LAST:event_BtnLimpiarActionPerformed
 
     private void TxtRFCClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtRFCClienteActionPerformed
         // TODO add your handling code here:
@@ -1012,6 +1012,7 @@ public class Clientes extends javax.swing.JInternalFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BtnGuardar;
+    private javax.swing.JButton BtnLimpiar;
     private javax.swing.JTextField TxtAmaterno;
     private javax.swing.JTextField TxtApaterno;
     private javax.swing.JTextField TxtCorreoCliente;
@@ -1021,7 +1022,6 @@ public class Clientes extends javax.swing.JInternalFrame {
     private javax.swing.JTextField TxtNombre;
     private javax.swing.JTextField TxtRFCCliente;
     private javax.swing.JTextField TxtTelCliente;
-    private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton20;
     private javax.swing.JButton jButton21;
     private javax.swing.JButton jButton22;
