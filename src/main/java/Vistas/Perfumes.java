@@ -15,6 +15,7 @@ public class Perfumes extends javax.swing.JInternalFrame {
      */
     public Perfumes() {
         initComponents();
+        cargarTabla();
     }
 
     /**
@@ -73,7 +74,6 @@ public class Perfumes extends javax.swing.JInternalFrame {
         BtnLimpiar_B = new javax.swing.JButton();
         TxtPrecio_B = new javax.swing.JTextField();
         TxtCosto_B = new javax.swing.JTextField();
-        BtnBuscar_B = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
@@ -97,7 +97,6 @@ public class Perfumes extends javax.swing.JInternalFrame {
         BtnLimpiar_C = new javax.swing.JButton();
         TxtPrecio_C = new javax.swing.JTextField();
         TxtCosto_C = new javax.swing.JTextField();
-        BtnBuscar_C = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
         jLabel40 = new javax.swing.JLabel();
         jLabel41 = new javax.swing.JLabel();
@@ -357,10 +356,6 @@ public class Perfumes extends javax.swing.JInternalFrame {
 
         TxtCosto_B.setEnabled(false);
 
-        BtnBuscar_B.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        BtnBuscar_B.setText("Buscar");
-        BtnBuscar_B.addActionListener(this::BtnBuscar_BActionPerformed);
-
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -388,11 +383,9 @@ public class Perfumes extends javax.swing.JInternalFrame {
                     .addComponent(TxtTipo_B, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(TxtFecha_B)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGap(0, 3, Short.MAX_VALUE)
                         .addComponent(BtnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(BtnBuscar_B)
-                        .addGap(34, 34, 34)
+                        .addGap(124, 124, 124)
                         .addComponent(BtnLimpiar_B, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(TxtID_B)
                     .addComponent(TxtPrecio_B)
@@ -445,8 +438,7 @@ public class Perfumes extends javax.swing.JInternalFrame {
                 .addGap(32, 32, 32)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BtnEliminar)
-                    .addComponent(BtnLimpiar_B, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BtnBuscar_B))
+                    .addComponent(BtnLimpiar_B, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(33, 33, 33))
         );
 
@@ -525,10 +517,6 @@ public class Perfumes extends javax.swing.JInternalFrame {
 
         TxtCosto_C.setEnabled(false);
 
-        BtnBuscar_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        BtnBuscar_C.setText("Buscar");
-        BtnBuscar_C.addActionListener(this::BtnBuscar_CActionPerformed);
-
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
@@ -556,11 +544,9 @@ public class Perfumes extends javax.swing.JInternalFrame {
                     .addComponent(jComboBox12, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(TxtFecha_C)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGap(0, 3, Short.MAX_VALUE)
                         .addComponent(BtnModificar, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(BtnBuscar_C)
-                        .addGap(34, 34, 34)
+                        .addGap(124, 124, 124)
                         .addComponent(BtnLimpiar_C, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(TxtID_C)
                     .addComponent(TxtPrecio_C)
@@ -613,8 +599,7 @@ public class Perfumes extends javax.swing.JInternalFrame {
                 .addGap(32, 32, 32)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BtnModificar)
-                    .addComponent(BtnLimpiar_C)
-                    .addComponent(BtnBuscar_C))
+                    .addComponent(BtnLimpiar_C))
                 .addGap(33, 33, 33))
         );
 
@@ -1051,94 +1036,30 @@ int confirmar = javax.swing.JOptionPane.showConfirmDialog(this, "¿Seguro que de
         // TODO add your handling code here:
     }//GEN-LAST:event_TxtTipo_BActionPerformed
 
-    private void BtnBuscar_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnBuscar_BActionPerformed
-        // TODO add your handling code here:
-        try {
-        int id = Integer.parseInt(TxtID_B.getText());
-        Modelos.Perfume p = new Modelos.Perfume();
-        if (p.Buscar(id)) { //
-            TxtNombre_B.setText(p.getNombre());
-            TxtNombrePerfumista_B.setText(p.getPerfumista());
-            TxtDescripcion_B.setText(p.getDescripcion());
-            TxtPrecio_B.setText(String.valueOf(p.getPrecio_venta()));
-            TxtCosto_B.setText(String.valueOf(p.getCosto_produccion()));
-            TxtEstado_B.setSelectedItem(p.getEstado());
-        }
-    } catch (Exception e) { /* Manejar error */ }
-    }//GEN-LAST:event_BtnBuscar_BActionPerformed
-
-    private void BtnBuscar_CActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnBuscar_CActionPerformed
-        // TODO add your handling code here:
-        try {
-        // 1. Capturamos el ID desde el campo de la pestaña Cambios
-        int id = Integer.parseInt(TxtID_C.getText());
-        Modelos.Perfume p = new Modelos.Perfume();
-        
-        // 2. Ejecutamos la búsqueda en el modelo
-        if (p.Buscar(id)) {
-            // 3. Habilitamos los campos para que el usuario pueda editar
-            TxtNombre_C.setEnabled(true);
-            TxtFamilia_C.setEnabled(true);
-            jComboBox12.setEnabled(true); // Este es el combo de Tipo en Cambios
-            TxtFecha_C.setEnabled(true);
-            TxtNombrePerfumista_C.setEnabled(true);
-            TxtDescripcion_C.setEnabled(true);
-            TxtPrecio_C.setEnabled(true);
-            TxtCosto_C.setEnabled(true);
-            TxtEstado_C.setEnabled(true);
-
-            // 4. Llenamos los campos con la información encontrada
-            TxtNombre_C.setText(p.getNombre());
-            TxtFamilia_C.setSelectedItem(p.getFamilia_olfativa());
-            jComboBox12.setSelectedItem(p.getTipo_producto());
-            
-            java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("dd/MM/yyyy");
-            TxtFecha_C.setText(sdf.format(p.getFecha_creacion()));
-            
-            TxtNombrePerfumista_C.setText(p.getPerfumista());
-            TxtDescripcion_C.setText(p.getDescripcion());
-            TxtPrecio_C.setText(String.valueOf(p.getPrecio_venta()));
-            TxtCosto_C.setText(String.valueOf(p.getCosto_produccion()));
-            TxtEstado_C.setSelectedItem(p.getEstado());
-            
-        } else {
-            javax.swing.JOptionPane.showMessageDialog(this, "El ID del perfume no existe.");
-            // Si no existe, es mejor limpiar y bloquear los campos
-            BtnLimpiar_CActionPerformed(null);
-        }
-    } catch (NumberFormatException e) {
-        javax.swing.JOptionPane.showMessageDialog(this, "Por favor, ingrese un ID numérico válido.");
-    } catch (Exception e) {
-        javax.swing.JOptionPane.showMessageDialog(this, "Error al buscar: " + e.getMessage());
-    }
-    }//GEN-LAST:event_BtnBuscar_CActionPerformed
-// Este método lo creas tú al final del archivo, antes de la última llave
-public void cargarTabla() {
+public void cargarTabla() 
+{
     try {
         Modelos.Perfume p = new Modelos.Perfume();
         java.sql.ResultSet rs = p.Mostrar(); //
         
-        // Obtenemos el modelo de la tabla que ya tienes en el diseño
         javax.swing.table.DefaultTableModel modelo = (javax.swing.table.DefaultTableModel) jTable1.getModel();
-        modelo.setRowCount(0); // Esto limpia la tabla para no duplicar datos
+        modelo.setRowCount(0);
         
         while (rs.next()) {
-            // Creamos una fila con las 10 columnas que definiste
             Object[] fila = new Object[10];
             for (int i = 0; i < 10; i++) {
                 fila[i] = rs.getObject(i + 1);
             }
             modelo.addRow(fila);
         }
-    } catch (Exception e) {
+    } catch (Exception e) 
+    {
         javax.swing.JOptionPane.showMessageDialog(this, "Error al cargar los datos: " + e.getMessage());
     }
 }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BtnBuscar;
-    private javax.swing.JButton BtnBuscar_B;
-    private javax.swing.JButton BtnBuscar_C;
     private javax.swing.JButton BtnEliminar;
     private javax.swing.JButton BtnGuardar;
     private javax.swing.JButton BtnLimpiar_A;

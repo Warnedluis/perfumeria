@@ -81,33 +81,33 @@
                               </Group>
                               <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jTextField22" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jTextField21" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jComboBox16" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jComboBox17" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jComboBox18" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="TxtNombre_A" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="TxtNivel_A" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="TxtTipo_A" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="TxtProveedor_A" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="TxtUnidad_A" alignment="0" max="32767" attributes="0"/>
                                   <Group type="102" alignment="1" attributes="0">
                                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                      <Component id="jButton12" min="-2" pref="140" max="-2" attributes="0"/>
+                                      <Component id="BtnGuardar" min="-2" pref="140" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="127" max="-2" attributes="0"/>
-                                      <Component id="jButton13" min="-2" pref="140" max="-2" attributes="0"/>
+                                      <Component id="BtnLimpiar_A" min="-2" pref="140" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="jTextField23" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="TxtID_A" alignment="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
-                                  <Group type="102" alignment="1" attributes="0">
+                                  <Group type="102" attributes="0">
                                       <Component id="jLabel58" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                                      <Component id="jFormattedTextField16" max="32767" attributes="0"/>
+                                      <Component id="TxtCosto_A" max="32767" attributes="0"/>
                                   </Group>
-                                  <Group type="102" alignment="1" attributes="0">
+                                  <Group type="102" attributes="0">
                                       <EmptySpace min="13" pref="13" max="-2" attributes="0"/>
                                       <Component id="jLabel50" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                                      <Component id="jTextField20" max="32767" attributes="0"/>
+                                      <Component id="TxtStock_A" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -122,47 +122,47 @@
                       <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel59" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField23" alignment="3" max="32767" attributes="0"/>
+                          <Component id="TxtID_A" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel52" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField22" alignment="3" max="32767" attributes="0"/>
+                          <Component id="TxtNombre_A" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel55" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jComboBox16" alignment="3" max="32767" attributes="0"/>
+                          <Component id="TxtTipo_A" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel56" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jComboBox18" alignment="3" max="32767" attributes="0"/>
+                          <Component id="TxtUnidad_A" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel50" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField20" alignment="3" max="32767" attributes="0"/>
+                          <Component id="TxtStock_A" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jFormattedTextField16" alignment="3" max="32767" attributes="0"/>
                           <Component id="jLabel58" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TxtCosto_A" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel51" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField21" alignment="3" max="32767" attributes="0"/>
+                          <Component id="TxtNivel_A" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel53" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jComboBox17" alignment="3" max="32767" attributes="0"/>
+                          <Component id="TxtProveedor_A" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jButton12" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jButton13" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                          <Component id="BtnGuardar" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="BtnLimpiar_A" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                   </Group>
@@ -170,16 +170,6 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JFormattedTextField" name="jFormattedTextField16">
-              <Properties>
-                <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
-                  <Format format="dd/MM/yyyy" subtype="-1" type="1"/>
-                </Property>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Segoe UI Light" size="14" style="0"/>
-                </Property>
-              </Properties>
-            </Component>
             <Component class="javax.swing.JLabel" name="jLabel50">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -196,24 +186,24 @@
                 <Property name="text" type="java.lang.String" value="Nivel de reorden:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField20">
+            <Component class="javax.swing.JTextField" name="TxtStock_A">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField20ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtStock_AActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField21">
+            <Component class="javax.swing.JTextField" name="TxtNivel_A">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField21ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtNivel_AActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel52">
@@ -232,14 +222,14 @@
                 <Property name="text" type="java.lang.String" value="Proveedor:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField22">
+            <Component class="javax.swing.JTextField" name="TxtNombre_A">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField22ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtNombre_AActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel55">
@@ -250,14 +240,14 @@
                 <Property name="text" type="java.lang.String" value="Tipo:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox16">
+            <Component class="javax.swing.JComboBox" name="TxtTipo_A">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="4">
-                    <StringItem index="0" value="Aceites esenciales"/>
+                    <StringItem index="0" value="A. esenciales"/>
                     <StringItem index="1" value="Fijadores"/>
                     <StringItem index="2" value="Alcoholes"/>
                     <StringItem index="3" value="Solventes"/>
@@ -265,13 +255,13 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBox16ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtTipo_AActionPerformed"/>
               </Events>
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
               </AuxValues>
             </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox17">
+            <Component class="javax.swing.JComboBox" name="TxtProveedor_A">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
@@ -280,11 +270,14 @@
                   <StringArray count="0"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtProveedor_AActionPerformed"/>
+              </Events>
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
               </AuxValues>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton12">
+            <Component class="javax.swing.JButton" name="BtnGuardar">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
@@ -292,7 +285,7 @@
                 <Property name="text" type="java.lang.String" value="Guardar"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton12ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnGuardarActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel56">
@@ -303,7 +296,7 @@
                 <Property name="text" type="java.lang.String" value="Unidad de medida:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox18">
+            <Component class="javax.swing.JComboBox" name="TxtUnidad_A">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
@@ -338,17 +331,17 @@
                 <Property name="text" type="java.lang.String" value="ID del ingrediente:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField23">
+            <Component class="javax.swing.JTextField" name="TxtID_A">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField23ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtID_AActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton13">
+            <Component class="javax.swing.JButton" name="BtnLimpiar_A">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
@@ -356,7 +349,17 @@
                 <Property name="text" type="java.lang.String" value="Limpiar"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton13ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnLimpiar_AActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="TxtCosto_A">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI Light" size="14" style="0"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtCosto_AActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>
@@ -392,33 +395,33 @@
                               </Group>
                               <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jTextField26" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jTextField25" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="TxtNombre_B" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="TxtNivel_B" alignment="0" max="32767" attributes="0"/>
                                   <Component id="jComboBox19" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jComboBox20" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="TxtProveedor_B" alignment="0" max="32767" attributes="0"/>
                                   <Component id="jComboBox21" alignment="0" max="32767" attributes="0"/>
                                   <Group type="102" alignment="1" attributes="0">
                                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                      <Component id="jButton14" min="-2" pref="140" max="-2" attributes="0"/>
+                                      <Component id="BtnBorrar" min="-2" pref="140" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="127" max="-2" attributes="0"/>
-                                      <Component id="jButton15" min="-2" pref="140" max="-2" attributes="0"/>
+                                      <Component id="BtnLimpiar_B" min="-2" pref="140" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="jTextField27" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="TxtID_B" alignment="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" attributes="0">
                               <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
-                                  <Group type="102" alignment="1" attributes="0">
+                                  <Group type="102" attributes="0">
                                       <Component id="jLabel64" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                                      <Component id="jFormattedTextField17" max="32767" attributes="0"/>
+                                      <Component id="TxtCosto_B" max="32767" attributes="0"/>
                                   </Group>
-                                  <Group type="102" alignment="1" attributes="0">
+                                  <Group type="102" attributes="0">
                                       <EmptySpace min="13" pref="13" max="-2" attributes="0"/>
                                       <Component id="jLabel54" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                                      <Component id="jTextField24" max="32767" attributes="0"/>
+                                      <Component id="TxtStock_B" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -433,12 +436,12 @@
                       <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel65" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField27" alignment="3" max="32767" attributes="0"/>
+                          <Component id="TxtID_B" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel60" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField26" alignment="3" max="32767" attributes="0"/>
+                          <Component id="TxtNombre_B" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -453,27 +456,27 @@
                       <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel54" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField24" alignment="3" max="32767" attributes="0"/>
+                          <Component id="TxtStock_B" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jFormattedTextField17" alignment="3" max="32767" attributes="0"/>
                           <Component id="jLabel64" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TxtCosto_B" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel57" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField25" alignment="3" max="32767" attributes="0"/>
+                          <Component id="TxtNivel_B" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel61" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jComboBox20" alignment="3" max="32767" attributes="0"/>
+                          <Component id="TxtProveedor_B" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jButton14" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jButton15" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                          <Component id="BtnBorrar" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="BtnLimpiar_B" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                   </Group>
@@ -481,17 +484,6 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JFormattedTextField" name="jFormattedTextField17">
-              <Properties>
-                <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
-                  <Format format="dd/MM/yyyy" subtype="-1" type="1"/>
-                </Property>
-                <Property name="enabled" type="boolean" value="false"/>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Segoe UI Light" size="14" style="0"/>
-                </Property>
-              </Properties>
-            </Component>
             <Component class="javax.swing.JLabel" name="jLabel54">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -508,7 +500,7 @@
                 <Property name="text" type="java.lang.String" value="Nivel de reorden:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField24">
+            <Component class="javax.swing.JTextField" name="TxtStock_B">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
@@ -516,10 +508,10 @@
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField24ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtStock_BActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField25">
+            <Component class="javax.swing.JTextField" name="TxtNivel_B">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
@@ -527,7 +519,7 @@
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField25ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtNivel_BActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel60">
@@ -546,7 +538,7 @@
                 <Property name="text" type="java.lang.String" value="Proveedor:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField26">
+            <Component class="javax.swing.JTextField" name="TxtNombre_B">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
@@ -554,7 +546,7 @@
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField26ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtNombre_BActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel62">
@@ -572,7 +564,7 @@
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="4">
-                    <StringItem index="0" value="Aceites esenciales"/>
+                    <StringItem index="0" value="A. esenciales"/>
                     <StringItem index="1" value="Fijadores"/>
                     <StringItem index="2" value="Alcoholes"/>
                     <StringItem index="3" value="Solventes"/>
@@ -584,7 +576,7 @@
                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
               </AuxValues>
             </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox20">
+            <Component class="javax.swing.JComboBox" name="TxtProveedor_B">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
@@ -598,7 +590,7 @@
                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
               </AuxValues>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton14">
+            <Component class="javax.swing.JButton" name="BtnBorrar">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
@@ -606,7 +598,7 @@
                 <Property name="text" type="java.lang.String" value="Eliminar"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton14ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnBorrarActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel63">
@@ -653,17 +645,17 @@
                 <Property name="text" type="java.lang.String" value="ID del ingrediente:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField27">
+            <Component class="javax.swing.JTextField" name="TxtID_B">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField27ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtID_BActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton15">
+            <Component class="javax.swing.JButton" name="BtnLimpiar_B">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
@@ -671,7 +663,18 @@
                 <Property name="text" type="java.lang.String" value="Limpiar"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton15ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnLimpiar_BActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="TxtCosto_B">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI Light" size="14" style="0"/>
+                </Property>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtCosto_BActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>
@@ -707,16 +710,16 @@
                               </Group>
                               <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jTextField30" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jTextField29" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jComboBox22" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jComboBox23" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jComboBox24" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="TxtNombre_C" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="TxtNivel_C" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="TxtTipo_C" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="TxtProveedores_C" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="TxtUnidad_C" alignment="0" max="32767" attributes="0"/>
                                   <Group type="102" alignment="1" attributes="0">
                                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                      <Component id="jButton16" min="-2" pref="140" max="-2" attributes="0"/>
+                                      <Component id="BtnModificar" min="-2" pref="140" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="127" max="-2" attributes="0"/>
-                                      <Component id="jButton17" min="-2" pref="140" max="-2" attributes="0"/>
+                                      <Component id="BtnLimpiar_C" min="-2" pref="140" max="-2" attributes="0"/>
                                   </Group>
                                   <Component id="jTextField31" alignment="0" max="32767" attributes="0"/>
                               </Group>
@@ -724,16 +727,16 @@
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
-                                  <Group type="102" alignment="1" attributes="0">
+                                  <Group type="102" attributes="0">
                                       <Component id="jLabel72" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                                      <Component id="jFormattedTextField18" max="32767" attributes="0"/>
+                                      <Component id="TxtCosto_C" max="32767" attributes="0"/>
                                   </Group>
-                                  <Group type="102" alignment="1" attributes="0">
+                                  <Group type="102" attributes="0">
                                       <EmptySpace min="13" pref="13" max="-2" attributes="0"/>
                                       <Component id="jLabel66" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                                      <Component id="jTextField28" max="32767" attributes="0"/>
+                                      <Component id="TxtStock_C" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -753,42 +756,42 @@
                       <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel68" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField30" alignment="3" max="32767" attributes="0"/>
+                          <Component id="TxtNombre_C" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel70" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jComboBox22" alignment="3" max="32767" attributes="0"/>
+                          <Component id="TxtTipo_C" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel71" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jComboBox24" alignment="3" max="32767" attributes="0"/>
+                          <Component id="TxtUnidad_C" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel66" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField28" alignment="3" max="32767" attributes="0"/>
+                          <Component id="TxtStock_C" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jFormattedTextField18" alignment="3" max="32767" attributes="0"/>
                           <Component id="jLabel72" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TxtCosto_C" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel67" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField29" alignment="3" max="32767" attributes="0"/>
+                          <Component id="TxtNivel_C" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel69" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jComboBox23" alignment="3" max="32767" attributes="0"/>
+                          <Component id="TxtProveedores_C" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jButton16" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jButton17" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                          <Component id="BtnModificar" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="BtnLimpiar_C" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                   </Group>
@@ -796,17 +799,6 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JFormattedTextField" name="jFormattedTextField18">
-              <Properties>
-                <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
-                  <Format format="dd/MM/yyyy" subtype="-1" type="1"/>
-                </Property>
-                <Property name="enabled" type="boolean" value="false"/>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Segoe UI Light" size="14" style="0"/>
-                </Property>
-              </Properties>
-            </Component>
             <Component class="javax.swing.JLabel" name="jLabel66">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -823,26 +815,24 @@
                 <Property name="text" type="java.lang.String" value="Nivel de reorden:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField28">
+            <Component class="javax.swing.JTextField" name="TxtStock_C">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
                 </Property>
-                <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField28ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtStock_CActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField29">
+            <Component class="javax.swing.JTextField" name="TxtNivel_C">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
                 </Property>
-                <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField29ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtNivel_CActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel68">
@@ -861,15 +851,14 @@
                 <Property name="text" type="java.lang.String" value="Proveedor:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField30">
+            <Component class="javax.swing.JTextField" name="TxtNombre_C">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
                 </Property>
-                <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField30ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtNombre_CActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel70">
@@ -880,26 +869,25 @@
                 <Property name="text" type="java.lang.String" value="Tipo:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox22">
+            <Component class="javax.swing.JComboBox" name="TxtTipo_C">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="4">
-                    <StringItem index="0" value="Aceites esenciales"/>
+                    <StringItem index="0" value="A. esenciales"/>
                     <StringItem index="1" value="Fijadores"/>
                     <StringItem index="2" value="Alcoholes"/>
                     <StringItem index="3" value="Solventes"/>
                   </StringArray>
                 </Property>
-                <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
               </AuxValues>
             </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox23">
+            <Component class="javax.swing.JComboBox" name="TxtProveedores_C">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
@@ -907,13 +895,12 @@
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="0"/>
                 </Property>
-                <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
               </AuxValues>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton16">
+            <Component class="javax.swing.JButton" name="BtnModificar">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
@@ -921,7 +908,7 @@
                 <Property name="text" type="java.lang.String" value="Modificar"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton16ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnModificarActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel71">
@@ -932,7 +919,7 @@
                 <Property name="text" type="java.lang.String" value="Unidad de medida:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox24">
+            <Component class="javax.swing.JComboBox" name="TxtUnidad_C">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
@@ -946,7 +933,6 @@
                     <StringItem index="4" value="Kilogramos"/>
                   </StringArray>
                 </Property>
-                <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
@@ -978,7 +964,7 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField31ActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton17">
+            <Component class="javax.swing.JButton" name="BtnLimpiar_C">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
@@ -986,7 +972,17 @@
                 <Property name="text" type="java.lang.String" value="Limpiar"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton17ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnLimpiar_CActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="TxtCosto_C">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI Light" size="14" style="0"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtCosto_CActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>
@@ -1022,33 +1018,33 @@
                               </Group>
                               <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jTextField34" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jTextField33" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jComboBox25" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jComboBox26" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jComboBox27" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="TxtNombre_BU" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="TxtNivel_BU" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="TxtTipo_BU" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="TxtProveedor_BU" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="TxtUnidad_BU" alignment="0" max="32767" attributes="0"/>
                                   <Group type="102" alignment="1" attributes="0">
                                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                      <Component id="jButton18" min="-2" pref="140" max="-2" attributes="0"/>
+                                      <Component id="BtnBuscar_BU" min="-2" pref="140" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="127" max="-2" attributes="0"/>
-                                      <Component id="jButton19" min="-2" pref="140" max="-2" attributes="0"/>
+                                      <Component id="BtnLimpiar_Buscar" min="-2" pref="140" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="jTextField35" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="TxtID_BU" alignment="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
-                                  <Group type="102" alignment="1" attributes="0">
+                                  <Group type="102" attributes="0">
                                       <Component id="jLabel80" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                                      <Component id="jFormattedTextField19" max="32767" attributes="0"/>
+                                      <Component id="TxtCosto_BU" max="32767" attributes="0"/>
                                   </Group>
-                                  <Group type="102" alignment="1" attributes="0">
+                                  <Group type="102" attributes="0">
                                       <EmptySpace min="13" pref="13" max="-2" attributes="0"/>
                                       <Component id="jLabel74" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                                      <Component id="jTextField32" max="32767" attributes="0"/>
+                                      <Component id="TxtStock_BU" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -1063,47 +1059,47 @@
                       <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel81" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField35" alignment="3" max="32767" attributes="0"/>
+                          <Component id="TxtID_BU" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel76" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField34" alignment="3" max="32767" attributes="0"/>
+                          <Component id="TxtNombre_BU" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel78" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jComboBox25" alignment="3" max="32767" attributes="0"/>
+                          <Component id="TxtTipo_BU" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel79" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jComboBox27" alignment="3" max="32767" attributes="0"/>
+                          <Component id="TxtUnidad_BU" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel74" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField32" alignment="3" max="32767" attributes="0"/>
+                          <Component id="TxtStock_BU" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jFormattedTextField19" alignment="3" max="32767" attributes="0"/>
                           <Component id="jLabel80" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TxtCosto_BU" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel75" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField33" alignment="3" max="32767" attributes="0"/>
+                          <Component id="TxtNivel_BU" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="jLabel77" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jComboBox26" alignment="3" max="32767" attributes="0"/>
+                          <Component id="TxtProveedor_BU" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jButton18" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jButton19" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
+                          <Component id="BtnBuscar_BU" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="BtnLimpiar_Buscar" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                   </Group>
@@ -1111,17 +1107,6 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JFormattedTextField" name="jFormattedTextField19">
-              <Properties>
-                <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
-                  <Format format="dd/MM/yyyy" subtype="-1" type="1"/>
-                </Property>
-                <Property name="enabled" type="boolean" value="false"/>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Segoe UI Light" size="14" style="0"/>
-                </Property>
-              </Properties>
-            </Component>
             <Component class="javax.swing.JLabel" name="jLabel74">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -1138,7 +1123,7 @@
                 <Property name="text" type="java.lang.String" value="Nivel de reorden:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField32">
+            <Component class="javax.swing.JTextField" name="TxtStock_BU">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
@@ -1146,10 +1131,10 @@
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField32ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtStock_BUActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField33">
+            <Component class="javax.swing.JTextField" name="TxtNivel_BU">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
@@ -1157,7 +1142,7 @@
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField33ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtNivel_BUActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel76">
@@ -1176,7 +1161,7 @@
                 <Property name="text" type="java.lang.String" value="Proveedor:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField34">
+            <Component class="javax.swing.JTextField" name="TxtNombre_BU">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
@@ -1184,7 +1169,7 @@
                 <Property name="enabled" type="boolean" value="false"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField34ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtNombre_BUActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel78">
@@ -1195,14 +1180,14 @@
                 <Property name="text" type="java.lang.String" value="Tipo:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox25">
+            <Component class="javax.swing.JComboBox" name="TxtTipo_BU">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="4">
-                    <StringItem index="0" value="Aceites esenciales"/>
+                    <StringItem index="0" value="A. esenciales"/>
                     <StringItem index="1" value="Fijadores"/>
                     <StringItem index="2" value="Alcoholes"/>
                     <StringItem index="3" value="Solventes"/>
@@ -1214,7 +1199,7 @@
                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
               </AuxValues>
             </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox26">
+            <Component class="javax.swing.JComboBox" name="TxtProveedor_BU">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
@@ -1228,7 +1213,7 @@
                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
               </AuxValues>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton18">
+            <Component class="javax.swing.JButton" name="BtnBuscar_BU">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
@@ -1236,7 +1221,7 @@
                 <Property name="text" type="java.lang.String" value="Buscar"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton18ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnBuscar_BUActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel79">
@@ -1247,7 +1232,7 @@
                 <Property name="text" type="java.lang.String" value="Unidad de medida:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JComboBox" name="jComboBox27">
+            <Component class="javax.swing.JComboBox" name="TxtUnidad_BU">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
@@ -1283,17 +1268,17 @@
                 <Property name="text" type="java.lang.String" value="ID del ingrediente:"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JTextField" name="jTextField35">
+            <Component class="javax.swing.JTextField" name="TxtID_BU">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField35ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtID_BUActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton19">
+            <Component class="javax.swing.JButton" name="BtnLimpiar_Buscar">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI Light" size="14" style="0"/>
@@ -1301,7 +1286,18 @@
                 <Property name="text" type="java.lang.String" value="Limpiar"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton19ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnLimpiar_BuscarActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JTextField" name="TxtCosto_BU">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI Light" size="14" style="0"/>
+                </Property>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TxtCosto_BUActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>
@@ -1318,7 +1314,7 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jScrollPane1" alignment="0" pref="737" max="32767" attributes="0"/>
+                  <Component id="jScrollPane1" alignment="0" pref="752" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
