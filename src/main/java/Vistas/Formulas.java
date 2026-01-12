@@ -96,7 +96,6 @@ public Formulas() {
         BtnAgregarFilaF1 = new javax.swing.JButton();
         jLabel68 = new javax.swing.JLabel();
         BtnEliminarFilaCambios = new javax.swing.JButton();
-        BtnBuscarCambios = new javax.swing.JButton();
         BuscarFormulas = new javax.swing.JPanel();
         jLabel69 = new javax.swing.JLabel();
         jTextField24 = new javax.swing.JTextField();
@@ -183,13 +182,14 @@ public Formulas() {
         BtnLimpiarAlta.setText("Limpiar");
         BtnLimpiarAlta.addActionListener(this::BtnLimpiarAltaActionPerformed);
 
-        BtnAgregarFilaF.setFont(new java.awt.Font("Segoe UI Light", 0, 12)); // NOI18N
+        BtnAgregarFilaF.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         BtnAgregarFilaF.setText("Agregar fila");
         BtnAgregarFilaF.addActionListener(this::BtnAgregarFilaFActionPerformed);
 
         jLabel55.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel55.setText("Ingredientes:");
 
+        BtnEliminarFilaAlta.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         BtnEliminarFilaAlta.setText("Eliminar Fila");
         BtnEliminarFilaAlta.addActionListener(this::BtnEliminarFilaAltaActionPerformed);
 
@@ -396,6 +396,8 @@ public Formulas() {
 
         jTabbedPane1.addTab("Baja", BajaFormulas);
 
+        CambiosFormulas.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+
         jLabel63.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel63.setText("Observaciones:");
 
@@ -457,7 +459,7 @@ public Formulas() {
         jButton15.setText("Limpiar");
         jButton15.addActionListener(this::jButton15ActionPerformed);
 
-        BtnAgregarFilaF1.setFont(new java.awt.Font("Segoe UI Light", 0, 12)); // NOI18N
+        BtnAgregarFilaF1.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         BtnAgregarFilaF1.setText("Agregar fila");
         BtnAgregarFilaF1.setEnabled(false);
         BtnAgregarFilaF1.addActionListener(this::BtnAgregarFilaF1ActionPerformed);
@@ -465,10 +467,8 @@ public Formulas() {
         jLabel68.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel68.setText("Ingredientes:");
 
+        BtnEliminarFilaCambios.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         BtnEliminarFilaCambios.setText("Eliminar Fila");
-
-        BtnBuscarCambios.setText("Buscar");
-        BtnBuscarCambios.addActionListener(this::BtnBuscarCambiosActionPerformed);
 
         javax.swing.GroupLayout CambiosFormulasLayout = new javax.swing.GroupLayout(CambiosFormulas);
         CambiosFormulas.setLayout(CambiosFormulasLayout);
@@ -478,37 +478,32 @@ public Formulas() {
                 .addGap(91, 91, 91)
                 .addGroup(CambiosFormulasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(CambiosFormulasLayout.createSequentialGroup()
-                        .addComponent(BtnBuscarCambios, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(BtnGuardarFormula2, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(BtnEliminarFilaCambios, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(BtnAgregarFilaF1, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(CambiosFormulasLayout.createSequentialGroup()
+                        .addComponent(jLabel68)
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(CambiosFormulasLayout.createSequentialGroup()
                         .addGroup(CambiosFormulasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(CambiosFormulasLayout.createSequentialGroup()
-                                .addComponent(BtnGuardarFormula2, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(BtnEliminarFilaCambios, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(BtnAgregarFilaF1, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(CambiosFormulasLayout.createSequentialGroup()
-                                .addComponent(jLabel68)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(CambiosFormulasLayout.createSequentialGroup()
-                                .addGroup(CambiosFormulasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel66, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel67, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel65, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel63, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel64, javax.swing.GroupLayout.Alignment.TRAILING))
-                                .addGap(29, 29, 29)
-                                .addGroup(CambiosFormulasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(TxtVersionFormula2)
-                                    .addComponent(FTxTFechaRegistro2)
-                                    .addComponent(jTextField23)
-                                    .addComponent(TxtIDFormula2)
-                                    .addComponent(jComboBox19, 0, 393, Short.MAX_VALUE)))
-                            .addComponent(jScrollPane5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 537, Short.MAX_VALUE))
-                        .addGap(118, 118, 118))))
+                            .addComponent(jLabel66, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel67, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel65, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel63, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel64, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addGap(29, 29, 29)
+                        .addGroup(CambiosFormulasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(TxtVersionFormula2)
+                            .addComponent(FTxTFechaRegistro2)
+                            .addComponent(jTextField23)
+                            .addComponent(TxtIDFormula2)
+                            .addComponent(jComboBox19, 0, 393, Short.MAX_VALUE)))
+                    .addComponent(jScrollPane5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 537, Short.MAX_VALUE))
+                .addGap(118, 118, 118))
         );
         CambiosFormulasLayout.setVerticalGroup(
             CambiosFormulasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -536,10 +531,8 @@ public Formulas() {
                 .addGap(20, 20, 20)
                 .addComponent(jLabel68)
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 133, Short.MAX_VALUE)
-                .addGap(18, 18, 18)
-                .addComponent(BtnBuscarCambios)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 126, Short.MAX_VALUE)
+                .addGap(47, 47, 47)
                 .addGroup(CambiosFormulasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BtnGuardarFormula2)
                     .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1236,97 +1229,6 @@ private void mostrarIngredientesFormula(String id) {
             }
     }//GEN-LAST:event_BtnEliminarFilaAltaActionPerformed
 
-    private void BtnBuscarCambiosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnBuscarCambiosActionPerformed
-        // TODO add your handling code here:
-          try {
-        String idStr = TxtIDFormula2.getText().trim();
-        if (idStr.isEmpty()) {
-            JOptionPane.showMessageDialog(this,
-                "Por favor, ingrese un ID de fórmula",
-                "Campo requerido",
-                JOptionPane.WARNING_MESSAGE);
-            return;
-        }
-
-        int id = Integer.parseInt(idStr);
-        Modelos.Formula formula = new Modelos.Formula();
-
-        if (formula.Buscar(id)) {
-            // Llenar los campos con la información encontrada
-            TxtVersionFormula2.setText(formula.getVersion());
-            SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-            FTxTFechaRegistro2.setText(sdf.format(formula.getFecha_registro()));
-            jTextField23.setText(formula.getObservaciones());
-
-            // Buscar el perfume
-            int idPerfume = formula.getId_perfume();
-            String nombrePerfume = "";
-            switch(idPerfume) {
-                case 1: nombrePerfume = "Floral"; break;
-                case 2: nombrePerfume = "Amaderado"; break;
-                case 3: nombrePerfume = "Cítrica"; break;
-                default: nombrePerfume = "Floral";
-            }
-            jComboBox19.setSelectedItem(nombrePerfume);
-
-            // Habilitar campos para edición
-            habilitarCamposCambios();
-
-            // Cargar ingredientes en la tabla TablaContiene2
-            try {
-                ResultSet rsIngredientes = formula.MostrarIngredientes(id);
-                javax.swing.table.DefaultTableModel modeloIngredientes =
-                    (javax.swing.table.DefaultTableModel) TablaContiene2.getModel();
-                modeloIngredientes.setRowCount(0); // Limpiar tabla
-
-                while (rsIngredientes.next()) {
-                    Object[] filaIngrediente = new Object[3];
-                    filaIngrediente[0] = rsIngredientes.getString("nombre");       // Nombre del ingrediente
-                    filaIngrediente[1] = rsIngredientes.getString("nota");         // Nota
-                    filaIngrediente[2] = rsIngredientes.getDouble("proporcion");  // Proporción
-                    modeloIngredientes.addRow(filaIngrediente);
-                }
-            } catch (SQLException ex) {
-                JOptionPane.showMessageDialog(this,
-                    "Error al cargar ingredientes: " + ex.getMessage(),
-                    "Error",
-                    JOptionPane.ERROR_MESSAGE);
-            }
-
-            JOptionPane.showMessageDialog(this,
-                "Fórmula encontrada. Puede modificar los campos.",
-                "Búsqueda exitosa",
-                JOptionPane.INFORMATION_MESSAGE);
-
-        } else {
-            JOptionPane.showMessageDialog(this,
-                "No existe una fórmula con el ID: " + id,
-                "Fórmula no encontrada",
-                JOptionPane.WARNING_MESSAGE);
-            // Limpiar campos
-            TxtIDFormula2.setText("");
-            TxtVersionFormula2.setText("");
-            FTxTFechaRegistro2.setText("");
-            jTextField23.setText("");
-            jComboBox19.setSelectedIndex(0);
-            // Limpiar tabla
-            javax.swing.table.DefaultTableModel modelo = (javax.swing.table.DefaultTableModel) TablaContiene2.getModel();
-            modelo.setRowCount(0);
-        }
-
-    } catch (NumberFormatException e) {
-        JOptionPane.showMessageDialog(this,
-            "El ID debe ser un número válido",
-            "Error de formato",
-            JOptionPane.ERROR_MESSAGE);
-    } catch (Exception e) {
-        JOptionPane.showMessageDialog(this,
-            "Error al buscar: " + e.getMessage(),
-            "Error",
-            JOptionPane.ERROR_MESSAGE);
-    }
-    }//GEN-LAST:event_BtnBuscarCambiosActionPerformed
-
 public void cargarTablaFormulas() {
     try {
         Modelos.Formula formula = new Modelos.Formula();
@@ -1367,7 +1269,6 @@ private void habilitarCamposCambios() {
     private javax.swing.JPanel BajaFormulas;
     private javax.swing.JButton BtnAgregarFilaF;
     private javax.swing.JButton BtnAgregarFilaF1;
-    private javax.swing.JButton BtnBuscarCambios;
     private javax.swing.JButton BtnEliminarFilaAlta;
     private javax.swing.JButton BtnEliminarFilaCambios;
     private javax.swing.JButton BtnGuardarFormula;
