@@ -39,20 +39,11 @@ public class PantallaPrincipal extends javax.swing.JFrame {
         MenuDesarrollo = new javax.swing.JMenu();
         MnFormulas = new javax.swing.JMenuItem();
         MnIngredientes = new javax.swing.JMenuItem();
-        MenuProduccion = new javax.swing.JMenu();
-        MnLotes = new javax.swing.JMenuItem();
-        MenuInventario = new javax.swing.JMenu();
-        MnMateriasPrimas = new javax.swing.JMenuItem();
-        MnProductosTerminados = new javax.swing.JMenuItem();
-        MnInventarioG = new javax.swing.JMenuItem();
         MenuVentas = new javax.swing.JMenu();
         MnClientes = new javax.swing.JMenuItem();
         MnPedidos = new javax.swing.JMenuItem();
         MenuFinanzas = new javax.swing.JMenu();
         MnProveedores = new javax.swing.JMenuItem();
-        MnFacturas = new javax.swing.JMenuItem();
-        MenuGP = new javax.swing.JMenu();
-        MnEmpleados = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -103,30 +94,6 @@ public class PantallaPrincipal extends javax.swing.JFrame {
 
         BarraMenu.add(MenuDesarrollo);
 
-        MenuProduccion.setText("Producción");
-
-        MnLotes.setText("Lotes de producción");
-        MnLotes.addActionListener(this::MnLotesActionPerformed);
-        MenuProduccion.add(MnLotes);
-
-        BarraMenu.add(MenuProduccion);
-
-        MenuInventario.setText("Inventario");
-
-        MnMateriasPrimas.setText("Materias primas");
-        MnMateriasPrimas.addActionListener(this::MnMateriasPrimasActionPerformed);
-        MenuInventario.add(MnMateriasPrimas);
-
-        MnProductosTerminados.setText("Productos terminados");
-        MnProductosTerminados.addActionListener(this::MnProductosTerminadosActionPerformed);
-        MenuInventario.add(MnProductosTerminados);
-
-        MnInventarioG.setText("Inventario General");
-        MnInventarioG.addActionListener(this::MnInventarioGActionPerformed);
-        MenuInventario.add(MnInventarioG);
-
-        BarraMenu.add(MenuInventario);
-
         MenuVentas.setText("Ventas");
 
         MnClientes.setText("Clientes");
@@ -145,19 +112,7 @@ public class PantallaPrincipal extends javax.swing.JFrame {
         MnProveedores.addActionListener(this::MnProveedoresActionPerformed);
         MenuFinanzas.add(MnProveedores);
 
-        MnFacturas.setText("Facturación");
-        MnFacturas.addActionListener(this::MnFacturasActionPerformed);
-        MenuFinanzas.add(MnFacturas);
-
         BarraMenu.add(MenuFinanzas);
-
-        MenuGP.setText("Gestión de personal");
-
-        MnEmpleados.setText("Empleados");
-        MnEmpleados.addActionListener(this::MnEmpleadosActionPerformed);
-        MenuGP.add(MnEmpleados);
-
-        BarraMenu.add(MenuGP);
 
         setJMenuBar(BarraMenu);
 
@@ -174,21 +129,6 @@ public class PantallaPrincipal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void MnLotesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnLotesActionPerformed
-        // TODO add your handling code here:
-
-    }//GEN-LAST:event_MnLotesActionPerformed
-
-    private void MnMateriasPrimasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnMateriasPrimasActionPerformed
-        // TODO add your handling code here:
-
-    }//GEN-LAST:event_MnMateriasPrimasActionPerformed
-
-    private void MnEmpleadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnEmpleadosActionPerformed
-        // TODO add your handling code here:
-
-    }//GEN-LAST:event_MnEmpleadosActionPerformed
 
     private void MnProveedoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnProveedoresActionPerformed
         // TODO add your handling code here:
@@ -225,27 +165,12 @@ public class PantallaPrincipal extends javax.swing.JFrame {
         Ventana.show();
     }//GEN-LAST:event_MnIngredientesActionPerformed
 
-    private void MnProductosTerminadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnProductosTerminadosActionPerformed
-        // TODO add your handling code here:
-
-    }//GEN-LAST:event_MnProductosTerminadosActionPerformed
-
     private void MnPedidosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnPedidosActionPerformed
         // TODO add your handling code here:
         Pedidos Ventana = new Pedidos();
         Escritorio.add(Ventana);
         Ventana.show();
     }//GEN-LAST:event_MnPedidosActionPerformed
-
-    private void MnFacturasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnFacturasActionPerformed
-        // TODO add your handling code here:
-
-    }//GEN-LAST:event_MnFacturasActionPerformed
-
-    private void MnInventarioGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MnInventarioGActionPerformed
-        // TODO add your handling code here:
-
-    }//GEN-LAST:event_MnInventarioGActionPerformed
 
     /**
      * @param args the command line arguments
@@ -256,22 +181,13 @@ public class PantallaPrincipal extends javax.swing.JFrame {
     private javax.swing.JDesktopPane Escritorio;
     private javax.swing.JMenu MenuDesarrollo;
     private javax.swing.JMenu MenuFinanzas;
-    private javax.swing.JMenu MenuGP;
-    private javax.swing.JMenu MenuInventario;
-    private javax.swing.JMenu MenuProduccion;
     private javax.swing.JMenu MenuProductos;
     private javax.swing.JMenu MenuVentas;
     private javax.swing.JMenuItem MnClientes;
-    private javax.swing.JMenuItem MnEmpleados;
-    private javax.swing.JMenuItem MnFacturas;
     private javax.swing.JMenuItem MnFormulas;
     private javax.swing.JMenuItem MnIngredientes;
-    private javax.swing.JMenuItem MnInventarioG;
-    private javax.swing.JMenuItem MnLotes;
-    private javax.swing.JMenuItem MnMateriasPrimas;
     private javax.swing.JMenuItem MnPedidos;
     private javax.swing.JMenuItem MnPerfumes;
-    private javax.swing.JMenuItem MnProductosTerminados;
     private javax.swing.JMenuItem MnProveedores;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
