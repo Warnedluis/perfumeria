@@ -141,7 +141,7 @@ public class Proveedores extends javax.swing.JInternalFrame {
         jLabel3.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel3.setText("Tipo:");
 
-        CmbPrograma.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        CmbPrograma.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Servicio", "Producto" }));
         CmbPrograma.addActionListener(this::CmbProgramaActionPerformed);
 
         jLabel4.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -272,7 +272,7 @@ public class Proveedores extends javax.swing.JInternalFrame {
         jLabel40.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel40.setText("Tipo:");
 
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Servicio", "Producto" }));
         jComboBox5.setEnabled(false);
 
         TxtContactoBaja.setEnabled(false);
@@ -419,7 +419,7 @@ public class Proveedores extends javax.swing.JInternalFrame {
         jLabel50.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel50.setText("Tipo:");
 
-        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Servicio", "Producto" }));
 
         jLabel51.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel51.setText("Apellido paterno:");
@@ -549,7 +549,7 @@ public class Proveedores extends javax.swing.JInternalFrame {
         jLabel60.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel60.setText("Tipo:");
 
-        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Servicio", "Producto" }));
         jComboBox7.setEnabled(false);
 
         TxtContactoBuscar.setEnabled(false);

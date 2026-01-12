@@ -1119,7 +1119,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
 public void llenarComboProveedores() {
     try {
         Modelos.Proveedores p = new Modelos.Proveedores();
-        java.sql.ResultSet rs = p.Mostrar();
+        java.sql.ResultSet rs = (java.sql.ResultSet) p.Mostrar();
         
         TxtProveedor_A.removeAllItems(); 
         TxtProveedores_C.removeAllItems(); // <-- Añade esta línea
