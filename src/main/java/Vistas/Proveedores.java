@@ -19,6 +19,7 @@ public class Proveedores extends javax.swing.JInternalFrame {
      */
     public Proveedores() {
         initComponents();
+        CargarTabla();
     }
 
     /**
@@ -35,7 +36,7 @@ public class Proveedores extends javax.swing.JInternalFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        CmbPrograma = new javax.swing.JComboBox<>();
         TxtContacto = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
@@ -140,7 +141,7 @@ public class Proveedores extends javax.swing.JInternalFrame {
         jLabel3.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel3.setText("Tipo:");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        CmbPrograma.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel4.setText("Apellido paterno:");
@@ -199,7 +200,7 @@ public class Proveedores extends javax.swing.JInternalFrame {
                         .addComponent(BtnGuardar)
                         .addGap(174, 174, 174)
                         .addComponent(BtnLimpiar))
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(CmbPrograma, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(TxtTelefono, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(TxtApellidoMaterno, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(TxtCalificacion, javax.swing.GroupLayout.Alignment.TRAILING)
@@ -223,7 +224,7 @@ public class Proveedores extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(CmbPrograma, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
@@ -756,7 +757,7 @@ public class Proveedores extends javax.swing.JInternalFrame {
                 Ob.setCalificacion(Calificacion);
 
                 
-                String Tipo = (String) jComboBox1.getSelectedItem();
+                String Tipo = (String) CmbPrograma.getSelectedItem();
                 Ob.setTipo_servicio(Tipo);
                 
 
@@ -847,37 +848,63 @@ public class Proveedores extends javax.swing.JInternalFrame {
 
     private void BtnBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnBuscarActionPerformed
         // TODO add your handling code here:
-        
-        try
-        {
-            if(!(TxtIDProveedorBuscar.getText().isEmpty()))
-            {
+        try {
+            // 1. Validar que el campo ID no esté vacío
+            if (!TxtIDProveedorBuscar.getText().isEmpty()) {
+                
                 Modelos.Proveedores Ob = new Modelos.Proveedores();
                 
-                TxtNombreBuscar.setText(Ob.getNombre_proveedor());
-                TxtApellidoPaternoBuscar.setText(Ob.getContacto_ap_paterno());
-                TxtApellidoMaternoBuscar.setText(String.valueOf(Ob.getContacto_ap_materno()));
-                TxtApellidoTelefonos.setText(String.valueOf(Ob.getContacto_ap_materno()));
+                // 2. Convertir el ID a entero
+                int id = Integer.parseInt(TxtIDProveedorBuscar.getText().trim());
                 
-                CmbPrograma.setSelectedItem(Ob.getPrograma());
+                // 3. Ejecutar la búsqueda en la Base de Datos
+                if (Ob.Buscar(id)) {
+                    
+                    // 4. Si se encuentra, llenamos los campos de la pestaña BUSCAR
+                    TxtNombreBuscar.setText(Ob.getNombre_proveedor());
+                    
+                    // Seleccionamos el item correcto en el ComboBox de BUSCAR (jComboBox7)
+                    jComboBox7.setSelectedItem(Ob.getTipo_servicio()); 
+                    
+                    TxtContactoBuscar.setText(Ob.getContacto_nombre());
+                    TxtApellidoPaternoBuscar.setText(Ob.getContacto_ap_paterno());
+                    TxtApellidoMaternoBuscar.setText(Ob.getContacto_ap_materno());
+                    TxtTelefonoBuscar.setText(Ob.getTelefono());
+                    TxtDireccionBuscar.setText(Ob.getDireccion());
+                    TxtCondicionesPagoBuscar.setText(Ob.getCondiciones_de_pago());
+                    
+                    // Convertimos la calificación (float) a texto para mostrarla
+                    TxtCalificacionBuscar.setText(String.valueOf(Ob.getCalificacion()));
 
-                if(Ob.getTurno().equals("Matutino"))
-                {
-                    RBtnMatutino.setSelected(true);
+                    JOptionPane.showMessageDialog(this, "Proveedor encontrado.");
+                    
+                } else {
+                    JOptionPane.showMessageDialog(this, "No se encontró ningún proveedor con ese ID.");
+                    // Opcional: Limpiar campos si no se encuentra
+                    BtnLimpiarBuscar.doClick(); 
                 }
-                else
-                {
-                    RBtnVespertino.setSelected(true);
-                }
-                JOptionPane.showMessageDialog(this,"Registro");
+            } else {
+                JOptionPane.showMessageDialog(this, "Por favor escribe un ID para buscar.");
             }
-        }
-        catch (Exception e)
-        {
-            JOptionPane.showMessageDialog(this,e.toString());
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Error: " + e.toString());
         }
     }//GEN-LAST:event_BtnBuscarActionPerformed
 
+    
+    private void CargarTabla() {
+        try {
+            Modelos.Proveedores Ob = new Modelos.Proveedores();
+            
+            // Aquí llamamos al método Mostrar() que acabas de crear en el Modelo
+            jTable1.setModel(Ob.Mostrar());
+            
+        } catch (Exception e) {
+            javax.swing.JOptionPane.showMessageDialog(this, "Error al cargar la tabla: " + e.toString());
+        }
+    }
+    
+ 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BtnBaja;
@@ -888,6 +915,7 @@ public class Proveedores extends javax.swing.JInternalFrame {
     private javax.swing.JButton BtnLimpiarBuscar;
     private javax.swing.JButton BtnLimpiarModificar;
     private javax.swing.JButton BtnModificar;
+    private javax.swing.JComboBox<String> CmbPrograma;
     private javax.swing.JTextField TxtApellidoMaterno;
     private javax.swing.JTextField TxtApellidoMaternoBaja;
     private javax.swing.JTextField TxtApellidoMaternoBuscar;
@@ -924,7 +952,6 @@ public class Proveedores extends javax.swing.JInternalFrame {
     private javax.swing.JTextField TxtTelefonoBaja;
     private javax.swing.JTextField TxtTelefonoBuscar;
     private javax.swing.JTextField TxtTelefonoModificar;
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox5;
     private javax.swing.JComboBox<String> jComboBox6;
     private javax.swing.JComboBox<String> jComboBox7;
