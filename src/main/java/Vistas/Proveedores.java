@@ -847,7 +847,7 @@ public class Proveedores extends javax.swing.JInternalFrame {
 
     private void BtnBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnBuscarActionPerformed
         // TODO add your handling code here:
-        
+  /*      
         try
         {
             if(!(TxtIDProveedorBuscar.getText().isEmpty()))
@@ -875,7 +875,7 @@ public class Proveedores extends javax.swing.JInternalFrame {
         catch (Exception e)
         {
             JOptionPane.showMessageDialog(this,e.toString());
-        }
+        }*/
     }//GEN-LAST:event_BtnBuscarActionPerformed
 
 
