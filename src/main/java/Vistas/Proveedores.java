@@ -141,8 +141,11 @@ public class Proveedores extends javax.swing.JInternalFrame {
         jLabel3.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel3.setText("Tipo:");
 
-        CmbPrograma.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        CmbPrograma.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        CmbPrograma.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Servicio", "Productos" }));
         CmbPrograma.addActionListener(this::CmbProgramaActionPerformed);
+
+        TxtContacto.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel4.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel4.setText("Apellido paterno:");
@@ -162,6 +165,18 @@ public class Proveedores extends javax.swing.JInternalFrame {
         jLabel9.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel9.setText("Calificación:");
 
+        TxtApellidoPaterno.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+
+        TxtApellidoMaterno.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+
+        TxtTelefono.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+
+        TxtDireccion.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+
+        TxtCondicionesPago.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+
+        TxtCalificacion.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+
         BtnGuardar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         BtnGuardar.setText("Guardar");
         BtnGuardar.addActionListener(this::BtnGuardarActionPerformed);
@@ -171,6 +186,10 @@ public class Proveedores extends javax.swing.JInternalFrame {
 
         jLabel37.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel37.setText("ID proveedor:");
+
+        TxtIDProveedor.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+
+        TxtNombre.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -216,44 +235,44 @@ public class Proveedores extends javax.swing.JInternalFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(47, 47, 47)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TxtIDProveedor, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE)
+                    .addComponent(TxtIDProveedor)
                     .addComponent(jLabel37))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(TxtNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(TxtNombre))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(CmbPrograma, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(CmbPrograma))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(TxtContacto, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(TxtContacto))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(TxtApellidoPaterno, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(TxtApellidoPaterno))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(TxtApellidoMaterno, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(TxtApellidoMaterno))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
-                    .addComponent(TxtTelefono, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(TxtTelefono))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
-                    .addComponent(TxtDireccion, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(TxtDireccion))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
-                    .addComponent(TxtCondicionesPago, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(TxtCondicionesPago))
                 .addGap(24, 24, 24)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9)
-                    .addComponent(TxtCalificacion, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(TxtCalificacion))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BtnLimpiar)
@@ -272,9 +291,11 @@ public class Proveedores extends javax.swing.JInternalFrame {
         jLabel40.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel40.setText("Tipo:");
 
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox5.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Servicio", "Productos" }));
         jComboBox5.setEnabled(false);
 
+        TxtContactoBaja.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         TxtContactoBaja.setEnabled(false);
 
         jLabel41.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -295,16 +316,22 @@ public class Proveedores extends javax.swing.JInternalFrame {
         jLabel46.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel46.setText("Calificación:");
 
+        TxtApellidoPaternoBaja.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         TxtApellidoPaternoBaja.setEnabled(false);
 
+        TxtApellidoMaternoBaja.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         TxtApellidoMaternoBaja.setEnabled(false);
 
+        TxtTelefonoBaja.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         TxtTelefonoBaja.setEnabled(false);
 
+        TxtDireccionBaja.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         TxtDireccionBaja.setEnabled(false);
 
+        TxtCondicionesPagoBaja.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         TxtCondicionesPagoBaja.setEnabled(false);
 
+        TxtCalificacionBaja.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         TxtCalificacionBaja.setEnabled(false);
 
         BtnBaja.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -317,6 +344,9 @@ public class Proveedores extends javax.swing.JInternalFrame {
         jLabel47.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel47.setText("ID proveedor:");
 
+        TxtIDProveedorBaja.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+
+        TxtNombreBaja.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         TxtNombreBaja.setEnabled(false);
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
@@ -363,44 +393,44 @@ public class Proveedores extends javax.swing.JInternalFrame {
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGap(47, 47, 47)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TxtIDProveedorBaja, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE)
+                    .addComponent(TxtIDProveedorBaja)
                     .addComponent(jLabel47))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel38)
-                    .addComponent(TxtNombreBaja, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(TxtNombreBaja))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel40)
-                    .addComponent(jComboBox5, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(jComboBox5))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel39)
-                    .addComponent(TxtContactoBaja, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(TxtContactoBaja))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel41)
-                    .addComponent(TxtApellidoPaternoBaja, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(TxtApellidoPaternoBaja))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel42)
-                    .addComponent(TxtApellidoMaternoBaja, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(TxtApellidoMaternoBaja))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel43)
-                    .addComponent(TxtTelefonoBaja, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(TxtTelefonoBaja))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel44)
-                    .addComponent(TxtDireccionBaja, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(TxtDireccionBaja))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel45)
-                    .addComponent(TxtCondicionesPagoBaja, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(TxtCondicionesPagoBaja))
                 .addGap(24, 24, 24)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel46)
-                    .addComponent(TxtCalificacionBaja, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(TxtCalificacionBaja))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BtnLimpiarBaja)
@@ -419,7 +449,10 @@ public class Proveedores extends javax.swing.JInternalFrame {
         jLabel50.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel50.setText("Tipo:");
 
-        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox6.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Servicio", "Productos" }));
+
+        TxtContactoModificar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel51.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel51.setText("Apellido paterno:");
@@ -439,6 +472,18 @@ public class Proveedores extends javax.swing.JInternalFrame {
         jLabel56.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel56.setText("Calificación:");
 
+        TxtApellidoPaternoModificar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+
+        TxtApellidoMaternoModificar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+
+        TxtTelefonoModificar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+
+        TxtDireccionModificar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+
+        TxtCondicionesPagoModificar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+
+        TxtCalificacionModificar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+
         BtnModificar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         BtnModificar.setText("Modificar");
         BtnModificar.addActionListener(this::BtnModificarActionPerformed);
@@ -448,6 +493,10 @@ public class Proveedores extends javax.swing.JInternalFrame {
 
         jLabel57.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel57.setText("ID proveedor:");
+
+        TxtIDProveedorModificar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+
+        TxtNombreModificar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -493,44 +542,44 @@ public class Proveedores extends javax.swing.JInternalFrame {
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGap(47, 47, 47)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TxtIDProveedorModificar, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE)
+                    .addComponent(TxtIDProveedorModificar)
                     .addComponent(jLabel57))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel48)
-                    .addComponent(TxtNombreModificar, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(TxtNombreModificar))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel50)
-                    .addComponent(jComboBox6, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(jComboBox6))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel49)
-                    .addComponent(TxtContactoModificar, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(TxtContactoModificar))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel51)
-                    .addComponent(TxtApellidoPaternoModificar, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(TxtApellidoPaternoModificar))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel52)
-                    .addComponent(TxtApellidoMaternoModificar, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(TxtApellidoMaternoModificar))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel53)
-                    .addComponent(TxtTelefonoModificar, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(TxtTelefonoModificar))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel54)
-                    .addComponent(TxtDireccionModificar, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(TxtDireccionModificar))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel55)
-                    .addComponent(TxtCondicionesPagoModificar, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(TxtCondicionesPagoModificar))
                 .addGap(24, 24, 24)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel56)
-                    .addComponent(TxtCalificacionModificar, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(TxtCalificacionModificar))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BtnLimpiarModificar)
@@ -549,9 +598,11 @@ public class Proveedores extends javax.swing.JInternalFrame {
         jLabel60.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel60.setText("Tipo:");
 
-        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox7.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Servicio", "Productos" }));
         jComboBox7.setEnabled(false);
 
+        TxtContactoBuscar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         TxtContactoBuscar.setEnabled(false);
 
         jLabel61.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -572,16 +623,22 @@ public class Proveedores extends javax.swing.JInternalFrame {
         jLabel66.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel66.setText("Calificación:");
 
+        TxtApellidoPaternoBuscar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         TxtApellidoPaternoBuscar.setEnabled(false);
 
+        TxtApellidoMaternoBuscar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         TxtApellidoMaternoBuscar.setEnabled(false);
 
+        TxtTelefonoBuscar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         TxtTelefonoBuscar.setEnabled(false);
 
+        TxtDireccionBuscar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         TxtDireccionBuscar.setEnabled(false);
 
+        TxtCondicionesPagoBuscar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         TxtCondicionesPagoBuscar.setEnabled(false);
 
+        TxtCalificacionBuscar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         TxtCalificacionBuscar.setEnabled(false);
 
         BtnBuscar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -594,7 +651,10 @@ public class Proveedores extends javax.swing.JInternalFrame {
         jLabel67.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel67.setText("ID proveedor:");
 
+        TxtNombreBuscar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         TxtNombreBuscar.setEnabled(false);
+
+        TxtIDProveedorBuscar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -640,44 +700,44 @@ public class Proveedores extends javax.swing.JInternalFrame {
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addGap(47, 47, 47)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TxtIDProveedorBuscar, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE)
+                    .addComponent(TxtIDProveedorBuscar)
                     .addComponent(jLabel67))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel58)
-                    .addComponent(TxtNombreBuscar, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(TxtNombreBuscar))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel60)
-                    .addComponent(jComboBox7, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(jComboBox7))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel59)
-                    .addComponent(TxtContactoBuscar, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(TxtContactoBuscar))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel61)
-                    .addComponent(TxtApellidoPaternoBuscar, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(TxtApellidoPaternoBuscar))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel62)
-                    .addComponent(TxtApellidoMaternoBuscar, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(TxtApellidoMaternoBuscar))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel63)
-                    .addComponent(TxtTelefonoBuscar, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(TxtTelefonoBuscar))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel64)
-                    .addComponent(TxtDireccionBuscar, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(TxtDireccionBuscar))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel65)
-                    .addComponent(TxtCondicionesPagoBuscar, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(TxtCondicionesPagoBuscar))
                 .addGap(24, 24, 24)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel66)
-                    .addComponent(TxtCalificacionBuscar, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE))
+                    .addComponent(TxtCalificacionBuscar))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BtnLimpiarBuscar)
