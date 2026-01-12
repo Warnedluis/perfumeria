@@ -67,7 +67,6 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jLabel65 = new javax.swing.JLabel();
         TxtID_B = new javax.swing.JTextField();
         BtnLimpiar_B = new javax.swing.JButton();
-        BtnBuscar_B = new javax.swing.JButton();
         Cambios = new javax.swing.JPanel();
         TxtCosto_C = new javax.swing.JFormattedTextField();
         jLabel66 = new javax.swing.JLabel();
@@ -87,7 +86,6 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         jLabel73 = new javax.swing.JLabel();
         TxtID_C = new javax.swing.JTextField();
         BtnLimpiar_C = new javax.swing.JButton();
-        BtnBuscar_C = new javax.swing.JButton();
         BuscarIngredientes = new javax.swing.JPanel();
         TxtCosto_BU = new javax.swing.JFormattedTextField();
         jLabel74 = new javax.swing.JLabel();
@@ -327,10 +325,6 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         BtnLimpiar_B.setText("Limpiar");
         BtnLimpiar_B.addActionListener(this::BtnLimpiar_BActionPerformed);
 
-        BtnBuscar_B.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        BtnBuscar_B.setText("Buscar");
-        BtnBuscar_B.addActionListener(this::BtnBuscar_BActionPerformed);
-
         javax.swing.GroupLayout BajaIngredientesLayout = new javax.swing.GroupLayout(BajaIngredientes);
         BajaIngredientes.setLayout(BajaIngredientesLayout);
         BajaIngredientesLayout.setHorizontalGroup(
@@ -356,9 +350,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BajaIngredientesLayout.createSequentialGroup()
                                 .addGap(0, 0, Short.MAX_VALUE)
                                 .addComponent(BtnBorrar, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(BtnBuscar_B)
-                                .addGap(34, 34, 34)
+                                .addGap(124, 124, 124)
                                 .addComponent(BtnLimpiar_B, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(TxtID_B)))
                     .addGroup(BajaIngredientesLayout.createSequentialGroup()
@@ -413,8 +405,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
                 .addGap(18, 18, 18)
                 .addGroup(BajaIngredientesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BtnBorrar)
-                    .addComponent(BtnLimpiar_B, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BtnBuscar_B))
+                    .addComponent(BtnLimpiar_B, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(10, 10, 10))
         );
 
@@ -484,10 +475,6 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         BtnLimpiar_C.setText("Limpiar");
         BtnLimpiar_C.addActionListener(this::BtnLimpiar_CActionPerformed);
 
-        BtnBuscar_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        BtnBuscar_C.setText("Buscar");
-        BtnBuscar_C.addActionListener(this::BtnBuscar_CActionPerformed);
-
         javax.swing.GroupLayout CambiosLayout = new javax.swing.GroupLayout(Cambios);
         Cambios.setLayout(CambiosLayout);
         CambiosLayout.setHorizontalGroup(
@@ -513,9 +500,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CambiosLayout.createSequentialGroup()
                                 .addGap(0, 0, Short.MAX_VALUE)
                                 .addComponent(BtnModificar, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(BtnBuscar_C)
-                                .addGap(34, 34, 34)
+                                .addGap(124, 124, 124)
                                 .addComponent(BtnLimpiar_C, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(TxtID_C)))
                     .addGroup(CambiosLayout.createSequentialGroup()
@@ -570,8 +555,7 @@ public class Ingredientes extends javax.swing.JInternalFrame {
                 .addGap(18, 18, 18)
                 .addGroup(CambiosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BtnModificar)
-                    .addComponent(BtnLimpiar_C, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BtnBuscar_C))
+                    .addComponent(BtnLimpiar_C, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(10, 10, 10))
         );
 
@@ -1047,79 +1031,10 @@ public class Ingredientes extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_TxtTipo_AActionPerformed
 
-    private void BtnBuscar_BActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnBuscar_BActionPerformed
-        // TODO add your handling code here:
-        try {
-        // 1. Obtenemos el ID de la pestaña Baja
-        int id = Integer.parseInt(TxtID_B.getText());
-        Modelos.Ingrediente i = new Modelos.Ingrediente();
-        
-        // 2. Buscamos en la base de datos
-        if (i.Buscar(id)) {
-            // 3. Llenamos los campos de texto
-            TxtNombre_B.setText(i.getNombre());
-            TxtStock_B.setText(String.valueOf(i.getStock_actual()));
-            TxtCosto_B.setText(String.valueOf(i.getCosto_unitario()));
-            
-            // Para el proveedor, seleccionamos el ID correspondiente en el combo
-            // Nota: Esto asume que llenaste el combo con el método llenarComboProveedores
-            TxtProveedor_B.setSelectedItem(i.getId_proveedor() + " - " + /* nombre opcional */ "");
-            
-        } else {
-            javax.swing.JOptionPane.showMessageDialog(this, "Ingrediente no encontrado.");
-            BtnLimpiar_BActionPerformed(null);
-        }
-    } catch (NumberFormatException e) {
-        javax.swing.JOptionPane.showMessageDialog(this, "Ingrese un ID numérico válido.");
-    } catch (Exception e) {
-        javax.swing.JOptionPane.showMessageDialog(this, "Error: " + e.getMessage());
-    }
-    }//GEN-LAST:event_BtnBuscar_BActionPerformed
-
-    private void BtnBuscar_CActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnBuscar_CActionPerformed
-        // TODO add your handling code here:
-        try {
-        int id = Integer.parseInt(TxtID_C.getText());
-        Modelos.Ingrediente i = new Modelos.Ingrediente();
-        
-        if (i.Buscar(id)) { //
-            // 1. Habilitamos los campos para edición
-            TxtNombre_C.setEnabled(true);
-            TxtTipo_C.setEnabled(true);
-            TxtUnidad_C.setEnabled(true);
-            TxtStock_C.setEnabled(true);
-            TxtCosto_C.setEnabled(true);
-            TxtNivel_C.setEnabled(true);
-            TxtProveedores_C.setEnabled(true);
-
-            // 2. Cargamos los datos en la interfaz
-            TxtNombre_C.setText(i.getNombre());
-            TxtTipo_C.setSelectedItem(i.getTipo());
-            TxtUnidad_C.setSelectedItem(i.getUnidad_medida());
-            TxtStock_C.setText(String.valueOf(i.getStock_actual()));
-            TxtCosto_C.setText(String.valueOf(i.getCosto_unitario()));
-            TxtNivel_C.setText(String.valueOf(i.getNivel_reorden()));
-            
-            // 3. Seleccionamos el proveedor correcto en el combo
-            int idProvGuardado = i.getId_proveedor();
-            for (int k = 0; k < TxtProveedores_C.getItemCount(); k++) {
-                if (TxtProveedores_C.getItemAt(k).startsWith(idProvGuardado + " - ")) {
-                    TxtProveedores_C.setSelectedIndex(k);
-                    break;
-                }
-            }
-        } else {
-            javax.swing.JOptionPane.showMessageDialog(this, "ID de ingrediente no encontrado.");
-        }
-    } catch (Exception e) {
-        javax.swing.JOptionPane.showMessageDialog(this, "Error al buscar: " + e.getMessage());
-    }
-    }//GEN-LAST:event_BtnBuscar_CActionPerformed
-
 public void llenarComboProveedores() {
     try {
         Modelos.Proveedores p = new Modelos.Proveedores();
-        java.sql.ResultSet rs = p.Mostrar();
+        java.sql.ResultSet p =  p.Mostrar();
         
         TxtProveedor_A.removeAllItems(); 
         TxtProveedores_C.removeAllItems(); // <-- Añade esta línea
@@ -1161,9 +1076,7 @@ public void cargarTabla() {
     private javax.swing.JPanel AltaIngredientes;
     private javax.swing.JPanel BajaIngredientes;
     private javax.swing.JButton BtnBorrar;
-    private javax.swing.JButton BtnBuscar_B;
     private javax.swing.JButton BtnBuscar_BU;
-    private javax.swing.JButton BtnBuscar_C;
     private javax.swing.JButton BtnGuardar;
     private javax.swing.JButton BtnLimpiar_A;
     private javax.swing.JButton BtnLimpiar_B;
