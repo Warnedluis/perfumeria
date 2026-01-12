@@ -451,11 +451,9 @@ public class Perfumes extends javax.swing.JInternalFrame {
         jLabel31.setText("Descripción:");
 
         TxtNombrePerfumista_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        TxtNombrePerfumista_C.setEnabled(false);
         TxtNombrePerfumista_C.addActionListener(this::TxtNombrePerfumista_CActionPerformed);
 
         TxtDescripcion_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        TxtDescripcion_C.setEnabled(false);
         TxtDescripcion_C.addActionListener(this::TxtDescripcion_CActionPerformed);
 
         jLabel32.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -465,7 +463,6 @@ public class Perfumes extends javax.swing.JInternalFrame {
         jLabel33.setText("Precio de venta:");
 
         TxtNombre_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        TxtNombre_C.setEnabled(false);
         TxtNombre_C.addActionListener(this::TxtNombre_CActionPerformed);
 
         jLabel34.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -476,11 +473,9 @@ public class Perfumes extends javax.swing.JInternalFrame {
 
         TxtFamilia_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         TxtFamilia_C.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Floral", "Amaderada", "Cítrica" }));
-        TxtFamilia_C.setEnabled(false);
 
         TxtEstado_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         TxtEstado_C.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "En desarrollo", "En producción", "Lanzado al mercado", "Descontinuado" }));
-        TxtEstado_C.setEnabled(false);
 
         BtnModificar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         BtnModificar.setText("Modificar");
@@ -491,7 +486,6 @@ public class Perfumes extends javax.swing.JInternalFrame {
 
         jComboBox12.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jComboBox12.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Eau de parfum", "Eau de toilette", "Extracto" }));
-        jComboBox12.setEnabled(false);
 
         jLabel37.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         jLabel37.setText("Fecha de creación:");
@@ -500,7 +494,6 @@ public class Perfumes extends javax.swing.JInternalFrame {
         jLabel38.setText("Costo de producción:");
 
         TxtFecha_C.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
-        TxtFecha_C.setEnabled(false);
         TxtFecha_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
 
         jLabel39.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
@@ -512,10 +505,6 @@ public class Perfumes extends javax.swing.JInternalFrame {
         BtnLimpiar_C.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
         BtnLimpiar_C.setText("Limpiar");
         BtnLimpiar_C.addActionListener(this::BtnLimpiar_CActionPerformed);
-
-        TxtPrecio_C.setEnabled(false);
-
-        TxtCosto_C.setEnabled(false);
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -855,23 +844,37 @@ int confirmar = javax.swing.JOptionPane.showConfirmDialog(this, "¿Seguro que de
     private void BtnModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnModificarActionPerformed
         // TODO add your handling code here:
         try {
+        
+        if (TxtID_C.getText().trim().isEmpty() || TxtFecha_C.getText().trim().isEmpty()) {
+            javax.swing.JOptionPane.showMessageDialog(this, "Error: El ID y la Fecha no pueden estar vacíos.");
+            return; 
+        }
+
         Modelos.Perfume p = new Modelos.Perfume();
         p.setId_perfume(Integer.parseInt(TxtID_C.getText()));
         p.setNombre(TxtNombre_C.getText());
         p.setFamilia_olfativa(TxtFamilia_C.getSelectedItem().toString());
-        p.setTipo_producto(jComboBox12.getSelectedItem().toString()); //
+        p.setTipo_producto(jComboBox12.getSelectedItem().toString()); 
         
         java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("dd/MM/yyyy");
         p.setFecha_creacion(sdf.parse(TxtFecha_C.getText()));
         
         p.setPerfumista(TxtNombrePerfumista_C.getText());
         p.setDescripcion(TxtDescripcion_C.getText());
-        p.setPrecio_venta(Float.parseFloat(TxtPrecio_C.getText()));
-        p.setCosto_produccion(Float.parseFloat(TxtCosto_C.getText()));
+        
+        p.setPrecio_venta(Float.parseFloat(TxtPrecio_C.getText().isEmpty() ? "0" : TxtPrecio_C.getText()));
+        p.setCosto_produccion(Float.parseFloat(TxtCosto_C.getText().isEmpty() ? "0" : TxtCosto_C.getText()));
+        
         p.setEstado(TxtEstado_C.getSelectedItem().toString());
         
-        p.Modificar(); //
+        p.Modificar(); 
         javax.swing.JOptionPane.showMessageDialog(this, "Datos actualizados correctamente.");
+        cargarTabla();
+        
+    } catch (java.text.ParseException e) {
+        javax.swing.JOptionPane.showMessageDialog(this, "Formato de fecha inválido. Use: dd/MM/yyyy");
+    } catch (NumberFormatException e) {
+        javax.swing.JOptionPane.showMessageDialog(this, "Error: Verifique que ID, Precio y Costo sean números.");
     } catch (Exception e) {
         javax.swing.JOptionPane.showMessageDialog(this, "Error al modificar: " + e.getMessage());
     }
